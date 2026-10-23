@@ -15,8 +15,8 @@
 | 8 | Learned crawl policy (bandit/RL) | small MLP / bandit | all three: not enough data at 2.5 s per read | cut |
 | 9 | Focus-risk prediction from source code | code model | all three: 4 positives, unmeasurable | cut |
 
-## Over-claiming risks they named (we hold to these)
+## Over-claiming risks they named (I hold to these)
 - A frozen test proves a name is *exposed*, not that it is *correct*. Say "model-suggested, test-verified as exposed".
-- Not "VoiceView-tested": we simulate TalkBack-style rules; VoiceView on a device may differ.
+- Not "VoiceView-tested": I simulate TalkBack-style rules; VoiceView on a device may differ.
 - Report the NN next to its baselines; if a structural hash beats the embedding, say so.
 - Never train on 4 bugs. Use pretrained models and self-generated labels; split by session.

@@ -16,9 +16,9 @@ The same emulator had 745 MB free with the app open.
 Fire TV Stick HD / Lite class: 1 GB RAM. Stick 4K / 4K Max class: 2 GB RAM.
 150 MB is roughly 15% of a 1 GB stick, so the companion app is a viewer you open on demand, not something left running.
 The audit itself adds no resident process on the TV: it uses `input keyevent` and `uiautomator dump`, which start and exit per call.
-We have not measured on a physical stick (none available); the emulator is a proxy.
+I have not measured on a physical stick (none available); the emulator is a proxy.
 
-## Rules we keep
+## Rules I keep
 - No model runs on the TV. Ever.
 - The companion app does no audit work and stays closed unless the user opens it.
 - Any new on-device component needs a measured PSS number in this file before it ships.
