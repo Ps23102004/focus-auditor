@@ -1,0 +1,942 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "app": "com.example.android.tvleanback",
+    "activity": ".MainActivity",
+    "device": "fixture",
+    "timestamp": "2026-10-23T08:44:22-0400",
+    "fa_version": "0.1.0",
+    "run_id": "47c459b6"
+  },
+  "coverage": {
+    "pressed": 303,
+    "budget": 400,
+    "cold_starts": 17,
+    "probes": 110,
+    "nodes": 31,
+    "expanded": 30,
+    "max_nodes": 60,
+    "elapsed_s": 643.0,
+    "inconclusive_reasons": [
+      "replay_mismatch: wanted b7d898f0a8 got 99d4b49041",
+      "replay_mismatch: wanted 99d4b49041 got 25701997dd",
+      "replay_mismatch: wanted 6c89434a4a got 72f85ffcde",
+      "replay_mismatch: wanted 259c8ec405 got 25701997dd",
+      "replay_mismatch: wanted 78e50b09a2 got a4d067d3f5",
+      "replay_mismatch: wanted 048cc79f58 got 35a3ea8344",
+      "node_cap: 1 discovered nodes not expanded (max_nodes=60)",
+      "replay_mismatch: wanted bbf7b88ac6 got 4f94ba0746",
+      "label_unverified: 36 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "35a3ea8344",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon Demo Slam",
+      "bounds": [
+        112,
+        328,
+        363,
+        404
+      ]
+    },
+    {
+      "id": "785ff27975",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon Google+",
+      "bounds": [
+        112,
+        328,
+        315,
+        404
+      ]
+    },
+    {
+      "id": "5ebc316e12",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon Gone Google",
+      "bounds": [
+        112,
+        328,
+        382,
+        404
+      ]
+    },
+    {
+      "id": "25701997dd",
+      "cls": "android.widget.FrameLayout",
+      "label": "20ft Search Google Demo Slam",
+      "bounds": [
+        90,
+        354,
+        446,
+        672
+      ]
+    },
+    {
+      "id": "6a1fb53ed2",
+      "cls": "android.widget.FrameLayout",
+      "label": "Instant Upload Google+",
+      "bounds": [
+        90,
+        354,
+        446,
+        672
+      ]
+    },
+    {
+      "id": "2588b93c58",
+      "cls": "android.widget.FrameLayout",
+      "label": "Search Action",
+      "bounds": [
+        102,
+        52,
+        226,
+        176
+      ]
+    },
+    {
+      "id": "72f85ffcde",
+      "cls": "android.widget.FrameLayout",
+      "label": "New Dad Google+",
+      "bounds": [
+        418,
+        354,
+        774,
+        672
+      ]
+    },
+    {
+      "id": "356ace8ce6",
+      "cls": "android.widget.FrameLayout",
+      "label": "Search Action",
+      "bounds": [
+        102,
+        52,
+        226,
+        176
+      ]
+    },
+    {
+      "id": "e34882d554",
+      "cls": "android.widget.FrameLayout",
+      "label": "Hall and Oates has Gone Google Gone Google",
+      "bounds": [
+        418,
+        354,
+        774,
+        672
+      ]
+    },
+    {
+      "id": "894a48095a",
+      "cls": "android.widget.FrameLayout",
+      "label": "Pt England School has Gone Google Gone Google",
+      "bounds": [
+        746,
+        354,
+        1102,
+        672
+      ]
+    },
+    {
+      "id": "b7d898f0a8",
+      "cls": "android.widget.FrameLayout",
+      "label": "Work has Gone Google Gone Google",
+      "bounds": [
+        1074,
+        354,
+        1430,
+        672
+      ]
+    },
+    {
+      "id": "99d4b49041",
+      "cls": "android.widget.FrameLayout",
+      "label": "Epic Docs Animation Google Demo Slam",
+      "bounds": [
+        782,
+        354,
+        1138,
+        672
+      ]
+    },
+    {
+      "id": "259c8ec405",
+      "cls": "android.widget.FrameLayout",
+      "label": "Google Drive has Gone Google Gone Google",
+      "bounds": [
+        90,
+        354,
+        446,
+        672
+      ]
+    },
+    {
+      "id": "b9cb9116b3",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon Zeitgeist",
+      "bounds": [
+        112,
+        328,
+        320,
+        404
+      ]
+    },
+    {
+      "id": "11ee43062e",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon April Fool's 2013",
+      "bounds": [
+        112,
+        328,
+        437,
+        404
+      ]
+    },
+    {
+      "id": "9fedbbe511",
+      "cls": "android.widget.FrameLayout",
+      "label": "2013 in Searches Google Zeitgeist",
+      "bounds": [
+        90,
+        354,
+        446,
+        672
+      ]
+    },
+    {
+      "id": "4f94ba0746",
+      "cls": "android.widget.FrameLayout",
+      "label": "Explore Treasure Mode with Google Maps Google",
+      "bounds": [
+        90,
+        354,
+        446,
+        672
+      ]
+    },
+    {
+      "id": "ae1eda9e6a",
+      "cls": "android.widget.LinearLayout",
+      "label": "Header icon More Samples",
+      "bounds": [
+        112,
+        328,
+        405,
+        404
+      ]
+    },
+    {
+      "id": "a4d067d3f5",
+      "cls": "android.widget.FrameLayout",
+      "label": "Introducing Gmail Blue Google",
+      "bounds": [
+        418,
+        354,
+        774,
+        672
+      ]
+    },
+    {
+      "id": "d9691682cc",
+      "cls": "android.widget.TextView",
+      "label": "Vertical Grid View",
+      "bounds": [
+        98,
+        352,
+        326,
+        580
+      ]
+    },
+    {
+      "id": "a0c0cf34ad",
+      "cls": "android.widget.TextView",
+      "label": "Guided Step First Page",
+      "bounds": [
+        314,
+        352,
+        542,
+        580
+      ]
+    },
+    {
+      "id": "c11d7160d3",
+      "cls": "android.widget.TextView",
+      "label": "Error Fragment",
+      "bounds": [
+        530,
+        352,
+        758,
+        580
+      ]
+    },
+    {
+      "id": "6c89434a4a",
+      "cls": "android.widget.FrameLayout",
+      "label": "Say more with Hangouts Google+",
+      "bounds": [
+        746,
+        354,
+        1102,
+        672
+      ]
+    },
+    {
+      "id": "30a0e1c373",
+      "cls": "android.widget.FrameLayout",
+      "label": "Year In Review - 2010 Google Zeitgeist",
+      "bounds": [
+        418,
+        354,
+        774,
+        672
+      ]
+    },
+    {
+      "id": "32baa9c1ae",
+      "cls": "android.widget.FrameLayout",
+      "label": "Year In Review - 2011 Google Zeitgeist",
+      "bounds": [
+        746,
+        354,
+        1102,
+        672
+      ]
+    },
+    {
+      "id": "bbf7b88ac6",
+      "cls": "android.widget.FrameLayout",
+      "label": "Introducing Google Fiber to the Pole Google",
+      "bounds": [
+        746,
+        354,
+        1102,
+        672
+      ]
+    },
+    {
+      "id": "78e50b09a2",
+      "cls": "android.widget.FrameLayout",
+      "label": "Introducing Google Nose Google",
+      "bounds": [
+        818,
+        354,
+        1174,
+        672
+      ]
+    },
+    {
+      "id": "454eba8fb9",
+      "cls": "android.widget.TextView",
+      "label": "Personal Settings",
+      "bounds": [
+        746,
+        352,
+        974,
+        580
+      ]
+    },
+    {
+      "id": "048cc79f58",
+      "cls": "android.widget.FrameLayout",
+      "label": "YouTube's ready to select a winner Google",
+      "bounds": [
+        1146,
+        354,
+        1502,
+        672
+      ]
+    },
+    {
+      "id": "0c7f12fb9d",
+      "cls": "android.widget.FrameLayout",
+      "label": "Year In Review - 2012 Google Zeitgeist",
+      "bounds": [
+        1074,
+        354,
+        1430,
+        672
+      ]
+    },
+    {
+      "id": "4fdce5f9d7",
+      "cls": "android.widget.FrameLayout",
+      "label": "Here's to 2013 Google Zeitgeist",
+      "bounds": [
+        1402,
+        354,
+        1758,
+        672
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "35a3ea8344",
+      "UP",
+      "785ff27975"
+    ],
+    [
+      "785ff27975",
+      "DOWN",
+      "35a3ea8344"
+    ],
+    [
+      "35a3ea8344",
+      "DOWN",
+      "5ebc316e12"
+    ],
+    [
+      "5ebc316e12",
+      "UP",
+      "35a3ea8344"
+    ],
+    [
+      "35a3ea8344",
+      "LEFT",
+      "35a3ea8344"
+    ],
+    [
+      "35a3ea8344",
+      "RIGHT",
+      "25701997dd"
+    ],
+    [
+      "25701997dd",
+      "LEFT",
+      "35a3ea8344"
+    ],
+    [
+      "785ff27975",
+      "RIGHT",
+      "6a1fb53ed2"
+    ],
+    [
+      "6a1fb53ed2",
+      "LEFT",
+      "785ff27975"
+    ],
+    [
+      "785ff27975",
+      "UP",
+      "2588b93c58"
+    ],
+    [
+      "2588b93c58",
+      "DOWN",
+      "785ff27975"
+    ],
+    [
+      "785ff27975",
+      "LEFT",
+      "785ff27975"
+    ],
+    [
+      "6a1fb53ed2",
+      "RIGHT",
+      "72f85ffcde"
+    ],
+    [
+      "72f85ffcde",
+      "LEFT",
+      "6a1fb53ed2"
+    ],
+    [
+      "6a1fb53ed2",
+      "UP",
+      "356ace8ce6"
+    ],
+    [
+      "356ace8ce6",
+      "DOWN",
+      "6a1fb53ed2"
+    ],
+    [
+      "6a1fb53ed2",
+      "DOWN",
+      "25701997dd"
+    ],
+    [
+      "25701997dd",
+      "UP",
+      "6a1fb53ed2"
+    ],
+    [
+      "25701997dd",
+      "DOWN",
+      "25701997dd"
+    ],
+    [
+      "25701997dd",
+      "RIGHT",
+      "e34882d554"
+    ],
+    [
+      "e34882d554",
+      "LEFT",
+      "25701997dd"
+    ],
+    [
+      "e34882d554",
+      "RIGHT",
+      "894a48095a"
+    ],
+    [
+      "894a48095a",
+      "LEFT",
+      "e34882d554"
+    ],
+    [
+      "e34882d554",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "e34882d554",
+      "DOWN",
+      "e34882d554"
+    ],
+    [
+      "894a48095a",
+      "UP",
+      "e34882d554"
+    ],
+    [
+      "894a48095a",
+      "DOWN",
+      "894a48095a"
+    ],
+    [
+      "894a48095a",
+      "RIGHT",
+      "b7d898f0a8"
+    ],
+    [
+      "b7d898f0a8",
+      "LEFT",
+      "894a48095a"
+    ],
+    [
+      "b7d898f0a8",
+      "RIGHT",
+      "b7d898f0a8"
+    ],
+    [
+      "b7d898f0a8",
+      "UP",
+      "894a48095a"
+    ],
+    [
+      "99d4b49041",
+      "DOWN",
+      "259c8ec405"
+    ],
+    [
+      "259c8ec405",
+      "UP",
+      "99d4b49041"
+    ],
+    [
+      "99d4b49041",
+      "UP",
+      "6a1fb53ed2"
+    ],
+    [
+      "72f85ffcde",
+      "DOWN",
+      "99d4b49041"
+    ],
+    [
+      "99d4b49041",
+      "LEFT",
+      "894a48095a"
+    ],
+    [
+      "5ebc316e12",
+      "RIGHT",
+      "25701997dd"
+    ],
+    [
+      "5ebc316e12",
+      "LEFT",
+      "5ebc316e12"
+    ],
+    [
+      "5ebc316e12",
+      "DOWN",
+      "b9cb9116b3"
+    ],
+    [
+      "b9cb9116b3",
+      "UP",
+      "5ebc316e12"
+    ],
+    [
+      "b9cb9116b3",
+      "DOWN",
+      "11ee43062e"
+    ],
+    [
+      "11ee43062e",
+      "UP",
+      "b9cb9116b3"
+    ],
+    [
+      "b9cb9116b3",
+      "LEFT",
+      "b9cb9116b3"
+    ],
+    [
+      "b9cb9116b3",
+      "RIGHT",
+      "9fedbbe511"
+    ],
+    [
+      "9fedbbe511",
+      "LEFT",
+      "b9cb9116b3"
+    ],
+    [
+      "11ee43062e",
+      "RIGHT",
+      "4f94ba0746"
+    ],
+    [
+      "4f94ba0746",
+      "LEFT",
+      "11ee43062e"
+    ],
+    [
+      "11ee43062e",
+      "DOWN",
+      "ae1eda9e6a"
+    ],
+    [
+      "ae1eda9e6a",
+      "UP",
+      "11ee43062e"
+    ],
+    [
+      "11ee43062e",
+      "LEFT",
+      "11ee43062e"
+    ],
+    [
+      "4f94ba0746",
+      "RIGHT",
+      "a4d067d3f5"
+    ],
+    [
+      "a4d067d3f5",
+      "LEFT",
+      "4f94ba0746"
+    ],
+    [
+      "4f94ba0746",
+      "UP",
+      "9fedbbe511"
+    ],
+    [
+      "9fedbbe511",
+      "DOWN",
+      "4f94ba0746"
+    ],
+    [
+      "4f94ba0746",
+      "DOWN",
+      "d9691682cc"
+    ],
+    [
+      "d9691682cc",
+      "UP",
+      "4f94ba0746"
+    ],
+    [
+      "a4d067d3f5",
+      "DOWN",
+      "d9691682cc"
+    ],
+    [
+      "d9691682cc",
+      "DOWN",
+      "d9691682cc"
+    ],
+    [
+      "d9691682cc",
+      "LEFT",
+      "ae1eda9e6a"
+    ],
+    [
+      "ae1eda9e6a",
+      "RIGHT",
+      "d9691682cc"
+    ],
+    [
+      "d9691682cc",
+      "RIGHT",
+      "a0c0cf34ad"
+    ],
+    [
+      "a0c0cf34ad",
+      "LEFT",
+      "d9691682cc"
+    ],
+    [
+      "a0c0cf34ad",
+      "RIGHT",
+      "c11d7160d3"
+    ],
+    [
+      "c11d7160d3",
+      "LEFT",
+      "a0c0cf34ad"
+    ],
+    [
+      "a0c0cf34ad",
+      "UP",
+      "a4d067d3f5"
+    ],
+    [
+      "a4d067d3f5",
+      "UP",
+      "9fedbbe511"
+    ],
+    [
+      "9fedbbe511",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "72f85ffcde",
+      "UP",
+      "356ace8ce6"
+    ],
+    [
+      "356ace8ce6",
+      "UP",
+      "356ace8ce6"
+    ],
+    [
+      "356ace8ce6",
+      "LEFT",
+      "785ff27975"
+    ],
+    [
+      "2588b93c58",
+      "RIGHT",
+      "72f85ffcde"
+    ],
+    [
+      "72f85ffcde",
+      "RIGHT",
+      "6c89434a4a"
+    ],
+    [
+      "6c89434a4a",
+      "LEFT",
+      "72f85ffcde"
+    ],
+    [
+      "356ace8ce6",
+      "RIGHT",
+      "72f85ffcde"
+    ],
+    [
+      "2588b93c58",
+      "LEFT",
+      "2588b93c58"
+    ],
+    [
+      "2588b93c58",
+      "UP",
+      "2588b93c58"
+    ],
+    [
+      "9fedbbe511",
+      "RIGHT",
+      "30a0e1c373"
+    ],
+    [
+      "30a0e1c373",
+      "LEFT",
+      "9fedbbe511"
+    ],
+    [
+      "30a0e1c373",
+      "RIGHT",
+      "32baa9c1ae"
+    ],
+    [
+      "32baa9c1ae",
+      "LEFT",
+      "30a0e1c373"
+    ],
+    [
+      "30a0e1c373",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "ae1eda9e6a",
+      "DOWN",
+      "ae1eda9e6a"
+    ],
+    [
+      "ae1eda9e6a",
+      "LEFT",
+      "ae1eda9e6a"
+    ],
+    [
+      "a0c0cf34ad",
+      "DOWN",
+      "a0c0cf34ad"
+    ],
+    [
+      "c11d7160d3",
+      "UP",
+      "4f94ba0746"
+    ],
+    [
+      "a4d067d3f5",
+      "RIGHT",
+      "bbf7b88ac6"
+    ],
+    [
+      "bbf7b88ac6",
+      "LEFT",
+      "a4d067d3f5"
+    ],
+    [
+      "bbf7b88ac6",
+      "RIGHT",
+      "78e50b09a2"
+    ],
+    [
+      "78e50b09a2",
+      "LEFT",
+      "bbf7b88ac6"
+    ],
+    [
+      "bbf7b88ac6",
+      "UP",
+      "30a0e1c373"
+    ],
+    [
+      "30a0e1c373",
+      "DOWN",
+      "bbf7b88ac6"
+    ],
+    [
+      "bbf7b88ac6",
+      "DOWN",
+      "c11d7160d3"
+    ],
+    [
+      "c11d7160d3",
+      "DOWN",
+      "c11d7160d3"
+    ],
+    [
+      "c11d7160d3",
+      "RIGHT",
+      "454eba8fb9"
+    ],
+    [
+      "454eba8fb9",
+      "LEFT",
+      "c11d7160d3"
+    ],
+    [
+      "454eba8fb9",
+      "RIGHT",
+      "454eba8fb9"
+    ],
+    [
+      "454eba8fb9",
+      "UP",
+      "bbf7b88ac6"
+    ],
+    [
+      "78e50b09a2",
+      "DOWN",
+      "454eba8fb9"
+    ],
+    [
+      "454eba8fb9",
+      "DOWN",
+      "454eba8fb9"
+    ],
+    [
+      "32baa9c1ae",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "32baa9c1ae",
+      "DOWN",
+      "4f94ba0746"
+    ],
+    [
+      "32baa9c1ae",
+      "RIGHT",
+      "0c7f12fb9d"
+    ],
+    [
+      "0c7f12fb9d",
+      "LEFT",
+      "32baa9c1ae"
+    ],
+    [
+      "0c7f12fb9d",
+      "RIGHT",
+      "4fdce5f9d7"
+    ],
+    [
+      "4fdce5f9d7",
+      "LEFT",
+      "0c7f12fb9d"
+    ],
+    [
+      "0c7f12fb9d",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "0c7f12fb9d",
+      "DOWN",
+      "4f94ba0746"
+    ],
+    [
+      "4fdce5f9d7",
+      "UP",
+      "25701997dd"
+    ],
+    [
+      "4fdce5f9d7",
+      "DOWN",
+      "4f94ba0746"
+    ],
+    [
+      "4fdce5f9d7",
+      "RIGHT",
+      "4fdce5f9d7"
+    ]
+  ],
+  "entry": [
+    [
+      "DOWN",
+      "35a3ea8344"
+    ]
+  ],
+  "back": {},
+  "findings": [],
+  "screenshot": "screen.png",
+  "summary": {
+    "counts": {},
+    "total": 0,
+    "icon_only": 0
+  },
+  "verdict": "inconclusive"
+}

@@ -1,0 +1,84 @@
+From a1edef2f6d07048afde4ff48967eb74694078653 Mon Sep 17 00:00:00 2001
+From: Parth Singh <noreply@example.com>
+Date: Mon, 19 Oct 2026 01:38:44 -0400
+Subject: [PATCH] Fix focus trap and accessible names (agent patch, ADBT docs
+ consulted)
+
+---
+ .../helloworldtv/MainActivity.kt              | 24 ++++++++++---------
+ 1 file changed, 13 insertions(+), 11 deletions(-)
+
+diff --git a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+index 925b6fc..a1e2ef4 100644
+--- a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
++++ b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+@@ -21,8 +21,8 @@ import androidx.compose.foundation.focusGroup
+ import androidx.compose.foundation.layout.Arrangement
+ import androidx.compose.foundation.layout.Row
+ import androidx.compose.foundation.layout.size
+-import androidx.compose.ui.focus.FocusRequester
+-import androidx.compose.ui.focus.focusProperties
++import androidx.compose.ui.semantics.contentDescription
++import androidx.compose.ui.semantics.semantics
+ import androidx.tv.material3.Button
+ import androidx.tv.material3.Surface
+ import androidx.compose.runtime.Composable
+@@ -92,7 +92,7 @@ class MainActivity : ComponentActivity() {
+                                     }) {
+                                         QuickActions()
+                                     }
+-                                    items(30) {
++                                    items(30) { index ->
+                                         var isFocused by remember { mutableStateOf(false) }
+ 
+                                         StandardCardContainer(
+@@ -131,7 +131,7 @@ class MainActivity : ComponentActivity() {
+                                                             GradientBg()
+                                                         }
+                                                         Text(
+-                                                            text = "Movie Name",
++                                                            text = "Movie ${index + 1}",
+                                                             style = MaterialTheme.typography.titleMedium.copy(
+                                                                 color = textColor,
+                                                             )
+@@ -179,28 +179,30 @@ fun GradientBg() {
+     )
+ }
+ 
+-// PLANTED BUGS (branch `buggy`): this row traps D-pad focus (exit is cancelled in every
+-// direction) and contains two icon-only controls with no accessible name.
+ @OptIn(ExperimentalTvMaterial3Api::class, ExperimentalComposeUiApi::class)
+ @Composable
+ fun QuickActions() {
+     Row(
+         modifier = Modifier
+             .padding(start = 8.dp, bottom = 24.dp)
+-            .focusProperties { exit = { FocusRequester.Cancel } }
+             .focusGroup(),
+         horizontalArrangement = Arrangement.spacedBy(16.dp)
+     ) {
+         Button(onClick = { }) { Text("Play") }
+-        IconTile()
+-        IconTile()
++        IconTile("Add to watchlist")
++        IconTile("More info")
+     }
+ }
+ 
+ @OptIn(ExperimentalTvMaterial3Api::class)
+ @Composable
+-fun IconTile() {
+-    Surface(onClick = { }, modifier = Modifier.size(48.dp)) {
++fun IconTile(label: String) {
++    Surface(
++        onClick = { },
++        modifier = Modifier
++            .size(48.dp)
++            .semantics { contentDescription = label }
++    ) {
+         Box(modifier = Modifier.background(Red300).size(48.dp))
+     }
+ }
+-- 
+2.54.0 (Apple Git-157)
+

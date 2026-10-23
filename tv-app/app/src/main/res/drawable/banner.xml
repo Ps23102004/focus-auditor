@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 320x180 TV banner: squid-ink card with an orange focus bracket. No third-party marks. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="rectangle"><solid android:color="#232F3E" /><size android:width="320dp" android:height="180dp" /></shape></item>
+    <item android:left="132dp" android:top="62dp" android:right="132dp" android:bottom="62dp">
+        <shape android:shape="rectangle"><stroke android:width="6dp" android:color="#FF9900" /><corners android:radius="12dp" /></shape>
+    </item>
+</layer-list>

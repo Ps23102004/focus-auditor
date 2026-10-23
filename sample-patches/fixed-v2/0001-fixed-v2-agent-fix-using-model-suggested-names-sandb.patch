@@ -1,0 +1,90 @@
+From 1e3baa5f37366a74cf51b97ac1887af4bb6449f3 Mon Sep 17 00:00:00 2001
+From: Parth Singh <noreply@example.com>
+Date: Mon, 19 Oct 2026 10:11:50 -0400
+Subject: [PATCH] fixed-v2: agent fix using model-suggested names (sandboxed
+ fix loop)
+
+---
+ .../helloworldtv/MainActivity.kt              | 21 +++++++------------
+ 1 file changed, 7 insertions(+), 14 deletions(-)
+
+diff --git a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+index 06e1ec9..2d5119e 100644
+--- a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
++++ b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+@@ -21,8 +21,6 @@ import androidx.compose.foundation.focusGroup
+ import androidx.compose.foundation.layout.Arrangement
+ import androidx.compose.foundation.layout.Row
+ import androidx.compose.foundation.layout.size
+-import androidx.compose.ui.focus.FocusRequester
+-import androidx.compose.ui.focus.focusProperties
+ import androidx.tv.material3.Button
+ import androidx.tv.material3.Surface
+ import androidx.tv.material3.Icon
+@@ -97,7 +95,7 @@ class MainActivity : ComponentActivity() {
+                                     }) {
+                                         QuickActions()
+                                     }
+-                                    items(30) {
++                                    items(30) { index ->
+                                         var isFocused by remember { mutableStateOf(false) }
+ 
+                                         StandardCardContainer(
+@@ -123,8 +121,7 @@ class MainActivity : ComponentActivity() {
+                                                     scale = CardDefaults.scale(focusedScale = 1f),
+                                                     onClick = { },
+                                                     interactionSource = it
+-                                                ) {
+-                                                    val itemAlpha by animateFloatAsState(
++                                                ) {                                                    val itemAlpha by animateFloatAsState(
+                                                         targetValue = if (isFocused) .6f else 0.2f,
+                                                         label = ""
+                                                     )
+@@ -136,7 +133,7 @@ class MainActivity : ComponentActivity() {
+                                                             GradientBg()
+                                                         }
+                                                         Text(
+-                                                            text = "Movie Name",
++                                                            text = "Movie ${index + 1}",
+                                                             style = MaterialTheme.typography.titleMedium.copy(
+                                                                 color = textColor,
+                                                             )
+@@ -184,31 +181,27 @@ fun GradientBg() {
+     )
+ }
+ 
+-// PLANTED BUGS (branch `buggy`): this row traps D-pad focus (exit is cancelled in every
+-// direction) and contains two icon-only controls with no accessible name.
+ @OptIn(ExperimentalTvMaterial3Api::class, ExperimentalComposeUiApi::class)
+ @Composable
+ fun QuickActions() {
+     Row(
+         modifier = Modifier
+             .padding(start = 8.dp, bottom = 24.dp)
+-            .focusProperties { exit = { FocusRequester.Cancel } }
+             .focusGroup(),
+         horizontalArrangement = Arrangement.spacedBy(16.dp)
+     ) {
+         Button(onClick = { }) { Text("Play") }
+-        IconTile(Icons.Filled.Search)
+-        IconTile(Icons.Filled.Settings)
++        IconTile(Icons.Filled.Search, "Search")
++        IconTile(Icons.Filled.Settings, "Settings")
+     }
+ }
+ 
+ @OptIn(ExperimentalTvMaterial3Api::class)
+ @Composable
+-fun IconTile(icon: ImageVector) {
+-    // Bug: decorative-only icon on a focusable control, so the control exposes no accessible name.
++fun IconTile(icon: ImageVector, label: String) {
+     Surface(onClick = { }, modifier = Modifier.size(48.dp)) {
+         Box(contentAlignment = Alignment.Center, modifier = Modifier.size(48.dp)) {
+-            Icon(imageVector = icon, contentDescription = null, modifier = Modifier.size(28.dp))
++            Icon(imageVector = icon, contentDescription = label, modifier = Modifier.size(28.dp))
+         }
+     }
+ }
+-- 
+2.54.0 (Apple Git-157)
+

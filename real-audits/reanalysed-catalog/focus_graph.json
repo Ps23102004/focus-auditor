@@ -1,0 +1,556 @@
+{
+  "pkg": "com.google.tv.material.catalog",
+  "nodes": [
+    {
+      "id": "2c38d71ce4",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        108,
+        509,
+        500,
+        731
+      ]
+    },
+    {
+      "id": "83aa270b59",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        108,
+        366,
+        500,
+        588
+      ]
+    },
+    {
+      "id": "d171765926",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        108,
+        509,
+        500,
+        731
+      ]
+    },
+    {
+      "id": "07e005ff74",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        552,
+        509,
+        944,
+        731
+      ]
+    },
+    {
+      "id": "f7f514d2d7",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        552,
+        366,
+        944,
+        588
+      ]
+    },
+    {
+      "id": "212a6af1f1",
+      "cls": "android.view.View",
+      "label": "Theme & color mode",
+      "bounds": [
+        1174,
+        96,
+        1551,
+        192
+      ]
+    },
+    {
+      "id": "cf305b2e65",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        996,
+        366,
+        1388,
+        588
+      ]
+    },
+    {
+      "id": "a6fee57f5b",
+      "cls": "android.view.View",
+      "label": "Font scale",
+      "bounds": [
+        1583,
+        96,
+        1828,
+        192
+      ]
+    },
+    {
+      "id": "988ff5bc49",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        552,
+        509,
+        944,
+        731
+      ]
+    },
+    {
+      "id": "aa77e1976a",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        996,
+        509,
+        1388,
+        731
+      ]
+    },
+    {
+      "id": "ea31656b5e",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        996,
+        509,
+        1388,
+        731
+      ]
+    },
+    {
+      "id": "5feea85391",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        552,
+        780,
+        944,
+        1002
+      ]
+    },
+    {
+      "id": "18c1ed0adb",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        108,
+        780,
+        500,
+        1002
+      ]
+    },
+    {
+      "id": "254ce6fd45",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        996,
+        780,
+        1388,
+        1002
+      ]
+    },
+    {
+      "id": "3906b259e2",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        1440,
+        780,
+        1832,
+        1002
+      ]
+    },
+    {
+      "id": "736c3a4bb6",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        1440,
+        509,
+        1832,
+        731
+      ]
+    },
+    {
+      "id": "ef41c2468f",
+      "cls": "android.view.View",
+      "label": "",
+      "bounds": [
+        1440,
+        366,
+        1832,
+        588
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "2c38d71ce4",
+      "UP",
+      "83aa270b59"
+    ],
+    [
+      "83aa270b59",
+      "DOWN",
+      "2c38d71ce4"
+    ],
+    [
+      "2c38d71ce4",
+      "DOWN",
+      "d171765926"
+    ],
+    [
+      "d171765926",
+      "UP",
+      "2c38d71ce4"
+    ],
+    [
+      "2c38d71ce4",
+      "LEFT",
+      "2c38d71ce4"
+    ],
+    [
+      "2c38d71ce4",
+      "RIGHT",
+      "07e005ff74"
+    ],
+    [
+      "07e005ff74",
+      "LEFT",
+      "2c38d71ce4"
+    ],
+    [
+      "83aa270b59",
+      "RIGHT",
+      "f7f514d2d7"
+    ],
+    [
+      "f7f514d2d7",
+      "LEFT",
+      "83aa270b59"
+    ],
+    [
+      "83aa270b59",
+      "UP",
+      "212a6af1f1"
+    ],
+    [
+      "212a6af1f1",
+      "DOWN",
+      "83aa270b59"
+    ],
+    [
+      "83aa270b59",
+      "LEFT",
+      "83aa270b59"
+    ],
+    [
+      "f7f514d2d7",
+      "RIGHT",
+      "cf305b2e65"
+    ],
+    [
+      "cf305b2e65",
+      "LEFT",
+      "f7f514d2d7"
+    ],
+    [
+      "f7f514d2d7",
+      "UP",
+      "212a6af1f1"
+    ],
+    [
+      "212a6af1f1",
+      "UP",
+      "212a6af1f1"
+    ],
+    [
+      "212a6af1f1",
+      "LEFT",
+      "212a6af1f1"
+    ],
+    [
+      "212a6af1f1",
+      "RIGHT",
+      "a6fee57f5b"
+    ],
+    [
+      "a6fee57f5b",
+      "LEFT",
+      "212a6af1f1"
+    ],
+    [
+      "a6fee57f5b",
+      "RIGHT",
+      "a6fee57f5b"
+    ],
+    [
+      "a6fee57f5b",
+      "UP",
+      "a6fee57f5b"
+    ],
+    [
+      "a6fee57f5b",
+      "DOWN",
+      "f7f514d2d7"
+    ],
+    [
+      "f7f514d2d7",
+      "DOWN",
+      "07e005ff74"
+    ],
+    [
+      "07e005ff74",
+      "UP",
+      "f7f514d2d7"
+    ],
+    [
+      "07e005ff74",
+      "DOWN",
+      "988ff5bc49"
+    ],
+    [
+      "988ff5bc49",
+      "UP",
+      "07e005ff74"
+    ],
+    [
+      "07e005ff74",
+      "RIGHT",
+      "aa77e1976a"
+    ],
+    [
+      "aa77e1976a",
+      "LEFT",
+      "07e005ff74"
+    ],
+    [
+      "988ff5bc49",
+      "RIGHT",
+      "ea31656b5e"
+    ],
+    [
+      "ea31656b5e",
+      "LEFT",
+      "988ff5bc49"
+    ],
+    [
+      "988ff5bc49",
+      "DOWN",
+      "5feea85391"
+    ],
+    [
+      "5feea85391",
+      "UP",
+      "988ff5bc49"
+    ],
+    [
+      "988ff5bc49",
+      "LEFT",
+      "d171765926"
+    ],
+    [
+      "d171765926",
+      "RIGHT",
+      "988ff5bc49"
+    ],
+    [
+      "d171765926",
+      "LEFT",
+      "d171765926"
+    ],
+    [
+      "d171765926",
+      "DOWN",
+      "18c1ed0adb"
+    ],
+    [
+      "18c1ed0adb",
+      "UP",
+      "d171765926"
+    ],
+    [
+      "18c1ed0adb",
+      "DOWN",
+      "18c1ed0adb"
+    ],
+    [
+      "18c1ed0adb",
+      "LEFT",
+      "18c1ed0adb"
+    ],
+    [
+      "18c1ed0adb",
+      "RIGHT",
+      "5feea85391"
+    ],
+    [
+      "5feea85391",
+      "LEFT",
+      "18c1ed0adb"
+    ],
+    [
+      "5feea85391",
+      "RIGHT",
+      "254ce6fd45"
+    ],
+    [
+      "254ce6fd45",
+      "LEFT",
+      "5feea85391"
+    ],
+    [
+      "5feea85391",
+      "DOWN",
+      "5feea85391"
+    ],
+    [
+      "254ce6fd45",
+      "UP",
+      "ea31656b5e"
+    ],
+    [
+      "ea31656b5e",
+      "DOWN",
+      "254ce6fd45"
+    ],
+    [
+      "254ce6fd45",
+      "DOWN",
+      "254ce6fd45"
+    ],
+    [
+      "254ce6fd45",
+      "RIGHT",
+      "3906b259e2"
+    ],
+    [
+      "3906b259e2",
+      "LEFT",
+      "254ce6fd45"
+    ],
+    [
+      "ea31656b5e",
+      "RIGHT",
+      "736c3a4bb6"
+    ],
+    [
+      "736c3a4bb6",
+      "LEFT",
+      "aa77e1976a"
+    ],
+    [
+      "aa77e1976a",
+      "RIGHT",
+      "736c3a4bb6"
+    ],
+    [
+      "736c3a4bb6",
+      "UP",
+      "ef41c2468f"
+    ],
+    [
+      "ef41c2468f",
+      "DOWN",
+      "736c3a4bb6"
+    ],
+    [
+      "736c3a4bb6",
+      "DOWN",
+      "ea31656b5e"
+    ],
+    [
+      "ea31656b5e",
+      "UP",
+      "aa77e1976a"
+    ],
+    [
+      "aa77e1976a",
+      "DOWN",
+      "ea31656b5e"
+    ],
+    [
+      "aa77e1976a",
+      "UP",
+      "cf305b2e65"
+    ],
+    [
+      "cf305b2e65",
+      "DOWN",
+      "aa77e1976a"
+    ],
+    [
+      "cf305b2e65",
+      "UP",
+      "212a6af1f1"
+    ],
+    [
+      "cf305b2e65",
+      "RIGHT",
+      "ef41c2468f"
+    ],
+    [
+      "ef41c2468f",
+      "LEFT",
+      "cf305b2e65"
+    ],
+    [
+      "ef41c2468f",
+      "RIGHT",
+      "ef41c2468f"
+    ],
+    [
+      "ef41c2468f",
+      "UP",
+      "a6fee57f5b"
+    ],
+    [
+      "736c3a4bb6",
+      "RIGHT",
+      "736c3a4bb6"
+    ],
+    [
+      "3906b259e2",
+      "UP",
+      "ea31656b5e"
+    ],
+    [
+      "3906b259e2",
+      "DOWN",
+      "3906b259e2"
+    ],
+    [
+      "3906b259e2",
+      "RIGHT",
+      "3906b259e2"
+    ]
+  ],
+  "coverage": {
+    "pressed": 114,
+    "budget": 400,
+    "cold_starts": 2,
+    "probes": 68,
+    "nodes": 17,
+    "expanded": 17,
+    "max_nodes": 40,
+    "elapsed_s": 313.8,
+    "inconclusive_reasons": [
+      "label_unverified: 29 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+    ]
+  },
+  "entry": [
+    [
+      "DOWN",
+      "2c38d71ce4"
+    ]
+  ],
+  "back": {
+    "2c38d71ce4": "yes"
+  }
+}

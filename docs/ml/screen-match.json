@@ -1,0 +1,207 @@
+{
+  "folds": [
+    {
+      "name": "calibrate on even-indexed paths, report on odd",
+      "calibration_pairs": {
+        "images": 11,
+        "positive": 10,
+        "negative_total": 37,
+        "negative_used": 37,
+        "ambiguous_skipped": 8
+      },
+      "test_pairs": {
+        "images": 9,
+        "positive": 9,
+        "negative_total": 27,
+        "negative_used": 27,
+        "ambiguous_skipped": 0
+      },
+      "test_metrics": {
+        "tree_exact": {
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143,
+          "false_merge_rate": 0.0,
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "tn": 27,
+          "auc": null,
+          "threshold": "exact hash equality"
+        },
+        "tree_struct": {
+          "precision": 0.45454545454545453,
+          "recall": 0.5555555555555556,
+          "f1": 0.5,
+          "false_merge_rate": 0.2222222222222222,
+          "tp": 5,
+          "fp": 6,
+          "fn": 4,
+          "tn": 21,
+          "auc": null,
+          "threshold": "exact hash equality"
+        },
+        "jaccard": {
+          "precision": 0.45454545454545453,
+          "recall": 0.5555555555555556,
+          "f1": 0.5,
+          "false_merge_rate": 0.2222222222222222,
+          "tp": 5,
+          "fp": 6,
+          "fn": 4,
+          "tn": 21,
+          "auc": 0.7530864197530864,
+          "threshold": 0.35294117647058826
+        },
+        "phash": {
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143,
+          "false_merge_rate": 0.0,
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "tn": 27,
+          "auc": 0.6337448559670782,
+          "threshold": 0.90625
+        },
+        "embed": {
+          "precision": 0.45454545454545453,
+          "recall": 0.5555555555555556,
+          "f1": 0.5,
+          "false_merge_rate": 0.2222222222222222,
+          "tp": 5,
+          "fp": 6,
+          "fn": 4,
+          "tn": 21,
+          "auc": 0.7613168724279835,
+          "threshold": 0.8034806847572327
+        },
+        "fused": {
+          "precision": 0.45454545454545453,
+          "recall": 0.5555555555555556,
+          "f1": 0.5,
+          "false_merge_rate": 0.2222222222222222,
+          "tp": 5,
+          "fp": 6,
+          "fn": 4,
+          "tn": 21,
+          "auc": null,
+          "threshold": {
+            "embed": 0.8034806847572327,
+            "tree_struct": "equal"
+          }
+        }
+      }
+    },
+    {
+      "name": "calibrate on odd-indexed paths, report on even",
+      "calibration_pairs": {
+        "images": 9,
+        "positive": 9,
+        "negative_total": 27,
+        "negative_used": 27,
+        "ambiguous_skipped": 0
+      },
+      "test_pairs": {
+        "images": 11,
+        "positive": 10,
+        "negative_total": 37,
+        "negative_used": 37,
+        "ambiguous_skipped": 8
+      },
+      "test_metrics": {
+        "tree_exact": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "false_merge_rate": 0.0,
+          "tp": 5,
+          "fp": 0,
+          "fn": 5,
+          "tn": 37,
+          "auc": null,
+          "threshold": "exact hash equality"
+        },
+        "tree_struct": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "false_merge_rate": 0.0,
+          "tp": 5,
+          "fp": 0,
+          "fn": 5,
+          "tn": 37,
+          "auc": null,
+          "threshold": "exact hash equality"
+        },
+        "jaccard": {
+          "precision": 0.5333333333333333,
+          "recall": 0.8,
+          "f1": 0.64,
+          "false_merge_rate": 0.1891891891891892,
+          "tp": 8,
+          "fp": 7,
+          "fn": 2,
+          "tn": 30,
+          "auc": 0.8594594594594595,
+          "threshold": 0.28
+        },
+        "phash": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715,
+          "false_merge_rate": 0.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 6,
+          "tn": 37,
+          "auc": 0.5378378378378378,
+          "threshold": 1.0
+        },
+        "embed": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715,
+          "false_merge_rate": 0.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 6,
+          "tn": 37,
+          "auc": 0.8729729729729729,
+          "threshold": 0.9999999403953552
+        },
+        "fused": {
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715,
+          "false_merge_rate": 0.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 6,
+          "tn": 37,
+          "auc": null,
+          "threshold": {
+            "embed": 0.9999999403953552,
+            "tree_struct": "equal"
+          }
+        }
+      }
+    }
+  ],
+  "latency_ms_per_image": {
+    "tree_parse+hash": 0.058376946253702044,
+    "phash": 1.0587792552541941,
+    "embed": 17.27767699630931
+  },
+  "meta": {
+    "model": "torchvision mobilenet_v3_small (ImageNet)",
+    "device": "mps",
+    "images": 20,
+    "sets": [
+      "jetstream"
+    ],
+    "neg_per_pos_cap": 5,
+    "seed": 0
+  }
+}

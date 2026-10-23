@@ -1,0 +1,65 @@
+From f99b4cf57c8244e0dc98ca39b7a74f8b037c597e Mon Sep 17 00:00:00 2001
+From: Parth Singh <noreply@example.com>
+Date: Mon, 19 Oct 2026 02:28:29 -0400
+Subject: [PATCH] buggy-v2: planted icon tiles show real Search/Settings icons
+ with no accessible name
+
+---
+ app/build.gradle.kts                             |  1 +
+ .../amazonappstore/helloworldtv/MainActivity.kt  | 16 ++++++++++++----
+ 2 files changed, 13 insertions(+), 4 deletions(-)
+
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+index 68e5844..c09e569 100644
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -54,6 +54,7 @@ dependencies {
+     implementation("androidx.appcompat:appcompat:1.6.1")
+     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
+     implementation("androidx.compose.ui:ui-tooling-preview")
++    implementation("androidx.compose.material:material-icons-core")
+     implementation("androidx.tv:tv-foundation:1.0.0-alpha11")
+     implementation("androidx.tv:tv-material:1.0.0")
+     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+diff --git a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+index 925b6fc..06e1ec9 100644
+--- a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
++++ b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+@@ -25,6 +25,11 @@ import androidx.compose.ui.focus.FocusRequester
+ import androidx.compose.ui.focus.focusProperties
+ import androidx.tv.material3.Button
+ import androidx.tv.material3.Surface
++import androidx.tv.material3.Icon
++import androidx.compose.material.icons.Icons
++import androidx.compose.material.icons.filled.Search
++import androidx.compose.material.icons.filled.Settings
++import androidx.compose.ui.graphics.vector.ImageVector
+ import androidx.compose.runtime.Composable
+ import androidx.compose.ui.ExperimentalComposeUiApi
+ import androidx.compose.runtime.getValue
+@@ -192,15 +197,18 @@ fun QuickActions() {
+         horizontalArrangement = Arrangement.spacedBy(16.dp)
+     ) {
+         Button(onClick = { }) { Text("Play") }
+-        IconTile()
+-        IconTile()
++        IconTile(Icons.Filled.Search)
++        IconTile(Icons.Filled.Settings)
+     }
+ }
+ 
+ @OptIn(ExperimentalTvMaterial3Api::class)
+ @Composable
+-fun IconTile() {
++fun IconTile(icon: ImageVector) {
++    // Bug: decorative-only icon on a focusable control, so the control exposes no accessible name.
+     Surface(onClick = { }, modifier = Modifier.size(48.dp)) {
+-        Box(modifier = Modifier.background(Red300).size(48.dp))
++        Box(contentAlignment = Alignment.Center, modifier = Modifier.size(48.dp)) {
++            Icon(imageVector = icon, contentDescription = null, modifier = Modifier.size(28.dp))
++        }
+     }
+ }
+-- 
+2.54.0 (Apple Git-157)
+

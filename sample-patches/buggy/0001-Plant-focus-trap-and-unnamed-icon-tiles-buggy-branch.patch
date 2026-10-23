@@ -1,0 +1,78 @@
+From c62378c7bc833da37809a7e8c8be4b57de717259 Mon Sep 17 00:00:00 2001
+From: Parth Singh <noreply@example.com>
+Date: Sun, 18 Oct 2026 23:34:48 -0400
+Subject: [PATCH] Plant focus trap and unnamed icon tiles (buggy branch)
+
+---
+ .../helloworldtv/MainActivity.kt              | 42 ++++++++++++++++++-
+ 1 file changed, 41 insertions(+), 1 deletion(-)
+
+diff --git a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+index 1133b9c..925b6fc 100644
+--- a/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
++++ b/app/src/main/java/com/amazonappstore/helloworldtv/MainActivity.kt
+@@ -17,7 +17,16 @@ import androidx.compose.foundation.layout.fillMaxWidth
+ import androidx.compose.foundation.layout.height
+ import androidx.compose.foundation.layout.padding
+ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
++import androidx.compose.foundation.focusGroup
++import androidx.compose.foundation.layout.Arrangement
++import androidx.compose.foundation.layout.Row
++import androidx.compose.foundation.layout.size
++import androidx.compose.ui.focus.FocusRequester
++import androidx.compose.ui.focus.focusProperties
++import androidx.tv.material3.Button
++import androidx.tv.material3.Surface
+ import androidx.compose.runtime.Composable
++import androidx.compose.ui.ExperimentalComposeUiApi
+ import androidx.compose.runtime.getValue
+ import androidx.compose.runtime.mutableStateOf
+ import androidx.compose.runtime.remember
+@@ -78,6 +87,11 @@ class MainActivity : ComponentActivity() {
+                                     }) {
+                                         GridHeader()
+                                     }
++                                    item(span = {
++                                        GridItemSpan(5)
++                                    }) {
++                                        QuickActions()
++                                    }
+                                     items(30) {
+                                         var isFocused by remember { mutableStateOf(false) }
+ 
+@@ -163,4 +177,30 @@ fun GradientBg() {
+             .fillMaxWidth()
+             .height(200.dp)
+     )
+-}
+\ No newline at end of file
++}
++
++// PLANTED BUGS (branch `buggy`): this row traps D-pad focus (exit is cancelled in every
++// direction) and contains two icon-only controls with no accessible name.
++@OptIn(ExperimentalTvMaterial3Api::class, ExperimentalComposeUiApi::class)
++@Composable
++fun QuickActions() {
++    Row(
++        modifier = Modifier
++            .padding(start = 8.dp, bottom = 24.dp)
++            .focusProperties { exit = { FocusRequester.Cancel } }
++            .focusGroup(),
++        horizontalArrangement = Arrangement.spacedBy(16.dp)
++    ) {
++        Button(onClick = { }) { Text("Play") }
++        IconTile()
++        IconTile()
++    }
++}
++
++@OptIn(ExperimentalTvMaterial3Api::class)
++@Composable
++fun IconTile() {
++    Surface(onClick = { }, modifier = Modifier.size(48.dp)) {
++        Box(modifier = Modifier.background(Red300).size(48.dp))
++    }
++}
+-- 
+2.54.0 (Apple Git-157)
+

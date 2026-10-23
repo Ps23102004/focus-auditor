@@ -1,0 +1,2738 @@
+{
+ "meta": {
+  "app": "com.amazonappstore.helloworldtv",
+  "package": "com.amazonappstore.helloworldtv",
+  "device": "sdk_google_atv64_arm64 default",
+  "fa_version": "0.1.0",
+  "run_id": "017183fb",
+  "timestamp": "2026-10-19T10:06:32-0400",
+  "fixture": false
+ },
+ "verdict": "fail",
+ "coverage": {
+  "pressed": 385,
+  "budget": 400,
+  "nodes": 55,
+  "elapsed_s": 675.9,
+  "inconclusive": [
+   "budget_exhausted: max_presses",
+   "node_cap: 15 discovered nodes not expanded (max_nodes=40)"
+  ]
+ },
+ "summary": {
+  "trap": 1,
+  "missing_label": 2,
+  "duplicate_label": 1,
+  "total": 4,
+  "critical": 1,
+  "warning": 2,
+  "info": 1
+ },
+ "findings": [
+  {
+   "id": "9ee483ba4d",
+   "kind": "TRAP",
+   "severity": "critical",
+   "title": "Focus trap around \"Play\": 3 controls, no way out",
+   "evidence": "Every UP, DOWN, LEFT and RIGHT press from these 3 controls lands back inside. BACK leaves the screen, but no D-pad direction does.",
+   "bounds": [
+    224,
+    140,
+    600,
+    244
+   ],
+   "node_ids": [
+    "a36fc012d8",
+    "c1ce733d4e",
+    "e1436289c7"
+   ],
+   "witness": [
+    "DOWN",
+    "RIGHT"
+   ],
+   "fix_hint": "Remove the focus property that cancels/blocks exit (e.g. Compose focusProperties { exit = Cancel }) so UP/DOWN/LEFT/RIGHT can leave the group.",
+   "test": "test_9ee483ba4d",
+   "test_file": "tests_generated/test_9ee483ba4d.py",
+   "status": "failing"
+  },
+  {
+   "id": "72c12df2ba",
+   "kind": "MISSING_LABEL",
+   "severity": "warning",
+   "title": "Icon-only control without a name",
+   "evidence": "Focusable 96x96 px with no text, no content description and no named children, so a screen reader has nothing to say.",
+   "bounds": [
+    376,
+    148,
+    472,
+    244
+   ],
+   "node_ids": [
+    "bba07c22a9"
+   ],
+   "witness": [
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "RIGHT",
+    "DOWN"
+   ],
+   "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+   "test": "test_72c12df2ba",
+   "test_file": "tests_generated/test_72c12df2ba.py",
+   "status": "failing",
+   "suggested_name": "Search",
+   "suggestion_model": "gemma4:e4b-it-qat",
+   "suggestion_untrusted": true,
+   "announce_before": "unlabelled, button",
+   "announce_after": "Search, button",
+   "audio_before": "audio/announce-72c12df2ba-before.m4a",
+   "audio_after": "audio/announce-72c12df2ba-after.m4a"
+  },
+  {
+   "id": "b9df6da731",
+   "kind": "MISSING_LABEL",
+   "severity": "warning",
+   "title": "Icon-only control without a name",
+   "evidence": "Focusable 96x96 px with no text, no content description and no named children, so a screen reader has nothing to say.",
+   "bounds": [
+    504,
+    148,
+    600,
+    244
+   ],
+   "node_ids": [
+    "a36fc012d8"
+   ],
+   "witness": [
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "RIGHT",
+    "DOWN"
+   ],
+   "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+   "test": "test_b9df6da731",
+   "test_file": "tests_generated/test_b9df6da731.py",
+   "status": "failing",
+   "suggested_name": "Settings",
+   "suggestion_model": "gemma4:e4b-it-qat",
+   "suggestion_untrusted": true,
+   "announce_before": "unlabelled, button",
+   "announce_after": "Settings, button",
+   "audio_before": "audio/announce-b9df6da731-before.m4a",
+   "audio_after": "audio/announce-b9df6da731-after.m4a"
+  },
+  {
+   "id": "3c6bf1b1b1",
+   "kind": "DUPLICATE_LABEL",
+   "severity": "info",
+   "title": "30 controls share the name \"Movie Name\"",
+   "evidence": "A screen reader announces \"Movie Name\" for 30 different controls.",
+   "bounds": [
+    224,
+    308,
+    1856,
+    1080
+   ],
+   "node_ids": [
+    "e6867acc65",
+    "8a071d1327",
+    "b2a83234a4",
+    "991315aa6e",
+    "385306c268",
+    "bb95fdb79f",
+    "8db90ac240",
+    "0cd44fdbc1",
+    "ae87c82dd0",
+    "7e40fa0453",
+    "f423ea4f15",
+    "24c0ce7902",
+    "36215f7578",
+    "a4508ed247",
+    "942414df73",
+    "f6981190ba",
+    "9ee450af22",
+    "bdf537213b",
+    "37bcdab837",
+    "c1cf75d88e",
+    "5e537613d3",
+    "e839cea0eb",
+    "c0e3a71865",
+    "95cba638de",
+    "3106be57c3",
+    "e9ded5c9e7",
+    "8705b0390b",
+    "b4ca19b51c",
+    "2953ca6d90",
+    "308ad6b1e6"
+   ],
+   "witness": [
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "RIGHT",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "DOWN",
+    "LEFT",
+    "RIGHT",
+    "UP",
+    "RIGHT"
+   ],
+   "fix_hint": "Give each item a distinct accessible name (e.g. the real title).",
+   "test": "test_3c6bf1b1b1",
+   "test_file": "tests_generated/test_3c6bf1b1b1.py",
+   "status": "failing",
+   "on_screen": 20
+  }
+ ],
+ "graph": {
+  "nodes": [
+   {
+    "id": "b8cbeafb63",
+    "label": "Menu A",
+    "bounds": [
+     24,
+     56,
+     536,
+     168
+    ]
+   },
+   {
+    "id": "3970a802a8",
+    "label": "Menu B",
+    "bounds": [
+     24,
+     184,
+     536,
+     296
+    ]
+   },
+   {
+    "id": "a36fc012d8",
+    "label": "",
+    "bounds": [
+     504,
+     148,
+     600,
+     244
+    ]
+   },
+   {
+    "id": "e1436289c7",
+    "label": "",
+    "bounds": [
+     376,
+     148,
+     472,
+     244
+    ]
+   },
+   {
+    "id": "c1ce733d4e",
+    "label": "Play",
+    "bounds": [
+     224,
+     140,
+     344,
+     236
+    ]
+   },
+   {
+    "id": "00bb993281",
+    "label": "Menu C",
+    "bounds": [
+     24,
+     312,
+     536,
+     424
+    ]
+   },
+   {
+    "id": "a41c811509",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     308,
+     858,
+     477
+    ]
+   },
+   {
+    "id": "1f54e612b6",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     308,
+     525,
+     477
+    ]
+   },
+   {
+    "id": "01f018d4fa",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     509,
+     858,
+     678
+    ]
+   },
+   {
+    "id": "ff3c8bb961",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     308,
+     1191,
+     477
+    ]
+   },
+   {
+    "id": "ea283ddea6",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     509,
+     1191,
+     678
+    ]
+   },
+   {
+    "id": "20bff3be53",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     710,
+     858,
+     879
+    ]
+   },
+   {
+    "id": "168f2348e1",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     509,
+     525,
+     678
+    ]
+   },
+   {
+    "id": "25a742f43f",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     710,
+     525,
+     879
+    ]
+   },
+   {
+    "id": "64bb3e8dd2",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     911,
+     858,
+     1080
+    ]
+   },
+   {
+    "id": "d4861bd2e1",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     710,
+     1191,
+     879
+    ]
+   },
+   {
+    "id": "cb00dabf42",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     911,
+     1191,
+     1080
+    ]
+   },
+   {
+    "id": "d3674d1dc3",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     911,
+     525,
+     1080
+    ]
+   },
+   {
+    "id": "f707436ea2",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     710,
+     525,
+     879
+    ]
+   },
+   {
+    "id": "e9ded5c9e7",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     911,
+     525,
+     1080
+    ]
+   },
+   {
+    "id": "5e537613d3",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     710,
+     525,
+     879
+    ]
+   },
+   {
+    "id": "9709eb01ae",
+    "label": "Menu C",
+    "bounds": [
+     24,
+     312,
+     536,
+     424
+    ]
+   },
+   {
+    "id": "24c0ce7902",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     308,
+     858,
+     477
+    ]
+   },
+   {
+    "id": "f423ea4f15",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     308,
+     525,
+     477
+    ]
+   },
+   {
+    "id": "8db90ac240",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     107,
+     858,
+     276
+    ]
+   },
+   {
+    "id": "9ee450af22",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     509,
+     858,
+     678
+    ]
+   },
+   {
+    "id": "36215f7578",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     308,
+     1191,
+     477
+    ]
+   },
+   {
+    "id": "0cd44fdbc1",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     107,
+     1191,
+     276
+    ]
+   },
+   {
+    "id": "1db50b6bb4",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     0,
+     858,
+     169
+    ]
+   },
+   {
+    "id": "462728aad1",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     201,
+     858,
+     370
+    ]
+   },
+   {
+    "id": "94c2949b1b",
+    "label": "",
+    "bounds": [
+     504,
+     0,
+     600,
+     96
+    ]
+   },
+   {
+    "id": "5988537403",
+    "label": "",
+    "bounds": [
+     376,
+     0,
+     472,
+     96
+    ]
+   },
+   {
+    "id": "fe30b14247",
+    "label": "Play",
+    "bounds": [
+     224,
+     0,
+     344,
+     88
+    ]
+   },
+   {
+    "id": "8c7277b158",
+    "label": "Movie Name",
+    "bounds": [
+     1223,
+     308,
+     1524,
+     477
+    ]
+   },
+   {
+    "id": "9ac074a9c3",
+    "label": "Movie Name",
+    "bounds": [
+     1223,
+     509,
+     1524,
+     678
+    ]
+   },
+   {
+    "id": "d3afb80d68",
+    "label": "Movie Name",
+    "bounds": [
+     1223,
+     710,
+     1524,
+     879
+    ]
+   },
+   {
+    "id": "117b93e304",
+    "label": "Menu C",
+    "bounds": [
+     24,
+     312,
+     536,
+     424
+    ]
+   },
+   {
+    "id": "10c257d01e",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     308,
+     858,
+     477
+    ]
+   },
+   {
+    "id": "fa5da3bda5",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     308,
+     525,
+     477
+    ]
+   },
+   {
+    "id": "2719776a69",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     107,
+     858,
+     276
+    ]
+   },
+   {
+    "id": "a4decfb48e",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     509,
+     858,
+     678
+    ]
+   },
+   {
+    "id": "b05a760d80",
+    "label": "Movie Name",
+    "bounds": [
+     1556,
+     308,
+     1856,
+     477
+    ]
+   },
+   {
+    "id": "f370f9a263",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     911,
+     525,
+     1080
+    ]
+   },
+   {
+    "id": "74f750ee32",
+    "label": "Movie Name",
+    "bounds": [
+     1556,
+     509,
+     1856,
+     678
+    ]
+   },
+   {
+    "id": "dee95d1bc9",
+    "label": "Movie Name",
+    "bounds": [
+     1223,
+     911,
+     1524,
+     1080
+    ]
+   },
+   {
+    "id": "2ca6a919c5",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     911,
+     858,
+     1080
+    ]
+   },
+   {
+    "id": "4ee4f176e0",
+    "label": "Movie Name",
+    "bounds": [
+     1556,
+     710,
+     1856,
+     879
+    ]
+   },
+   {
+    "id": "dad9cbde19",
+    "label": "Menu B",
+    "bounds": [
+     24,
+     184,
+     536,
+     296
+    ]
+   },
+   {
+    "id": "da1c29eca0",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     308,
+     1191,
+     477
+    ]
+   },
+   {
+    "id": "4bfe186821",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     509,
+     525,
+     678
+    ]
+   },
+   {
+    "id": "43d7406a63",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     710,
+     858,
+     879
+    ]
+   },
+   {
+    "id": "8705b0390b",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     911,
+     858,
+     1080
+    ]
+   },
+   {
+    "id": "447ba887f1",
+    "label": "Menu B",
+    "bounds": [
+     24,
+     184,
+     536,
+     296
+    ]
+   },
+   {
+    "id": "bdf537213b",
+    "label": "Movie Name",
+    "bounds": [
+     890,
+     509,
+     1191,
+     678
+    ]
+   },
+   {
+    "id": "f6981190ba",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     509,
+     525,
+     678
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "b8cbeafb63",
+    "UP",
+    "b8cbeafb63"
+   ],
+   [
+    "b8cbeafb63",
+    "DOWN",
+    "3970a802a8"
+   ],
+   [
+    "3970a802a8",
+    "UP",
+    "b8cbeafb63"
+   ],
+   [
+    "b8cbeafb63",
+    "LEFT",
+    "b8cbeafb63"
+   ],
+   [
+    "b8cbeafb63",
+    "RIGHT",
+    "a36fc012d8"
+   ],
+   [
+    "a36fc012d8",
+    "LEFT",
+    "e1436289c7"
+   ],
+   [
+    "e1436289c7",
+    "RIGHT",
+    "a36fc012d8"
+   ],
+   [
+    "a36fc012d8",
+    "UP",
+    "a36fc012d8"
+   ],
+   [
+    "a36fc012d8",
+    "DOWN",
+    "a36fc012d8"
+   ],
+   [
+    "a36fc012d8",
+    "RIGHT",
+    "a36fc012d8"
+   ],
+   [
+    "e1436289c7",
+    "LEFT",
+    "c1ce733d4e"
+   ],
+   [
+    "c1ce733d4e",
+    "RIGHT",
+    "e1436289c7"
+   ],
+   [
+    "e1436289c7",
+    "UP",
+    "e1436289c7"
+   ],
+   [
+    "e1436289c7",
+    "DOWN",
+    "e1436289c7"
+   ],
+   [
+    "c1ce733d4e",
+    "UP",
+    "c1ce733d4e"
+   ],
+   [
+    "c1ce733d4e",
+    "DOWN",
+    "c1ce733d4e"
+   ],
+   [
+    "c1ce733d4e",
+    "LEFT",
+    "c1ce733d4e"
+   ],
+   [
+    "3970a802a8",
+    "RIGHT",
+    "a36fc012d8"
+   ],
+   [
+    "3970a802a8",
+    "LEFT",
+    "3970a802a8"
+   ],
+   [
+    "3970a802a8",
+    "DOWN",
+    "00bb993281"
+   ],
+   [
+    "00bb993281",
+    "UP",
+    "3970a802a8"
+   ],
+   [
+    "00bb993281",
+    "DOWN",
+    "00bb993281"
+   ],
+   [
+    "00bb993281",
+    "LEFT",
+    "00bb993281"
+   ],
+   [
+    "00bb993281",
+    "RIGHT",
+    "a41c811509"
+   ],
+   [
+    "a41c811509",
+    "LEFT",
+    "1f54e612b6"
+   ],
+   [
+    "1f54e612b6",
+    "RIGHT",
+    "a41c811509"
+   ],
+   [
+    "a41c811509",
+    "UP",
+    "a36fc012d8"
+   ],
+   [
+    "a41c811509",
+    "DOWN",
+    "01f018d4fa"
+   ],
+   [
+    "01f018d4fa",
+    "UP",
+    "a41c811509"
+   ],
+   [
+    "a41c811509",
+    "RIGHT",
+    "ff3c8bb961"
+   ],
+   [
+    "ff3c8bb961",
+    "LEFT",
+    "a41c811509"
+   ],
+   [
+    "01f018d4fa",
+    "RIGHT",
+    "ea283ddea6"
+   ],
+   [
+    "ea283ddea6",
+    "LEFT",
+    "01f018d4fa"
+   ],
+   [
+    "01f018d4fa",
+    "DOWN",
+    "20bff3be53"
+   ],
+   [
+    "20bff3be53",
+    "UP",
+    "01f018d4fa"
+   ],
+   [
+    "01f018d4fa",
+    "LEFT",
+    "168f2348e1"
+   ],
+   [
+    "168f2348e1",
+    "RIGHT",
+    "01f018d4fa"
+   ],
+   [
+    "20bff3be53",
+    "LEFT",
+    "25a742f43f"
+   ],
+   [
+    "25a742f43f",
+    "RIGHT",
+    "20bff3be53"
+   ],
+   [
+    "20bff3be53",
+    "DOWN",
+    "64bb3e8dd2"
+   ],
+   [
+    "64bb3e8dd2",
+    "UP",
+    "20bff3be53"
+   ],
+   [
+    "20bff3be53",
+    "RIGHT",
+    "d4861bd2e1"
+   ],
+   [
+    "d4861bd2e1",
+    "LEFT",
+    "20bff3be53"
+   ],
+   [
+    "64bb3e8dd2",
+    "RIGHT",
+    "cb00dabf42"
+   ],
+   [
+    "cb00dabf42",
+    "LEFT",
+    "64bb3e8dd2"
+   ],
+   [
+    "64bb3e8dd2",
+    "DOWN",
+    "d3674d1dc3"
+   ],
+   [
+    "d3674d1dc3",
+    "UP",
+    "f707436ea2"
+   ],
+   [
+    "f707436ea2",
+    "DOWN",
+    "d3674d1dc3"
+   ],
+   [
+    "d3674d1dc3",
+    "DOWN",
+    "e9ded5c9e7"
+   ],
+   [
+    "e9ded5c9e7",
+    "UP",
+    "5e537613d3"
+   ],
+   [
+    "5e537613d3",
+    "DOWN",
+    "e9ded5c9e7"
+   ],
+   [
+    "e9ded5c9e7",
+    "DOWN",
+    "e9ded5c9e7"
+   ],
+   [
+    "e9ded5c9e7",
+    "LEFT",
+    "9709eb01ae"
+   ],
+   [
+    "9709eb01ae",
+    "RIGHT",
+    "24c0ce7902"
+   ],
+   [
+    "24c0ce7902",
+    "LEFT",
+    "f423ea4f15"
+   ],
+   [
+    "f423ea4f15",
+    "RIGHT",
+    "24c0ce7902"
+   ],
+   [
+    "24c0ce7902",
+    "UP",
+    "8db90ac240"
+   ],
+   [
+    "8db90ac240",
+    "DOWN",
+    "24c0ce7902"
+   ],
+   [
+    "24c0ce7902",
+    "DOWN",
+    "9ee450af22"
+   ],
+   [
+    "9ee450af22",
+    "UP",
+    "24c0ce7902"
+   ],
+   [
+    "24c0ce7902",
+    "RIGHT",
+    "36215f7578"
+   ],
+   [
+    "36215f7578",
+    "LEFT",
+    "24c0ce7902"
+   ],
+   [
+    "8db90ac240",
+    "RIGHT",
+    "0cd44fdbc1"
+   ],
+   [
+    "0cd44fdbc1",
+    "LEFT",
+    "8db90ac240"
+   ],
+   [
+    "8db90ac240",
+    "UP",
+    "1db50b6bb4"
+   ],
+   [
+    "1db50b6bb4",
+    "DOWN",
+    "462728aad1"
+   ],
+   [
+    "462728aad1",
+    "UP",
+    "1db50b6bb4"
+   ],
+   [
+    "1db50b6bb4",
+    "UP",
+    "94c2949b1b"
+   ],
+   [
+    "94c2949b1b",
+    "DOWN",
+    "94c2949b1b"
+   ],
+   [
+    "94c2949b1b",
+    "UP",
+    "94c2949b1b"
+   ],
+   [
+    "94c2949b1b",
+    "LEFT",
+    "5988537403"
+   ],
+   [
+    "5988537403",
+    "RIGHT",
+    "94c2949b1b"
+   ],
+   [
+    "94c2949b1b",
+    "RIGHT",
+    "94c2949b1b"
+   ],
+   [
+    "5988537403",
+    "LEFT",
+    "fe30b14247"
+   ],
+   [
+    "fe30b14247",
+    "RIGHT",
+    "5988537403"
+   ],
+   [
+    "5988537403",
+    "UP",
+    "5988537403"
+   ],
+   [
+    "5988537403",
+    "DOWN",
+    "5988537403"
+   ],
+   [
+    "fe30b14247",
+    "UP",
+    "fe30b14247"
+   ],
+   [
+    "fe30b14247",
+    "DOWN",
+    "fe30b14247"
+   ],
+   [
+    "fe30b14247",
+    "LEFT",
+    "fe30b14247"
+   ],
+   [
+    "ff3c8bb961",
+    "RIGHT",
+    "8c7277b158"
+   ],
+   [
+    "8c7277b158",
+    "LEFT",
+    "ff3c8bb961"
+   ],
+   [
+    "ff3c8bb961",
+    "UP",
+    "a36fc012d8"
+   ],
+   [
+    "1f54e612b6",
+    "DOWN",
+    "168f2348e1"
+   ],
+   [
+    "168f2348e1",
+    "UP",
+    "1f54e612b6"
+   ],
+   [
+    "1f54e612b6",
+    "UP",
+    "e1436289c7"
+   ],
+   [
+    "ff3c8bb961",
+    "DOWN",
+    "ea283ddea6"
+   ],
+   [
+    "ea283ddea6",
+    "UP",
+    "ff3c8bb961"
+   ],
+   [
+    "ea283ddea6",
+    "DOWN",
+    "d4861bd2e1"
+   ],
+   [
+    "d4861bd2e1",
+    "UP",
+    "ea283ddea6"
+   ],
+   [
+    "ea283ddea6",
+    "RIGHT",
+    "9ac074a9c3"
+   ],
+   [
+    "9ac074a9c3",
+    "LEFT",
+    "ea283ddea6"
+   ],
+   [
+    "d4861bd2e1",
+    "RIGHT",
+    "d3afb80d68"
+   ],
+   [
+    "d3afb80d68",
+    "LEFT",
+    "d4861bd2e1"
+   ],
+   [
+    "d4861bd2e1",
+    "DOWN",
+    "cb00dabf42"
+   ],
+   [
+    "cb00dabf42",
+    "UP",
+    "d4861bd2e1"
+   ],
+   [
+    "cb00dabf42",
+    "DOWN",
+    "d3674d1dc3"
+   ],
+   [
+    "d3674d1dc3",
+    "LEFT",
+    "117b93e304"
+   ],
+   [
+    "117b93e304",
+    "RIGHT",
+    "10c257d01e"
+   ],
+   [
+    "10c257d01e",
+    "LEFT",
+    "fa5da3bda5"
+   ],
+   [
+    "fa5da3bda5",
+    "RIGHT",
+    "10c257d01e"
+   ],
+   [
+    "10c257d01e",
+    "UP",
+    "2719776a69"
+   ],
+   [
+    "2719776a69",
+    "DOWN",
+    "10c257d01e"
+   ],
+   [
+    "10c257d01e",
+    "DOWN",
+    "a4decfb48e"
+   ],
+   [
+    "1f54e612b6",
+    "LEFT",
+    "00bb993281"
+   ],
+   [
+    "8c7277b158",
+    "RIGHT",
+    "b05a760d80"
+   ],
+   [
+    "168f2348e1",
+    "LEFT",
+    "00bb993281"
+   ],
+   [
+    "168f2348e1",
+    "DOWN",
+    "25a742f43f"
+   ],
+   [
+    "25a742f43f",
+    "UP",
+    "168f2348e1"
+   ],
+   [
+    "25a742f43f",
+    "DOWN",
+    "f370f9a263"
+   ],
+   [
+    "8c7277b158",
+    "UP",
+    "a36fc012d8"
+   ],
+   [
+    "8c7277b158",
+    "DOWN",
+    "9ac074a9c3"
+   ],
+   [
+    "9ac074a9c3",
+    "UP",
+    "8c7277b158"
+   ],
+   [
+    "9ac074a9c3",
+    "DOWN",
+    "d3afb80d68"
+   ],
+   [
+    "d3afb80d68",
+    "UP",
+    "9ac074a9c3"
+   ],
+   [
+    "9ac074a9c3",
+    "RIGHT",
+    "74f750ee32"
+   ],
+   [
+    "25a742f43f",
+    "LEFT",
+    "00bb993281"
+   ],
+   [
+    "64bb3e8dd2",
+    "LEFT",
+    "f370f9a263"
+   ],
+   [
+    "cb00dabf42",
+    "RIGHT",
+    "dee95d1bc9"
+   ],
+   [
+    "d3674d1dc3",
+    "RIGHT",
+    "2ca6a919c5"
+   ],
+   [
+    "d3afb80d68",
+    "DOWN",
+    "dee95d1bc9"
+   ],
+   [
+    "d3afb80d68",
+    "RIGHT",
+    "4ee4f176e0"
+   ],
+   [
+    "f707436ea2",
+    "LEFT",
+    "117b93e304"
+   ],
+   [
+    "117b93e304",
+    "UP",
+    "dad9cbde19"
+   ],
+   [
+    "117b93e304",
+    "DOWN",
+    "117b93e304"
+   ],
+   [
+    "117b93e304",
+    "LEFT",
+    "117b93e304"
+   ],
+   [
+    "10c257d01e",
+    "RIGHT",
+    "da1c29eca0"
+   ],
+   [
+    "f707436ea2",
+    "UP",
+    "4bfe186821"
+   ],
+   [
+    "f707436ea2",
+    "RIGHT",
+    "43d7406a63"
+   ],
+   [
+    "e9ded5c9e7",
+    "RIGHT",
+    "8705b0390b"
+   ],
+   [
+    "5e537613d3",
+    "LEFT",
+    "9709eb01ae"
+   ],
+   [
+    "9709eb01ae",
+    "UP",
+    "447ba887f1"
+   ],
+   [
+    "9709eb01ae",
+    "DOWN",
+    "9709eb01ae"
+   ],
+   [
+    "9709eb01ae",
+    "LEFT",
+    "9709eb01ae"
+   ],
+   [
+    "9ee450af22",
+    "RIGHT",
+    "bdf537213b"
+   ],
+   [
+    "5e537613d3",
+    "UP",
+    "f6981190ba"
+   ]
+  ]
+ },
+ "screenshot": "data-v2/screen.png",
+ "after": {
+  "meta": {
+   "app": "com.amazonappstore.helloworldtv",
+   "package": "com.amazonappstore.helloworldtv",
+   "device": "sdk_google_atv64_arm64 default",
+   "fa_version": "0.1.0",
+   "run_id": "bd869647",
+   "timestamp": "2026-10-19T10:24:19-0400",
+   "fixture": false
+  },
+  "verdict": "inconclusive",
+  "coverage": {
+   "pressed": 360,
+   "budget": 400,
+   "nodes": 59,
+   "elapsed_s": 741.8,
+   "inconclusive": [
+    "budget_exhausted: max_presses",
+    "node_cap: 19 discovered nodes not expanded (max_nodes=40)"
+   ]
+  },
+  "summary": {
+   "trap": 0,
+   "missing_label": 0,
+   "duplicate_label": 0,
+   "total": 0,
+   "critical": 0,
+   "warning": 0,
+   "info": 0
+  },
+  "findings": [],
+  "graph": {
+   "nodes": [
+    {
+     "id": "84c1a1b0e4",
+     "label": "Menu A",
+     "bounds": [
+      24,
+      56,
+      536,
+      168
+     ]
+    },
+    {
+     "id": "bc5e667038",
+     "label": "Menu B",
+     "bounds": [
+      24,
+      184,
+      536,
+      296
+     ]
+    },
+    {
+     "id": "4b6544b82f",
+     "label": "Settings",
+     "bounds": [
+      504,
+      148,
+      600,
+      244
+     ]
+    },
+    {
+     "id": "e44335efcc",
+     "label": "Search",
+     "bounds": [
+      376,
+      148,
+      472,
+      244
+     ]
+    },
+    {
+     "id": "c6efe6c99f",
+     "label": "Movie 2",
+     "bounds": [
+      557,
+      308,
+      858,
+      477
+     ]
+    },
+    {
+     "id": "cf4535a33a",
+     "label": "Movie 1",
+     "bounds": [
+      224,
+      308,
+      525,
+      477
+     ]
+    },
+    {
+     "id": "73691b3f67",
+     "label": "Movie 7",
+     "bounds": [
+      557,
+      509,
+      858,
+      678
+     ]
+    },
+    {
+     "id": "d7591a5dbf",
+     "label": "Movie 3",
+     "bounds": [
+      890,
+      308,
+      1191,
+      477
+     ]
+    },
+    {
+     "id": "936537caa0",
+     "label": "Movie 8",
+     "bounds": [
+      890,
+      509,
+      1191,
+      678
+     ]
+    },
+    {
+     "id": "ded27af43b",
+     "label": "Movie 12",
+     "bounds": [
+      557,
+      710,
+      858,
+      879
+     ]
+    },
+    {
+     "id": "9afd44f3c3",
+     "label": "Movie 6",
+     "bounds": [
+      224,
+      509,
+      525,
+      678
+     ]
+    },
+    {
+     "id": "8d64b1f27b",
+     "label": "Movie 11",
+     "bounds": [
+      224,
+      710,
+      525,
+      879
+     ]
+    },
+    {
+     "id": "b34d4135f8",
+     "label": "Movie 17",
+     "bounds": [
+      557,
+      911,
+      858,
+      1080
+     ]
+    },
+    {
+     "id": "0b7a804f5d",
+     "label": "Movie 13",
+     "bounds": [
+      890,
+      710,
+      1191,
+      879
+     ]
+    },
+    {
+     "id": "3b2f6cfd87",
+     "label": "Movie 18",
+     "bounds": [
+      890,
+      911,
+      1191,
+      1080
+     ]
+    },
+    {
+     "id": "49b235ffa9",
+     "label": "Movie 21",
+     "bounds": [
+      224,
+      911,
+      525,
+      1080
+     ]
+    },
+    {
+     "id": "66491ede62",
+     "label": "Movie 16",
+     "bounds": [
+      224,
+      710,
+      525,
+      879
+     ]
+    },
+    {
+     "id": "e9ded5c9e7",
+     "label": "Movie 26",
+     "bounds": [
+      224,
+      911,
+      525,
+      1080
+     ]
+    },
+    {
+     "id": "5e537613d3",
+     "label": "Movie 21",
+     "bounds": [
+      224,
+      710,
+      525,
+      879
+     ]
+    },
+    {
+     "id": "9709eb01ae",
+     "label": "Menu C",
+     "bounds": [
+      24,
+      312,
+      536,
+      424
+     ]
+    },
+    {
+     "id": "24c0ce7902",
+     "label": "Movie 12",
+     "bounds": [
+      557,
+      308,
+      858,
+      477
+     ]
+    },
+    {
+     "id": "f423ea4f15",
+     "label": "Movie 11",
+     "bounds": [
+      224,
+      308,
+      525,
+      477
+     ]
+    },
+    {
+     "id": "8db90ac240",
+     "label": "Movie 7",
+     "bounds": [
+      557,
+      107,
+      858,
+      276
+     ]
+    },
+    {
+     "id": "9ee450af22",
+     "label": "Movie 17",
+     "bounds": [
+      557,
+      509,
+      858,
+      678
+     ]
+    },
+    {
+     "id": "36215f7578",
+     "label": "Movie 13",
+     "bounds": [
+      890,
+      308,
+      1191,
+      477
+     ]
+    },
+    {
+     "id": "0cd44fdbc1",
+     "label": "Movie 8",
+     "bounds": [
+      890,
+      107,
+      1191,
+      276
+     ]
+    },
+    {
+     "id": "1db50b6bb4",
+     "label": "Movie 2",
+     "bounds": [
+      557,
+      0,
+      858,
+      169
+     ]
+    },
+    {
+     "id": "462728aad1",
+     "label": "Movie 7",
+     "bounds": [
+      557,
+      201,
+      858,
+      370
+     ]
+    },
+    {
+     "id": "29e5ff259a",
+     "label": "Settings",
+     "bounds": [
+      504,
+      0,
+      600,
+      96
+     ]
+    },
+    {
+     "id": "0163c551d5",
+     "label": "Movie 2",
+     "bounds": [
+      557,
+      160,
+      858,
+      329
+     ]
+    },
+    {
+     "id": "f8a675ded9",
+     "label": "Search",
+     "bounds": [
+      376,
+      0,
+      472,
+      96
+     ]
+    },
+    {
+     "id": "45ef99b17a",
+     "label": "Movie 1",
+     "bounds": [
+      224,
+      160,
+      525,
+      329
+     ]
+    },
+    {
+     "id": "44f2b24056",
+     "label": "Movie 7",
+     "bounds": [
+      557,
+      361,
+      858,
+      530
+     ]
+    },
+    {
+     "id": "cab0c90a8d",
+     "label": "Movie 3",
+     "bounds": [
+      890,
+      160,
+      1191,
+      329
+     ]
+    },
+    {
+     "id": "22879c7a47",
+     "label": "Movie 8",
+     "bounds": [
+      890,
+      361,
+      1191,
+      530
+     ]
+    },
+    {
+     "id": "4a638d1eec",
+     "label": "Movie 12",
+     "bounds": [
+      557,
+      562,
+      858,
+      731
+     ]
+    },
+    {
+     "id": "a717de6795",
+     "label": "Movie 6",
+     "bounds": [
+      224,
+      361,
+      525,
+      530
+     ]
+    },
+    {
+     "id": "10cbaffd8e",
+     "label": "Movie 11",
+     "bounds": [
+      224,
+      562,
+      525,
+      731
+     ]
+    },
+    {
+     "id": "4080967234",
+     "label": "Movie 17",
+     "bounds": [
+      557,
+      763,
+      858,
+      932
+     ]
+    },
+    {
+     "id": "ff1250b113",
+     "label": "Movie 13",
+     "bounds": [
+      890,
+      562,
+      1191,
+      731
+     ]
+    },
+    {
+     "id": "e247f8c8d3",
+     "label": "Movie 18",
+     "bounds": [
+      890,
+      763,
+      1191,
+      932
+     ]
+    },
+    {
+     "id": "be9cf631bc",
+     "label": "Play",
+     "bounds": [
+      224,
+      140,
+      344,
+      236
+     ]
+    },
+    {
+     "id": "635f79deec",
+     "label": "Menu C",
+     "bounds": [
+      24,
+      312,
+      536,
+      424
+     ]
+    },
+    {
+     "id": "ef6794a61c",
+     "label": "Movie 4",
+     "bounds": [
+      1223,
+      308,
+      1524,
+      477
+     ]
+    },
+    {
+     "id": "6ebe6c5454",
+     "label": "Movie 9",
+     "bounds": [
+      1223,
+      509,
+      1524,
+      678
+     ]
+    },
+    {
+     "id": "fc94e416ee",
+     "label": "Movie 16",
+     "bounds": [
+      224,
+      911,
+      525,
+      1080
+     ]
+    },
+    {
+     "id": "506c48305b",
+     "label": "Movie 14",
+     "bounds": [
+      1223,
+      710,
+      1524,
+      879
+     ]
+    },
+    {
+     "id": "2fc7fcd61b",
+     "label": "Menu C",
+     "bounds": [
+      24,
+      312,
+      536,
+      424
+     ]
+    },
+    {
+     "id": "013dc24dae",
+     "label": "Movie 19",
+     "bounds": [
+      1223,
+      911,
+      1524,
+      1080
+     ]
+    },
+    {
+     "id": "62ed074c45",
+     "label": "Movie 22",
+     "bounds": [
+      557,
+      911,
+      858,
+      1080
+     ]
+    },
+    {
+     "id": "34905149db",
+     "label": "Movie 17",
+     "bounds": [
+      557,
+      710,
+      858,
+      879
+     ]
+    },
+    {
+     "id": "4307da46a1",
+     "label": "Movie 11",
+     "bounds": [
+      224,
+      509,
+      525,
+      678
+     ]
+    },
+    {
+     "id": "8705b0390b",
+     "label": "Movie 27",
+     "bounds": [
+      557,
+      911,
+      858,
+      1080
+     ]
+    },
+    {
+     "id": "447ba887f1",
+     "label": "Menu B",
+     "bounds": [
+      24,
+      184,
+      536,
+      296
+     ]
+    },
+    {
+     "id": "bdf537213b",
+     "label": "Movie 18",
+     "bounds": [
+      890,
+      509,
+      1191,
+      678
+     ]
+    },
+    {
+     "id": "f6981190ba",
+     "label": "Movie 16",
+     "bounds": [
+      224,
+      509,
+      525,
+      678
+     ]
+    },
+    {
+     "id": "e839cea0eb",
+     "label": "Movie 22",
+     "bounds": [
+      557,
+      710,
+      858,
+      879
+     ]
+    },
+    {
+     "id": "a4508ed247",
+     "label": "Movie 14",
+     "bounds": [
+      1223,
+      308,
+      1524,
+      477
+     ]
+    },
+    {
+     "id": "bb95fdb79f",
+     "label": "Movie 6",
+     "bounds": [
+      224,
+      107,
+      525,
+      276
+     ]
+    }
+   ],
+   "edges": [
+    [
+     "84c1a1b0e4",
+     "UP",
+     "84c1a1b0e4"
+    ],
+    [
+     "84c1a1b0e4",
+     "DOWN",
+     "bc5e667038"
+    ],
+    [
+     "bc5e667038",
+     "UP",
+     "84c1a1b0e4"
+    ],
+    [
+     "84c1a1b0e4",
+     "LEFT",
+     "84c1a1b0e4"
+    ],
+    [
+     "84c1a1b0e4",
+     "RIGHT",
+     "4b6544b82f"
+    ],
+    [
+     "4b6544b82f",
+     "LEFT",
+     "e44335efcc"
+    ],
+    [
+     "e44335efcc",
+     "RIGHT",
+     "4b6544b82f"
+    ],
+    [
+     "4b6544b82f",
+     "UP",
+     "4b6544b82f"
+    ],
+    [
+     "4b6544b82f",
+     "DOWN",
+     "c6efe6c99f"
+    ],
+    [
+     "c6efe6c99f",
+     "UP",
+     "4b6544b82f"
+    ],
+    [
+     "4b6544b82f",
+     "RIGHT",
+     "c6efe6c99f"
+    ],
+    [
+     "c6efe6c99f",
+     "LEFT",
+     "cf4535a33a"
+    ],
+    [
+     "cf4535a33a",
+     "RIGHT",
+     "c6efe6c99f"
+    ],
+    [
+     "c6efe6c99f",
+     "DOWN",
+     "73691b3f67"
+    ],
+    [
+     "73691b3f67",
+     "UP",
+     "c6efe6c99f"
+    ],
+    [
+     "c6efe6c99f",
+     "RIGHT",
+     "d7591a5dbf"
+    ],
+    [
+     "d7591a5dbf",
+     "LEFT",
+     "c6efe6c99f"
+    ],
+    [
+     "73691b3f67",
+     "RIGHT",
+     "936537caa0"
+    ],
+    [
+     "936537caa0",
+     "LEFT",
+     "73691b3f67"
+    ],
+    [
+     "73691b3f67",
+     "DOWN",
+     "ded27af43b"
+    ],
+    [
+     "ded27af43b",
+     "UP",
+     "73691b3f67"
+    ],
+    [
+     "73691b3f67",
+     "LEFT",
+     "9afd44f3c3"
+    ],
+    [
+     "9afd44f3c3",
+     "RIGHT",
+     "73691b3f67"
+    ],
+    [
+     "ded27af43b",
+     "LEFT",
+     "8d64b1f27b"
+    ],
+    [
+     "8d64b1f27b",
+     "RIGHT",
+     "ded27af43b"
+    ],
+    [
+     "ded27af43b",
+     "DOWN",
+     "b34d4135f8"
+    ],
+    [
+     "b34d4135f8",
+     "UP",
+     "ded27af43b"
+    ],
+    [
+     "ded27af43b",
+     "RIGHT",
+     "0b7a804f5d"
+    ],
+    [
+     "0b7a804f5d",
+     "LEFT",
+     "ded27af43b"
+    ],
+    [
+     "b34d4135f8",
+     "RIGHT",
+     "3b2f6cfd87"
+    ],
+    [
+     "3b2f6cfd87",
+     "LEFT",
+     "b34d4135f8"
+    ],
+    [
+     "b34d4135f8",
+     "DOWN",
+     "49b235ffa9"
+    ],
+    [
+     "49b235ffa9",
+     "UP",
+     "66491ede62"
+    ],
+    [
+     "66491ede62",
+     "DOWN",
+     "49b235ffa9"
+    ],
+    [
+     "49b235ffa9",
+     "DOWN",
+     "e9ded5c9e7"
+    ],
+    [
+     "e9ded5c9e7",
+     "UP",
+     "5e537613d3"
+    ],
+    [
+     "5e537613d3",
+     "DOWN",
+     "e9ded5c9e7"
+    ],
+    [
+     "e9ded5c9e7",
+     "DOWN",
+     "e9ded5c9e7"
+    ],
+    [
+     "e9ded5c9e7",
+     "LEFT",
+     "9709eb01ae"
+    ],
+    [
+     "9709eb01ae",
+     "RIGHT",
+     "24c0ce7902"
+    ],
+    [
+     "24c0ce7902",
+     "LEFT",
+     "f423ea4f15"
+    ],
+    [
+     "f423ea4f15",
+     "RIGHT",
+     "24c0ce7902"
+    ],
+    [
+     "24c0ce7902",
+     "UP",
+     "8db90ac240"
+    ],
+    [
+     "8db90ac240",
+     "DOWN",
+     "24c0ce7902"
+    ],
+    [
+     "24c0ce7902",
+     "DOWN",
+     "9ee450af22"
+    ],
+    [
+     "9ee450af22",
+     "UP",
+     "24c0ce7902"
+    ],
+    [
+     "24c0ce7902",
+     "RIGHT",
+     "36215f7578"
+    ],
+    [
+     "36215f7578",
+     "LEFT",
+     "24c0ce7902"
+    ],
+    [
+     "8db90ac240",
+     "RIGHT",
+     "0cd44fdbc1"
+    ],
+    [
+     "0cd44fdbc1",
+     "LEFT",
+     "8db90ac240"
+    ],
+    [
+     "8db90ac240",
+     "UP",
+     "1db50b6bb4"
+    ],
+    [
+     "1db50b6bb4",
+     "DOWN",
+     "462728aad1"
+    ],
+    [
+     "462728aad1",
+     "UP",
+     "1db50b6bb4"
+    ],
+    [
+     "1db50b6bb4",
+     "UP",
+     "29e5ff259a"
+    ],
+    [
+     "29e5ff259a",
+     "DOWN",
+     "0163c551d5"
+    ],
+    [
+     "0163c551d5",
+     "UP",
+     "29e5ff259a"
+    ],
+    [
+     "29e5ff259a",
+     "UP",
+     "29e5ff259a"
+    ],
+    [
+     "29e5ff259a",
+     "LEFT",
+     "f8a675ded9"
+    ],
+    [
+     "f8a675ded9",
+     "RIGHT",
+     "29e5ff259a"
+    ],
+    [
+     "29e5ff259a",
+     "RIGHT",
+     "0163c551d5"
+    ],
+    [
+     "0163c551d5",
+     "LEFT",
+     "45ef99b17a"
+    ],
+    [
+     "45ef99b17a",
+     "RIGHT",
+     "0163c551d5"
+    ],
+    [
+     "0163c551d5",
+     "DOWN",
+     "44f2b24056"
+    ],
+    [
+     "44f2b24056",
+     "UP",
+     "0163c551d5"
+    ],
+    [
+     "0163c551d5",
+     "RIGHT",
+     "cab0c90a8d"
+    ],
+    [
+     "cab0c90a8d",
+     "LEFT",
+     "0163c551d5"
+    ],
+    [
+     "44f2b24056",
+     "RIGHT",
+     "22879c7a47"
+    ],
+    [
+     "22879c7a47",
+     "LEFT",
+     "44f2b24056"
+    ],
+    [
+     "44f2b24056",
+     "DOWN",
+     "4a638d1eec"
+    ],
+    [
+     "4a638d1eec",
+     "UP",
+     "44f2b24056"
+    ],
+    [
+     "44f2b24056",
+     "LEFT",
+     "a717de6795"
+    ],
+    [
+     "a717de6795",
+     "RIGHT",
+     "44f2b24056"
+    ],
+    [
+     "4a638d1eec",
+     "LEFT",
+     "10cbaffd8e"
+    ],
+    [
+     "10cbaffd8e",
+     "RIGHT",
+     "4a638d1eec"
+    ],
+    [
+     "4a638d1eec",
+     "DOWN",
+     "4080967234"
+    ],
+    [
+     "4080967234",
+     "UP",
+     "4a638d1eec"
+    ],
+    [
+     "4a638d1eec",
+     "RIGHT",
+     "ff1250b113"
+    ],
+    [
+     "ff1250b113",
+     "LEFT",
+     "4a638d1eec"
+    ],
+    [
+     "4080967234",
+     "RIGHT",
+     "e247f8c8d3"
+    ],
+    [
+     "bc5e667038",
+     "LEFT",
+     "bc5e667038"
+    ],
+    [
+     "bc5e667038",
+     "RIGHT",
+     "4b6544b82f"
+    ],
+    [
+     "e44335efcc",
+     "LEFT",
+     "be9cf631bc"
+    ],
+    [
+     "bc5e667038",
+     "DOWN",
+     "635f79deec"
+    ],
+    [
+     "e44335efcc",
+     "UP",
+     "e44335efcc"
+    ],
+    [
+     "e44335efcc",
+     "DOWN",
+     "cf4535a33a"
+    ],
+    [
+     "cf4535a33a",
+     "UP",
+     "e44335efcc"
+    ],
+    [
+     "cf4535a33a",
+     "DOWN",
+     "9afd44f3c3"
+    ],
+    [
+     "9afd44f3c3",
+     "UP",
+     "cf4535a33a"
+    ],
+    [
+     "cf4535a33a",
+     "LEFT",
+     "635f79deec"
+    ],
+    [
+     "d7591a5dbf",
+     "RIGHT",
+     "ef6794a61c"
+    ],
+    [
+     "d7591a5dbf",
+     "UP",
+     "4b6544b82f"
+    ],
+    [
+     "d7591a5dbf",
+     "DOWN",
+     "936537caa0"
+    ],
+    [
+     "936537caa0",
+     "UP",
+     "d7591a5dbf"
+    ],
+    [
+     "936537caa0",
+     "DOWN",
+     "0b7a804f5d"
+    ],
+    [
+     "0b7a804f5d",
+     "UP",
+     "936537caa0"
+    ],
+    [
+     "936537caa0",
+     "RIGHT",
+     "6ebe6c5454"
+    ],
+    [
+     "9afd44f3c3",
+     "LEFT",
+     "635f79deec"
+    ],
+    [
+     "9afd44f3c3",
+     "DOWN",
+     "8d64b1f27b"
+    ],
+    [
+     "8d64b1f27b",
+     "UP",
+     "9afd44f3c3"
+    ],
+    [
+     "8d64b1f27b",
+     "DOWN",
+     "fc94e416ee"
+    ],
+    [
+     "8d64b1f27b",
+     "LEFT",
+     "635f79deec"
+    ],
+    [
+     "0b7a804f5d",
+     "RIGHT",
+     "506c48305b"
+    ],
+    [
+     "b34d4135f8",
+     "LEFT",
+     "fc94e416ee"
+    ],
+    [
+     "0b7a804f5d",
+     "DOWN",
+     "3b2f6cfd87"
+    ],
+    [
+     "3b2f6cfd87",
+     "UP",
+     "0b7a804f5d"
+    ],
+    [
+     "3b2f6cfd87",
+     "DOWN",
+     "49b235ffa9"
+    ],
+    [
+     "49b235ffa9",
+     "LEFT",
+     "2fc7fcd61b"
+    ],
+    [
+     "3b2f6cfd87",
+     "RIGHT",
+     "013dc24dae"
+    ],
+    [
+     "49b235ffa9",
+     "RIGHT",
+     "62ed074c45"
+    ],
+    [
+     "66491ede62",
+     "LEFT",
+     "2fc7fcd61b"
+    ],
+    [
+     "66491ede62",
+     "RIGHT",
+     "34905149db"
+    ],
+    [
+     "66491ede62",
+     "UP",
+     "4307da46a1"
+    ],
+    [
+     "e9ded5c9e7",
+     "RIGHT",
+     "8705b0390b"
+    ],
+    [
+     "5e537613d3",
+     "LEFT",
+     "9709eb01ae"
+    ],
+    [
+     "9709eb01ae",
+     "UP",
+     "447ba887f1"
+    ],
+    [
+     "9709eb01ae",
+     "DOWN",
+     "9709eb01ae"
+    ],
+    [
+     "9709eb01ae",
+     "LEFT",
+     "9709eb01ae"
+    ],
+    [
+     "9ee450af22",
+     "RIGHT",
+     "bdf537213b"
+    ],
+    [
+     "5e537613d3",
+     "UP",
+     "f6981190ba"
+    ],
+    [
+     "5e537613d3",
+     "RIGHT",
+     "e839cea0eb"
+    ],
+    [
+     "f423ea4f15",
+     "LEFT",
+     "9709eb01ae"
+    ],
+    [
+     "36215f7578",
+     "RIGHT",
+     "a4508ed247"
+    ],
+    [
+     "8db90ac240",
+     "LEFT",
+     "bb95fdb79f"
+    ],
+    [
+     "f423ea4f15",
+     "UP",
+     "bb95fdb79f"
+    ],
+    [
+     "f423ea4f15",
+     "DOWN",
+     "f6981190ba"
+    ]
+   ]
+  },
+  "screenshot": "data-v2/screen-after.png",
+  "after": null,
+  "resolved": [
+   {
+    "id": "9ee483ba4d",
+    "kind": "TRAP",
+    "title": "Focus trap around \"Play\": 3 controls, no way out",
+    "bounds": [
+     224,
+     140,
+     600,
+     244
+    ],
+    "test": "test_9ee483ba4d",
+    "status": "passing"
+   },
+   {
+    "id": "72c12df2ba",
+    "kind": "MISSING_LABEL",
+    "title": "Icon-only control without a name",
+    "bounds": [
+     376,
+     148,
+     472,
+     244
+    ],
+    "test": "test_72c12df2ba",
+    "status": "passing"
+   },
+   {
+    "id": "b9df6da731",
+    "kind": "MISSING_LABEL",
+    "title": "Icon-only control without a name",
+    "bounds": [
+     504,
+     148,
+     600,
+     244
+    ],
+    "test": "test_b9df6da731",
+    "status": "passing"
+   },
+   {
+    "id": "3c6bf1b1b1",
+    "kind": "DUPLICATE_LABEL",
+    "title": "30 controls share the name \"Movie Name\"",
+    "bounds": [
+     224,
+     308,
+     1856,
+     1080
+    ],
+    "test": "test_3c6bf1b1b1",
+    "status": "passing"
+   }
+  ]
+ }
+}

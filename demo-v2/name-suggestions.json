@@ -1,0 +1,34 @@
+{
+  "source": "vlm",
+  "model": "gemma4:e4b-it-qat",
+  "untrusted": true,
+  "note": "Model guesses; screen.png shows one UI state, so a crop can miss a control that is only visible in another state.",
+  "suggestions": [
+    {
+      "finding_id": "72c12df2ba",
+      "node_id": "bba07c22a9",
+      "bounds": [
+        376,
+        148,
+        472,
+        244
+      ],
+      "suggestion": "Search",
+      "abstain": false,
+      "status": "ok"
+    },
+    {
+      "finding_id": "b9df6da731",
+      "node_id": "a36fc012d8",
+      "bounds": [
+        504,
+        148,
+        600,
+        244
+      ],
+      "suggestion": "Settings",
+      "abstain": false,
+      "status": "ok"
+    }
+  ]
+}

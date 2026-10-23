@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Audit Fire TV focus navigation and screen-reader names. See every finding on the real screen, replay the evidence, and verify the fix.">
+    <meta name="theme-color" content="#f5f5f7">
+    <title>Focus Auditor</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="motion.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to audit results</a>
+
+    <svg class="sr-only" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-focus" viewBox="0 0 24 24"><path d="M8 3H4a1 1 0 0 0-1 1v4m13-5h4a1 1 0 0 1 1 1v4M3 16v4a1 1 0 0 0 1 1h4m8 0h4a1 1 0 0 0 1-1v-4"/><rect x="8" y="8" width="8" height="8" rx="2"/></symbol>
+        <symbol id="icon-tv" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+        <symbol id="icon-trap" viewBox="0 0 24 24"><path d="M7 3h10l5 9-5 9H7l-5-9Z"/><path d="M12 7v6m0 4h.01"/></symbol>
+        <symbol id="icon-warning" viewBox="0 0 24 24"><path d="m10.3 4.2-8 14A1.9 1.9 0 0 0 4 21h16a1.9 1.9 0 0 0 1.7-2.8l-8-14a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4m0 4h.01"/></symbol>
+        <symbol id="icon-label" viewBox="0 0 24 24"><path d="M20 11.5V5a2 2 0 0 0-2-2h-6.5L3 11.5a2 2 0 0 0 0 2.8l6.7 6.7a2 2 0 0 0 2.8 0Z"/><circle cx="16" cy="7" r="1"/><path d="m3 3 18 18"/></symbol>
+        <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+        <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+        <symbol id="icon-fail" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17"/></symbol>
+        <symbol id="icon-replay" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/><path d="m11 8 5 4-5 4Z"/></symbol>
+        <symbol id="icon-coverage" viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></symbol>
+      </defs>
+    </svg>
+
+    <header class="topbar">
+      <div class="topbar-inner page-shell">
+        <div class="brand-group">
+          <a class="brand" href="#main" aria-label="Focus Auditor, audit overview">
+            <svg class="icon brand-mark" aria-hidden="true"><use href="#icon-focus"></use></svg>
+            Focus Auditor
+          </a>
+          <span class="app-chip" id="app-name">Loading report</span>
+        </div>
+
+        <div class="toolbar" aria-label="Report controls">
+          <div class="run-chip">
+            <svg class="icon" aria-hidden="true"><use href="#icon-tv"></use></svg>
+            <span id="device-name">Android TV</span> · <code id="run-id">run</code>
+          </div>
+
+          <div class="segmented-control" role="group" aria-label="Report version">
+            <button type="button" data-role="before" aria-pressed="true" aria-controls="report">Before</button>
+            <button type="button" data-role="after" aria-pressed="false" aria-controls="report" aria-describedby="after-unavailable" disabled>After</button>
+          </div>
+          <span id="after-unavailable" class="sr-only">No after report yet. Run the audit again after applying fixes to compare.</span>
+
+          <button class="button button-quiet tv-toggle" id="tv-toggle" type="button" aria-pressed="false">
+            <svg class="icon" aria-hidden="true"><use href="#icon-tv"></use></svg>
+            <span>TV mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell" tabindex="-1">
+      <div id="report" data-verdict="fail">
+        <section class="hero" aria-labelledby="verdict">
+          <div class="hero-heading">
+            <div>
+              <p class="eyebrow">Focus &amp; accessibility audit</p>
+              <h1 id="verdict" aria-live="polite" aria-atomic="true">Loading</h1>
+              <p class="hero-description" id="verdict-description"></p>
+              <p class="how-we-know"><a id="how-link" href="#evidence" hidden>How we know</a></p>
+            </div>
+            <div class="run-state">
+              <span class="status-pill status-critical" id="run-pill"></span>
+              <p id="run-note"></p>
+            </div>
+          </div>
+
+          <div id="tiles" aria-label="Audit summary"></div>
+          <div id="verdict-delta" class="verdict-delta" aria-live="polite" hidden></div>
+        </section>
+
+        <div class="workspace">
+          <section class="map-section" aria-labelledby="map-title">
+            <div class="section-heading">
+              <h2 id="map-title">The focus map.</h2>
+              <span class="section-meta">Real screen. Recorded evidence.</span>
+            </div>
+
+            <figure class="map-card" aria-describedby="map-caption">
+              <div class="map-toolbar">
+                <span class="map-toolbar-label" id="map-device">Android TV · 1920 × 1080</span>
+                <div class="legend" aria-label="Map legend">
+                  <span class="legend-item"><span class="legend-swatch critical" aria-hidden="true"></span>Critical</span>
+                  <span class="legend-item"><span class="legend-swatch warning" aria-hidden="true"></span>Finding</span>
+                  <span class="legend-item"><span class="legend-swatch path" aria-hidden="true"></span>Focus path</span>
+                </div>
+              </div>
+
+              <div id="map-stage">
+                <img id="map-img" src="" width="1920" height="1080" alt="Screenshot of the audited Fire TV screen" decoding="async">
+                <svg id="map-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="overlay-title overlay-description" data-has-selection="false">
+                  <title id="overlay-title">Findings on the audited screen</title>
+                  <desc id="overlay-description">Boxes mark each finding. The blue line shows the recorded focus path.</desc>
+                  <g id="finding-boxes"></g>
+                  <g id="focus-path-layer">
+                    <polyline id="focus-path" class="focus-path" points=""/>
+                    <circle id="focus-ball" class="focus-ball" cx="-100" cy="-100" r="10"/>
+                  </g>
+                  <g id="node-labels" aria-hidden="true"></g>
+                </svg>
+              </div>
+
+              <figcaption class="map-caption" id="map-caption">
+                <span id="map-selected"><strong>Selected:</strong> none</span>
+                <span id="map-meta"></span>
+              </figcaption>
+            </figure>
+
+            <section class="witness-panel" aria-labelledby="witness-title">
+              <div class="witness-heading">
+                <h3 id="witness-title">The path that proves it</h3>
+                <button class="button button-quiet" id="replay-witness" type="button" data-action="replay" aria-label="Replay the selected finding's witness path">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-replay"></use></svg>
+                  Replay
+                </button>
+              </div>
+              <div class="witness-keys" id="witness-keys"></div>
+            </section>
+
+            <p class="tv-hint">Arrow keys to move · Enter to inspect · Esc to return</p>
+          </section>
+
+          <aside class="findings-panel" aria-labelledby="findings-title">
+            <div class="section-heading">
+              <h2 id="findings-title">Findings <span class="count" id="findings-count"></span></h2>
+              <span class="section-meta">Highest severity first</span>
+            </div>
+
+            <ol id="findings" class="findings-list" aria-label="Audit findings"></ol>
+
+            <section id="detail" class="detail-panel" aria-labelledby="detail-title" aria-live="polite" aria-atomic="true" tabindex="-1">
+              <div class="detail-heading">
+                <h3 id="detail-title">Select a finding</h3>
+                <span class="section-meta">Suggested fix</span>
+              </div>
+              <p id="detail-body"></p>
+              <div id="detail-suggest" hidden></div>
+              <div id="hears" class="hears" hidden>
+                <h4 id="hears-title">What a screen reader hears</h4>
+                <div class="hears-row"><span class="hears-label">Before</span><q id="hears-before"></q><button class="button button-quiet" type="button" id="play-before" data-action="play-audio" data-which="before" data-spatial-focus hidden>Play</button></div>
+                <div class="hears-row"><span class="hears-label">After</span><q id="hears-after"></q><button class="button button-quiet" type="button" id="play-after" data-action="play-audio" data-which="after" data-spatial-focus hidden>Play</button></div>
+                <p class="hears-note">TalkBack-style rules, not a device recording</p>
+                <audio id="hears-audio" preload="none"></audio>
+              </div>
+              <div class="test-name">
+                <span>Generated test</span>
+                <code id="detail-test">none</code>
+              </div>
+            </section>
+          </aside>
+        </div>
+
+        <section id="evidence" class="evidence" aria-labelledby="evidence-title" tabindex="-1" hidden>
+          <h2 id="evidence-title">How we know.</h2>
+          <ol id="evidence-rows" aria-label="Evidence behind the suggestions"></ol>
+        </section>
+
+        <section class="workflow" aria-labelledby="workflow-title">
+          <h2 id="workflow-title">From evidence to confidence.</h2>
+          <ol id="run-steps" aria-label="Audit workflow"></ol>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-shell">
+        <div class="footer-meta">
+          <span>Focus Auditor <span id="fa-version"></span></span>
+          <span id="package-name"></span>
+          <time id="run-timestamp"></time>
+          <span id="fixture-label"></span>
+        </div>
+        <p id="inconclusive-reasons" class="inconclusive-note"></p>
+      </div>
+    </footer>
+
+    <noscript><p style="padding:24px">Focus Auditor needs JavaScript to render the report.</p></noscript>
+    <div id="status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

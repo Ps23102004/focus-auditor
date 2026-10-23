@@ -1,0 +1,475 @@
+{
+  "pkg": "com.android.tv.reference",
+  "nodes": [
+    {
+      "id": "78a09cf3a4",
+      "cls": "android.widget.TextView",
+      "label": "Supercharged Clips",
+      "bounds": [
+        112,
+        329,
+        479,
+        393
+      ]
+    },
+    {
+      "id": "94cdf03a7f",
+      "cls": "android.widget.TextView",
+      "label": "Misc Clips",
+      "bounds": [
+        112,
+        329,
+        308,
+        393
+      ]
+    },
+    {
+      "id": "82c2ee94c4",
+      "cls": "android.widget.FrameLayout",
+      "label": "jQuery and Closest Clip",
+      "bounds": [
+        85,
+        351,
+        523,
+        715
+      ]
+    },
+    {
+      "id": "36aa043572",
+      "cls": "android.widget.FrameLayout",
+      "label": "Chrome Dev Summit Promo Clip",
+      "bounds": [
+        85,
+        351,
+        523,
+        715
+      ]
+    },
+    {
+      "id": "6ddeecf624",
+      "cls": "android.widget.TextView",
+      "label": "Beverly Hillbillies",
+      "bounds": [
+        112,
+        329,
+        435,
+        393
+      ]
+    },
+    {
+      "id": "41d3242b5d",
+      "cls": "android.widget.FrameLayout",
+      "label": "State of the Web Clip",
+      "bounds": [
+        485,
+        351,
+        923,
+        715
+      ]
+    },
+    {
+      "id": "b259c3a1de",
+      "cls": "android.widget.FrameLayout",
+      "label": "Map and Filter Clip",
+      "bounds": [
+        485,
+        351,
+        923,
+        715
+      ]
+    },
+    {
+      "id": "ebc059c200",
+      "cls": "android.widget.FrameLayout",
+      "label": "Some and Every Clip",
+      "bounds": [
+        741,
+        351,
+        1179,
+        715
+      ]
+    },
+    {
+      "id": "96b2537738",
+      "cls": "android.widget.FrameLayout",
+      "label": "Jethro's Friend Season 1 Episode 36",
+      "bounds": [
+        741,
+        351,
+        1179,
+        715
+      ]
+    },
+    {
+      "id": "d5d27d026c",
+      "cls": "android.widget.FrameLayout",
+      "label": "Reduce Clip",
+      "bounds": [
+        997,
+        351,
+        1435,
+        715
+      ]
+    },
+    {
+      "id": "0aab37f2ff",
+      "cls": "android.widget.FrameLayout",
+      "label": "FlatMap Clip",
+      "bounds": [
+        1397,
+        351,
+        1835,
+        715
+      ]
+    },
+    {
+      "id": "16a76f8e33",
+      "cls": "android.widget.TextView",
+      "label": "Charlie Chaplin Movies",
+      "bounds": [
+        112,
+        329,
+        524,
+        393
+      ]
+    },
+    {
+      "id": "35ee217401",
+      "cls": "android.widget.TextView",
+      "label": "Identity",
+      "bounds": [
+        112,
+        329,
+        254,
+        393
+      ]
+    },
+    {
+      "id": "c7774e6565",
+      "cls": "android.widget.TextView",
+      "label": "Sign in",
+      "bounds": [
+        98,
+        352,
+        326,
+        580
+      ]
+    },
+    {
+      "id": "4d41ce4c7f",
+      "cls": "android.widget.FrameLayout",
+      "label": "Hair-Raising Holiday Season 2 Episode 2",
+      "bounds": [
+        997,
+        351,
+        1435,
+        715
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "78a09cf3a4",
+      "UP",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "DOWN",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "UP",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "LEFT",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "RIGHT",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "LEFT",
+      "78a09cf3a4"
+    ],
+    [
+      "94cdf03a7f",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "LEFT",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "DOWN",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "UP",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "LEFT",
+      "94cdf03a7f"
+    ],
+    [
+      "36aa043572",
+      "RIGHT",
+      "41d3242b5d"
+    ],
+    [
+      "41d3242b5d",
+      "LEFT",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "UP",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "82c2ee94c4",
+      "UP",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "RIGHT",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "LEFT",
+      "82c2ee94c4"
+    ],
+    [
+      "b259c3a1de",
+      "RIGHT",
+      "ebc059c200"
+    ],
+    [
+      "ebc059c200",
+      "LEFT",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "UP",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "41d3242b5d",
+      "UP",
+      "b259c3a1de"
+    ],
+    [
+      "ebc059c200",
+      "DOWN",
+      "41d3242b5d"
+    ],
+    [
+      "41d3242b5d",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "41d3242b5d",
+      "RIGHT",
+      "96b2537738"
+    ],
+    [
+      "96b2537738",
+      "LEFT",
+      "41d3242b5d"
+    ],
+    [
+      "96b2537738",
+      "RIGHT",
+      "96b2537738"
+    ],
+    [
+      "96b2537738",
+      "UP",
+      "41d3242b5d"
+    ],
+    [
+      "96b2537738",
+      "DOWN",
+      "96b2537738"
+    ],
+    [
+      "ebc059c200",
+      "UP",
+      "ebc059c200"
+    ],
+    [
+      "ebc059c200",
+      "RIGHT",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "LEFT",
+      "ebc059c200"
+    ],
+    [
+      "d5d27d026c",
+      "RIGHT",
+      "0aab37f2ff"
+    ],
+    [
+      "0aab37f2ff",
+      "LEFT",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "UP",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "6ddeecf624",
+      "DOWN",
+      "16a76f8e33"
+    ],
+    [
+      "16a76f8e33",
+      "UP",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "LEFT",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "16a76f8e33",
+      "LEFT",
+      "16a76f8e33"
+    ],
+    [
+      "16a76f8e33",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "16a76f8e33",
+      "DOWN",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "UP",
+      "16a76f8e33"
+    ],
+    [
+      "35ee217401",
+      "DOWN",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "LEFT",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "RIGHT",
+      "c7774e6565"
+    ],
+    [
+      "c7774e6565",
+      "LEFT",
+      "35ee217401"
+    ],
+    [
+      "c7774e6565",
+      "RIGHT",
+      "c7774e6565"
+    ],
+    [
+      "c7774e6565",
+      "UP",
+      "36aa043572"
+    ],
+    [
+      "0aab37f2ff",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "0aab37f2ff",
+      "UP",
+      "0aab37f2ff"
+    ],
+    [
+      "0aab37f2ff",
+      "RIGHT",
+      "0aab37f2ff"
+    ],
+    [
+      "c7774e6565",
+      "DOWN",
+      "c7774e6565"
+    ]
+  ],
+  "coverage": {
+    "pressed": 141,
+    "budget": 400,
+    "cold_starts": 8,
+    "probes": 56,
+    "nodes": 15,
+    "expanded": 14,
+    "max_nodes": 60,
+    "elapsed_s": 291.8,
+    "inconclusive_reasons": [
+      "replay_mismatch: wanted 4d41ce4c7f got 78a09cf3a4",
+      "node_cap: 1 discovered nodes not expanded (max_nodes=60)"
+    ]
+  },
+  "entry": [
+    [
+      "CENTER",
+      "78a09cf3a4"
+    ]
+  ],
+  "back": {
+    "78a09cf3a4": "yes"
+  }
+}

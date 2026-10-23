@@ -1,0 +1,1597 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "app": "com.google.jetstream",
+    "activity": ".MainActivity",
+    "device": "fixture",
+    "timestamp": "2026-10-23T08:44:22-0400",
+    "fa_version": "0.1.0",
+    "run_id": "4a3d9927"
+  },
+  "coverage": {
+    "pressed": 354,
+    "budget": 400,
+    "cold_starts": 8,
+    "probes": 192,
+    "nodes": 54,
+    "expanded": 54,
+    "max_nodes": 60,
+    "elapsed_s": 770.5,
+    "inconclusive_reasons": [
+      "budget_exhausted: max_presses"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "8f4ba437d7",
+      "cls": "android.view.View",
+      "label": "Movies Carousel",
+      "bounds": [
+        132,
+        192,
+        1788,
+        808
+      ]
+    },
+    {
+      "id": "d6173f4676",
+      "cls": "android.view.View",
+      "label": "Home",
+      "bounds": [
+        236,
+        48,
+        381,
+        144
+      ]
+    },
+    {
+      "id": "6c07b6bd8a",
+      "cls": "android.view.View",
+      "label": "Movie poster of On the Bridge",
+      "bounds": [
+        132,
+        324,
+        432,
+        774
+      ]
+    },
+    {
+      "id": "49e06fa2f0",
+      "cls": "android.view.View",
+      "label": "User Profile Button",
+      "bounds": [
+        116,
+        48,
+        212,
+        144
+      ]
+    },
+    {
+      "id": "8763037daf",
+      "cls": "android.view.View",
+      "label": "Categories",
+      "bounds": [
+        381,
+        48,
+        595,
+        144
+      ]
+    },
+    {
+      "id": "129ec01b4b",
+      "cls": "android.view.View",
+      "label": "Movies",
+      "bounds": [
+        595,
+        48,
+        757,
+        144
+      ]
+    },
+    {
+      "id": "b9d8470e92",
+      "cls": "android.view.View",
+      "label": "Action",
+      "bounds": [
+        148,
+        208,
+        530,
+        423
+      ]
+    },
+    {
+      "id": "02ab57c19d",
+      "cls": "android.view.View",
+      "label": "Fantasy",
+      "bounds": [
+        148,
+        455,
+        530,
+        670
+      ]
+    },
+    {
+      "id": "a8f979e98f",
+      "cls": "android.view.View",
+      "label": "Drama",
+      "bounds": [
+        562,
+        208,
+        944,
+        423
+      ]
+    },
+    {
+      "id": "9c4a667021",
+      "cls": "android.view.View",
+      "label": "Romance",
+      "bounds": [
+        562,
+        455,
+        944,
+        670
+      ]
+    },
+    {
+      "id": "c4923ab9bc",
+      "cls": "android.view.View",
+      "label": "Thriller",
+      "bounds": [
+        148,
+        702,
+        530,
+        917
+      ]
+    },
+    {
+      "id": "f5b34b28b6",
+      "cls": "android.view.View",
+      "label": "Documentary",
+      "bounds": [
+        976,
+        455,
+        1358,
+        670
+      ]
+    },
+    {
+      "id": "9f0c785200",
+      "cls": "android.view.View",
+      "label": "Adventure",
+      "bounds": [
+        562,
+        702,
+        944,
+        917
+      ]
+    },
+    {
+      "id": "caf65a5eac",
+      "cls": "android.view.View",
+      "label": "Comedy",
+      "bounds": [
+        976,
+        208,
+        1358,
+        423
+      ]
+    },
+    {
+      "id": "b45da48457",
+      "cls": "android.view.View",
+      "label": "Animation",
+      "bounds": [
+        1390,
+        455,
+        1772,
+        670
+      ]
+    },
+    {
+      "id": "20ee465e2f",
+      "cls": "android.view.View",
+      "label": "Horror",
+      "bounds": [
+        1390,
+        208,
+        1772,
+        423
+      ]
+    },
+    {
+      "id": "4c145a61b2",
+      "cls": "android.view.View",
+      "label": "Movie poster of On the Bridge On the Bridge On the Bridge",
+      "bounds": [
+        132,
+        198,
+        932,
+        630
+      ]
+    },
+    {
+      "id": "82602ff8a1",
+      "cls": "android.view.View",
+      "label": "Shows",
+      "bounds": [
+        757,
+        48,
+        913,
+        144
+      ]
+    },
+    {
+      "id": "64adb643b8",
+      "cls": "android.view.View",
+      "label": "Movie poster of Inventor Inventor Inventor",
+      "bounds": [
+        576,
+        198,
+        1376,
+        630
+      ]
+    },
+    {
+      "id": "4e690d64fb",
+      "cls": "android.view.View",
+      "label": "Movie poster of Immortal Rider",
+      "bounds": [
+        132,
+        380,
+        432,
+        830
+      ]
+    },
+    {
+      "id": "e20158c1a3",
+      "cls": "android.view.View",
+      "label": "Movie poster of Cybernet Cybernet Cybernet",
+      "bounds": [
+        576,
+        198,
+        1376,
+        630
+      ]
+    },
+    {
+      "id": "44702169e4",
+      "cls": "android.view.View",
+      "label": "Movie poster of Space opera",
+      "bounds": [
+        132,
+        380,
+        432,
+        830
+      ]
+    },
+    {
+      "id": "36bdf6b092",
+      "cls": "android.view.View",
+      "label": "Movie poster of Space opera",
+      "bounds": [
+        132,
+        380,
+        432,
+        830
+      ]
+    },
+    {
+      "id": "3351ff24a0",
+      "cls": "android.view.View",
+      "label": "Favourites",
+      "bounds": [
+        913,
+        48,
+        1120,
+        144
+      ]
+    },
+    {
+      "id": "eae5a7fc69",
+      "cls": "android.view.View",
+      "label": "Dashboard Search Button",
+      "bounds": [
+        1104,
+        48,
+        1200,
+        144
+      ]
+    },
+    {
+      "id": "11c77d3b71",
+      "cls": "android.view.View",
+      "label": "Available in 4K",
+      "bounds": [
+        862,
+        148,
+        1110,
+        244
+      ]
+    },
+    {
+      "id": "b64378cc58",
+      "cls": "android.view.View",
+      "label": "Search for movies, shows and more\u2026",
+      "bounds": [
+        132,
+        176,
+        1788,
+        290
+      ]
+    },
+    {
+      "id": "f1e4c451ab",
+      "cls": "android.view.View",
+      "label": "Movie poster of The Good Lawyer",
+      "bounds": [
+        977,
+        264,
+        1226,
+        638
+      ]
+    },
+    {
+      "id": "ba82d53764",
+      "cls": "android.view.View",
+      "label": "Added Last Week",
+      "bounds": [
+        548,
+        148,
+        830,
+        244
+      ]
+    },
+    {
+      "id": "81d4046dfc",
+      "cls": "android.view.View",
+      "label": "Movie poster of Cybernet",
+      "bounds": [
+        696,
+        264,
+        945,
+        638
+      ]
+    },
+    {
+      "id": "e7deba8049",
+      "cls": "android.view.View",
+      "label": "Movie poster of The Invisible Man",
+      "bounds": [
+        977,
+        419,
+        1226,
+        793
+      ]
+    },
+    {
+      "id": "1ff8f410f1",
+      "cls": "android.view.View",
+      "label": "Movie poster of Acts of Love",
+      "bounds": [
+        1258,
+        264,
+        1507,
+        638
+      ]
+    },
+    {
+      "id": "385ba1e581",
+      "cls": "android.view.View",
+      "label": "Movie poster of Meaning of Life",
+      "bounds": [
+        1258,
+        419,
+        1507,
+        793
+      ]
+    },
+    {
+      "id": "afad876d90",
+      "cls": "android.view.View",
+      "label": "Movie poster of Idiot",
+      "bounds": [
+        696,
+        419,
+        945,
+        793
+      ]
+    },
+    {
+      "id": "77d72621b9",
+      "cls": "android.view.View",
+      "label": "Movie poster of Tomato",
+      "bounds": [
+        414,
+        419,
+        664,
+        794
+      ]
+    },
+    {
+      "id": "bb06a56a21",
+      "cls": "android.view.View",
+      "label": "Movie poster of Mr Potato",
+      "bounds": [
+        132,
+        419,
+        382,
+        794
+      ]
+    },
+    {
+      "id": "4f7bde82b2",
+      "cls": "android.view.View",
+      "label": "Movie poster of Pink City",
+      "bounds": [
+        1539,
+        419,
+        1788,
+        793
+      ]
+    },
+    {
+      "id": "359ef607a7",
+      "cls": "android.view.View",
+      "label": "TV Shows",
+      "bounds": [
+        323,
+        148,
+        516,
+        244
+      ]
+    },
+    {
+      "id": "f07f876010",
+      "cls": "android.view.View",
+      "label": "Movie poster of Inventor",
+      "bounds": [
+        414,
+        264,
+        664,
+        639
+      ]
+    },
+    {
+      "id": "41c0f4029d",
+      "cls": "android.view.View",
+      "label": "Movie poster of On the Bridge",
+      "bounds": [
+        132,
+        264,
+        382,
+        639
+      ]
+    },
+    {
+      "id": "768b665215",
+      "cls": "android.view.View",
+      "label": "Movie poster of Night in Tokyo",
+      "bounds": [
+        1539,
+        264,
+        1788,
+        638
+      ]
+    },
+    {
+      "id": "27b2ce49ec",
+      "cls": "android.view.View",
+      "label": "Movie poster of Infinite",
+      "bounds": [
+        472,
+        380,
+        772,
+        830
+      ]
+    },
+    {
+      "id": "e611e9fe77",
+      "cls": "android.view.View",
+      "label": "Movie poster of Venture",
+      "bounds": [
+        576,
+        380,
+        876,
+        830
+      ]
+    },
+    {
+      "id": "9ce64ccb57",
+      "cls": "android.view.View",
+      "label": "Movie poster of Infinite",
+      "bounds": [
+        472,
+        380,
+        772,
+        830
+      ]
+    },
+    {
+      "id": "077078d049",
+      "cls": "android.view.View",
+      "label": "Movie poster of Tomato",
+      "bounds": [
+        576,
+        380,
+        876,
+        830
+      ]
+    },
+    {
+      "id": "5cb11e6d91",
+      "cls": "android.view.View",
+      "label": "Movie poster of Mr Potato",
+      "bounds": [
+        472,
+        380,
+        772,
+        830
+      ]
+    },
+    {
+      "id": "f046b93b5b",
+      "cls": "android.view.View",
+      "label": "Movie poster of Tomato",
+      "bounds": [
+        576,
+        380,
+        876,
+        830
+      ]
+    },
+    {
+      "id": "4a04e333bf",
+      "cls": "android.view.View",
+      "label": "Movie poster of Tom and the Tomato #1",
+      "bounds": [
+        132,
+        623,
+        532,
+        848
+      ]
+    },
+    {
+      "id": "f3c7f00769",
+      "cls": "android.view.View",
+      "label": "Movie poster of Inventor",
+      "bounds": [
+        472,
+        324,
+        772,
+        774
+      ]
+    },
+    {
+      "id": "000dacbaff",
+      "cls": "android.view.View",
+      "label": "Movie poster of Luke Strong #2",
+      "bounds": [
+        572,
+        623,
+        972,
+        848
+      ]
+    },
+    {
+      "id": "3c5e2dc6bf",
+      "cls": "android.view.View",
+      "label": "Movie poster of On the Bridge",
+      "bounds": [
+        132,
+        372,
+        432,
+        822
+      ]
+    },
+    {
+      "id": "133a2f9c11",
+      "cls": "android.view.View",
+      "label": "Movie poster of Boxer Kid #3",
+      "bounds": [
+        576,
+        623,
+        976,
+        848
+      ]
+    },
+    {
+      "id": "7942aa86d2",
+      "cls": "android.view.View",
+      "label": "Movie poster of Inventor",
+      "bounds": [
+        472,
+        372,
+        772,
+        822
+      ]
+    },
+    {
+      "id": "e35d63e7fa",
+      "cls": "android.view.View",
+      "label": "Movie poster of Cybernet",
+      "bounds": [
+        576,
+        372,
+        876,
+        822
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "8f4ba437d7",
+      "UP",
+      "d6173f4676"
+    ],
+    [
+      "d6173f4676",
+      "DOWN",
+      "8f4ba437d7"
+    ],
+    [
+      "8f4ba437d7",
+      "DOWN",
+      "6c07b6bd8a"
+    ],
+    [
+      "6c07b6bd8a",
+      "UP",
+      "8f4ba437d7"
+    ],
+    [
+      "8f4ba437d7",
+      "LEFT",
+      "8f4ba437d7"
+    ],
+    [
+      "8f4ba437d7",
+      "RIGHT",
+      "8f4ba437d7"
+    ],
+    [
+      "d6173f4676",
+      "LEFT",
+      "49e06fa2f0"
+    ],
+    [
+      "49e06fa2f0",
+      "RIGHT",
+      "d6173f4676"
+    ],
+    [
+      "d6173f4676",
+      "UP",
+      "d6173f4676"
+    ],
+    [
+      "d6173f4676",
+      "RIGHT",
+      "8763037daf"
+    ],
+    [
+      "8763037daf",
+      "LEFT",
+      "d6173f4676"
+    ],
+    [
+      "8763037daf",
+      "RIGHT",
+      "129ec01b4b"
+    ],
+    [
+      "129ec01b4b",
+      "LEFT",
+      "8763037daf"
+    ],
+    [
+      "8763037daf",
+      "UP",
+      "8763037daf"
+    ],
+    [
+      "8763037daf",
+      "DOWN",
+      "b9d8470e92"
+    ],
+    [
+      "b9d8470e92",
+      "UP",
+      "49e06fa2f0"
+    ],
+    [
+      "49e06fa2f0",
+      "DOWN",
+      "b9d8470e92"
+    ],
+    [
+      "b9d8470e92",
+      "DOWN",
+      "02ab57c19d"
+    ],
+    [
+      "02ab57c19d",
+      "UP",
+      "b9d8470e92"
+    ],
+    [
+      "b9d8470e92",
+      "LEFT",
+      "b9d8470e92"
+    ],
+    [
+      "b9d8470e92",
+      "RIGHT",
+      "a8f979e98f"
+    ],
+    [
+      "a8f979e98f",
+      "LEFT",
+      "b9d8470e92"
+    ],
+    [
+      "02ab57c19d",
+      "RIGHT",
+      "9c4a667021"
+    ],
+    [
+      "9c4a667021",
+      "LEFT",
+      "02ab57c19d"
+    ],
+    [
+      "02ab57c19d",
+      "DOWN",
+      "c4923ab9bc"
+    ],
+    [
+      "c4923ab9bc",
+      "UP",
+      "02ab57c19d"
+    ],
+    [
+      "02ab57c19d",
+      "LEFT",
+      "02ab57c19d"
+    ],
+    [
+      "9c4a667021",
+      "RIGHT",
+      "f5b34b28b6"
+    ],
+    [
+      "f5b34b28b6",
+      "LEFT",
+      "9c4a667021"
+    ],
+    [
+      "9c4a667021",
+      "UP",
+      "a8f979e98f"
+    ],
+    [
+      "a8f979e98f",
+      "DOWN",
+      "9c4a667021"
+    ],
+    [
+      "9c4a667021",
+      "DOWN",
+      "9f0c785200"
+    ],
+    [
+      "9f0c785200",
+      "UP",
+      "9c4a667021"
+    ],
+    [
+      "f5b34b28b6",
+      "DOWN",
+      "9f0c785200"
+    ],
+    [
+      "9f0c785200",
+      "DOWN",
+      "9f0c785200"
+    ],
+    [
+      "9f0c785200",
+      "LEFT",
+      "c4923ab9bc"
+    ],
+    [
+      "c4923ab9bc",
+      "RIGHT",
+      "9f0c785200"
+    ],
+    [
+      "9f0c785200",
+      "RIGHT",
+      "f5b34b28b6"
+    ],
+    [
+      "f5b34b28b6",
+      "UP",
+      "caf65a5eac"
+    ],
+    [
+      "caf65a5eac",
+      "DOWN",
+      "f5b34b28b6"
+    ],
+    [
+      "f5b34b28b6",
+      "RIGHT",
+      "b45da48457"
+    ],
+    [
+      "b45da48457",
+      "LEFT",
+      "f5b34b28b6"
+    ],
+    [
+      "caf65a5eac",
+      "RIGHT",
+      "20ee465e2f"
+    ],
+    [
+      "20ee465e2f",
+      "LEFT",
+      "caf65a5eac"
+    ],
+    [
+      "caf65a5eac",
+      "UP",
+      "8763037daf"
+    ],
+    [
+      "129ec01b4b",
+      "DOWN",
+      "4c145a61b2"
+    ],
+    [
+      "4c145a61b2",
+      "UP",
+      "129ec01b4b"
+    ],
+    [
+      "129ec01b4b",
+      "UP",
+      "129ec01b4b"
+    ],
+    [
+      "129ec01b4b",
+      "RIGHT",
+      "82602ff8a1"
+    ],
+    [
+      "82602ff8a1",
+      "LEFT",
+      "129ec01b4b"
+    ],
+    [
+      "4c145a61b2",
+      "RIGHT",
+      "64adb643b8"
+    ],
+    [
+      "64adb643b8",
+      "LEFT",
+      "4c145a61b2"
+    ],
+    [
+      "4c145a61b2",
+      "DOWN",
+      "4e690d64fb"
+    ],
+    [
+      "4e690d64fb",
+      "UP",
+      "4c145a61b2"
+    ],
+    [
+      "4c145a61b2",
+      "LEFT",
+      "4c145a61b2"
+    ],
+    [
+      "64adb643b8",
+      "RIGHT",
+      "e20158c1a3"
+    ],
+    [
+      "e20158c1a3",
+      "LEFT",
+      "64adb643b8"
+    ],
+    [
+      "64adb643b8",
+      "UP",
+      "129ec01b4b"
+    ],
+    [
+      "82602ff8a1",
+      "DOWN",
+      "4c145a61b2"
+    ],
+    [
+      "64adb643b8",
+      "DOWN",
+      "44702169e4"
+    ],
+    [
+      "44702169e4",
+      "UP",
+      "64adb643b8"
+    ],
+    [
+      "e20158c1a3",
+      "DOWN",
+      "36bdf6b092"
+    ],
+    [
+      "36bdf6b092",
+      "UP",
+      "e20158c1a3"
+    ],
+    [
+      "e20158c1a3",
+      "UP",
+      "82602ff8a1"
+    ],
+    [
+      "82602ff8a1",
+      "UP",
+      "82602ff8a1"
+    ],
+    [
+      "82602ff8a1",
+      "RIGHT",
+      "3351ff24a0"
+    ],
+    [
+      "3351ff24a0",
+      "LEFT",
+      "82602ff8a1"
+    ],
+    [
+      "3351ff24a0",
+      "RIGHT",
+      "eae5a7fc69"
+    ],
+    [
+      "eae5a7fc69",
+      "LEFT",
+      "3351ff24a0"
+    ],
+    [
+      "3351ff24a0",
+      "UP",
+      "3351ff24a0"
+    ],
+    [
+      "3351ff24a0",
+      "DOWN",
+      "11c77d3b71"
+    ],
+    [
+      "11c77d3b71",
+      "UP",
+      "3351ff24a0"
+    ],
+    [
+      "eae5a7fc69",
+      "DOWN",
+      "b64378cc58"
+    ],
+    [
+      "b64378cc58",
+      "UP",
+      "eae5a7fc69"
+    ],
+    [
+      "eae5a7fc69",
+      "UP",
+      "eae5a7fc69"
+    ],
+    [
+      "eae5a7fc69",
+      "RIGHT",
+      "eae5a7fc69"
+    ],
+    [
+      "b64378cc58",
+      "LEFT",
+      "b64378cc58"
+    ],
+    [
+      "b64378cc58",
+      "RIGHT",
+      "b64378cc58"
+    ],
+    [
+      "b64378cc58",
+      "DOWN",
+      "b64378cc58"
+    ],
+    [
+      "11c77d3b71",
+      "DOWN",
+      "f1e4c451ab"
+    ],
+    [
+      "f1e4c451ab",
+      "UP",
+      "11c77d3b71"
+    ],
+    [
+      "11c77d3b71",
+      "LEFT",
+      "ba82d53764"
+    ],
+    [
+      "ba82d53764",
+      "RIGHT",
+      "11c77d3b71"
+    ],
+    [
+      "11c77d3b71",
+      "RIGHT",
+      "11c77d3b71"
+    ],
+    [
+      "f1e4c451ab",
+      "LEFT",
+      "81d4046dfc"
+    ],
+    [
+      "81d4046dfc",
+      "RIGHT",
+      "f1e4c451ab"
+    ],
+    [
+      "f1e4c451ab",
+      "DOWN",
+      "e7deba8049"
+    ],
+    [
+      "e7deba8049",
+      "UP",
+      "f1e4c451ab"
+    ],
+    [
+      "f1e4c451ab",
+      "RIGHT",
+      "1ff8f410f1"
+    ],
+    [
+      "1ff8f410f1",
+      "LEFT",
+      "f1e4c451ab"
+    ],
+    [
+      "e7deba8049",
+      "RIGHT",
+      "385ba1e581"
+    ],
+    [
+      "385ba1e581",
+      "LEFT",
+      "e7deba8049"
+    ],
+    [
+      "e7deba8049",
+      "DOWN",
+      "e7deba8049"
+    ],
+    [
+      "e7deba8049",
+      "LEFT",
+      "afad876d90"
+    ],
+    [
+      "afad876d90",
+      "RIGHT",
+      "e7deba8049"
+    ],
+    [
+      "afad876d90",
+      "LEFT",
+      "77d72621b9"
+    ],
+    [
+      "77d72621b9",
+      "RIGHT",
+      "afad876d90"
+    ],
+    [
+      "afad876d90",
+      "UP",
+      "afad876d90"
+    ],
+    [
+      "afad876d90",
+      "DOWN",
+      "afad876d90"
+    ],
+    [
+      "77d72621b9",
+      "UP",
+      "77d72621b9"
+    ],
+    [
+      "77d72621b9",
+      "DOWN",
+      "77d72621b9"
+    ],
+    [
+      "77d72621b9",
+      "LEFT",
+      "bb06a56a21"
+    ],
+    [
+      "bb06a56a21",
+      "RIGHT",
+      "77d72621b9"
+    ],
+    [
+      "bb06a56a21",
+      "LEFT",
+      "bb06a56a21"
+    ],
+    [
+      "bb06a56a21",
+      "UP",
+      "bb06a56a21"
+    ],
+    [
+      "bb06a56a21",
+      "DOWN",
+      "bb06a56a21"
+    ],
+    [
+      "385ba1e581",
+      "UP",
+      "385ba1e581"
+    ],
+    [
+      "385ba1e581",
+      "DOWN",
+      "385ba1e581"
+    ],
+    [
+      "385ba1e581",
+      "RIGHT",
+      "4f7bde82b2"
+    ],
+    [
+      "4f7bde82b2",
+      "LEFT",
+      "385ba1e581"
+    ],
+    [
+      "4f7bde82b2",
+      "RIGHT",
+      "4f7bde82b2"
+    ],
+    [
+      "4f7bde82b2",
+      "UP",
+      "4f7bde82b2"
+    ],
+    [
+      "4f7bde82b2",
+      "DOWN",
+      "4f7bde82b2"
+    ],
+    [
+      "81d4046dfc",
+      "UP",
+      "ba82d53764"
+    ],
+    [
+      "ba82d53764",
+      "DOWN",
+      "81d4046dfc"
+    ],
+    [
+      "81d4046dfc",
+      "DOWN",
+      "afad876d90"
+    ],
+    [
+      "1ff8f410f1",
+      "UP",
+      "11c77d3b71"
+    ],
+    [
+      "ba82d53764",
+      "UP",
+      "3351ff24a0"
+    ],
+    [
+      "ba82d53764",
+      "LEFT",
+      "359ef607a7"
+    ],
+    [
+      "359ef607a7",
+      "RIGHT",
+      "ba82d53764"
+    ],
+    [
+      "81d4046dfc",
+      "LEFT",
+      "f07f876010"
+    ],
+    [
+      "f07f876010",
+      "RIGHT",
+      "81d4046dfc"
+    ],
+    [
+      "f07f876010",
+      "LEFT",
+      "41c0f4029d"
+    ],
+    [
+      "41c0f4029d",
+      "RIGHT",
+      "f07f876010"
+    ],
+    [
+      "f07f876010",
+      "UP",
+      "359ef607a7"
+    ],
+    [
+      "359ef607a7",
+      "DOWN",
+      "f07f876010"
+    ],
+    [
+      "f07f876010",
+      "DOWN",
+      "77d72621b9"
+    ],
+    [
+      "1ff8f410f1",
+      "DOWN",
+      "385ba1e581"
+    ],
+    [
+      "1ff8f410f1",
+      "RIGHT",
+      "768b665215"
+    ],
+    [
+      "768b665215",
+      "LEFT",
+      "1ff8f410f1"
+    ],
+    [
+      "768b665215",
+      "RIGHT",
+      "768b665215"
+    ],
+    [
+      "768b665215",
+      "UP",
+      "11c77d3b71"
+    ],
+    [
+      "359ef607a7",
+      "UP",
+      "3351ff24a0"
+    ],
+    [
+      "4e690d64fb",
+      "DOWN",
+      "4e690d64fb"
+    ],
+    [
+      "4e690d64fb",
+      "LEFT",
+      "4e690d64fb"
+    ],
+    [
+      "4e690d64fb",
+      "RIGHT",
+      "27b2ce49ec"
+    ],
+    [
+      "27b2ce49ec",
+      "LEFT",
+      "4e690d64fb"
+    ],
+    [
+      "27b2ce49ec",
+      "RIGHT",
+      "e611e9fe77"
+    ],
+    [
+      "e611e9fe77",
+      "LEFT",
+      "27b2ce49ec"
+    ],
+    [
+      "27b2ce49ec",
+      "UP",
+      "4c145a61b2"
+    ],
+    [
+      "44702169e4",
+      "DOWN",
+      "44702169e4"
+    ],
+    [
+      "44702169e4",
+      "LEFT",
+      "44702169e4"
+    ],
+    [
+      "44702169e4",
+      "RIGHT",
+      "9ce64ccb57"
+    ],
+    [
+      "9ce64ccb57",
+      "LEFT",
+      "44702169e4"
+    ],
+    [
+      "9ce64ccb57",
+      "RIGHT",
+      "077078d049"
+    ],
+    [
+      "077078d049",
+      "LEFT",
+      "9ce64ccb57"
+    ],
+    [
+      "9ce64ccb57",
+      "UP",
+      "64adb643b8"
+    ],
+    [
+      "e20158c1a3",
+      "RIGHT",
+      "e20158c1a3"
+    ],
+    [
+      "36bdf6b092",
+      "LEFT",
+      "36bdf6b092"
+    ],
+    [
+      "36bdf6b092",
+      "RIGHT",
+      "5cb11e6d91"
+    ],
+    [
+      "5cb11e6d91",
+      "LEFT",
+      "36bdf6b092"
+    ],
+    [
+      "36bdf6b092",
+      "DOWN",
+      "36bdf6b092"
+    ],
+    [
+      "5cb11e6d91",
+      "UP",
+      "e20158c1a3"
+    ],
+    [
+      "5cb11e6d91",
+      "DOWN",
+      "5cb11e6d91"
+    ],
+    [
+      "5cb11e6d91",
+      "RIGHT",
+      "f046b93b5b"
+    ],
+    [
+      "f046b93b5b",
+      "LEFT",
+      "5cb11e6d91"
+    ],
+    [
+      "f046b93b5b",
+      "RIGHT",
+      "f046b93b5b"
+    ],
+    [
+      "f046b93b5b",
+      "UP",
+      "e20158c1a3"
+    ],
+    [
+      "9ce64ccb57",
+      "DOWN",
+      "9ce64ccb57"
+    ],
+    [
+      "077078d049",
+      "UP",
+      "64adb643b8"
+    ],
+    [
+      "27b2ce49ec",
+      "DOWN",
+      "27b2ce49ec"
+    ],
+    [
+      "e611e9fe77",
+      "UP",
+      "4c145a61b2"
+    ],
+    [
+      "e611e9fe77",
+      "DOWN",
+      "e611e9fe77"
+    ],
+    [
+      "e611e9fe77",
+      "RIGHT",
+      "e611e9fe77"
+    ],
+    [
+      "49e06fa2f0",
+      "LEFT",
+      "49e06fa2f0"
+    ],
+    [
+      "49e06fa2f0",
+      "UP",
+      "49e06fa2f0"
+    ],
+    [
+      "a8f979e98f",
+      "UP",
+      "8763037daf"
+    ],
+    [
+      "a8f979e98f",
+      "RIGHT",
+      "caf65a5eac"
+    ],
+    [
+      "caf65a5eac",
+      "LEFT",
+      "a8f979e98f"
+    ],
+    [
+      "20ee465e2f",
+      "RIGHT",
+      "20ee465e2f"
+    ],
+    [
+      "20ee465e2f",
+      "UP",
+      "8763037daf"
+    ],
+    [
+      "6c07b6bd8a",
+      "DOWN",
+      "4a04e333bf"
+    ],
+    [
+      "4a04e333bf",
+      "UP",
+      "6c07b6bd8a"
+    ],
+    [
+      "6c07b6bd8a",
+      "LEFT",
+      "6c07b6bd8a"
+    ],
+    [
+      "6c07b6bd8a",
+      "RIGHT",
+      "f3c7f00769"
+    ],
+    [
+      "f3c7f00769",
+      "LEFT",
+      "6c07b6bd8a"
+    ],
+    [
+      "4a04e333bf",
+      "RIGHT",
+      "000dacbaff"
+    ],
+    [
+      "000dacbaff",
+      "LEFT",
+      "4a04e333bf"
+    ],
+    [
+      "4a04e333bf",
+      "DOWN",
+      "3c5e2dc6bf"
+    ],
+    [
+      "3c5e2dc6bf",
+      "UP",
+      "4a04e333bf"
+    ],
+    [
+      "4a04e333bf",
+      "LEFT",
+      "4a04e333bf"
+    ],
+    [
+      "000dacbaff",
+      "RIGHT",
+      "133a2f9c11"
+    ],
+    [
+      "133a2f9c11",
+      "LEFT",
+      "000dacbaff"
+    ],
+    [
+      "000dacbaff",
+      "UP",
+      "6c07b6bd8a"
+    ],
+    [
+      "f3c7f00769",
+      "DOWN",
+      "000dacbaff"
+    ],
+    [
+      "000dacbaff",
+      "DOWN",
+      "3c5e2dc6bf"
+    ],
+    [
+      "3c5e2dc6bf",
+      "DOWN",
+      "3c5e2dc6bf"
+    ],
+    [
+      "3c5e2dc6bf",
+      "LEFT",
+      "3c5e2dc6bf"
+    ],
+    [
+      "3c5e2dc6bf",
+      "RIGHT",
+      "7942aa86d2"
+    ],
+    [
+      "7942aa86d2",
+      "LEFT",
+      "3c5e2dc6bf"
+    ],
+    [
+      "7942aa86d2",
+      "RIGHT",
+      "e35d63e7fa"
+    ],
+    [
+      "e35d63e7fa",
+      "LEFT",
+      "7942aa86d2"
+    ]
+  ],
+  "entry": [
+    [
+      "DOWN",
+      "8f4ba437d7"
+    ]
+  ],
+  "back": {},
+  "findings": [],
+  "screenshot": "screen.png",
+  "summary": {
+    "counts": {},
+    "total": 0,
+    "icon_only": 0
+  },
+  "verdict": "inconclusive"
+}

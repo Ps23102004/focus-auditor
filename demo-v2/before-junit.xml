@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="141.761" timestamp="2026-10-19T10:06:32.989306-04:00" hostname="localhost"><testcase classname="tests_generated_v2.test_3c6bf1b1b1" name="test_3c6bf1b1b1" time="12.850"><failure message="AssertionError: [DUPLICATE_LABEL 3c6bf1b1b1] 30 focusables still share the name 'Movie Name'">@pytest.mark.device
+    def test_3c6bf1b1b1():
+&gt;       testgen.check(DATA)
+
+tests_generated_v2/test_3c6bf1b1b1.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+fa/testgen.py:96: in check
+    {"TRAP": _check_trap, "MISSING_LABEL": _check_label, "DUPLICATE_LABEL": _check_dup}[d["kind"]](dev, d)
+fa/testgen.py:120: in _check_dup
+    _fail(d, f"{len(same)} focusables still share the name {d['label']!r}")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+d = {'activity': '.MainActivity', 'bounds': [224, 107, 525, 276], 'finding_id': '3c6bf1b1b1', 'keys': ['DOWN', 'DOWN', 'DOWN', 'RIGHT', 'DOWN', 'DOWN', ...], ...}
+msg = "30 focusables still share the name 'Movie Name'"
+
+    def _fail(d, msg):
+&gt;       raise AssertionError(f"[{d['kind']} {d['finding_id']}] {msg}")
+E       AssertionError: [DUPLICATE_LABEL 3c6bf1b1b1] 30 focusables still share the name 'Movie Name'
+
+fa/testgen.py:90: AssertionError</failure></testcase><testcase classname="tests_generated_v2.test_72c12df2ba" name="test_72c12df2ba" time="9.833"><failure message="AssertionError: [MISSING_LABEL 72c12df2ba] node bba07c22a9 at [376, 148, 472, 244] still exposes no accessible name">@pytest.mark.device
+    def test_72c12df2ba():
+&gt;       testgen.check(DATA)
+
+tests_generated_v2/test_72c12df2ba.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+fa/testgen.py:96: in check
+    {"TRAP": _check_trap, "MISSING_LABEL": _check_label, "DUPLICATE_LABEL": _check_dup}[d["kind"]](dev, d)
+fa/testgen.py:108: in _check_label
+    _fail(d, f"node {d['node_id']} at {d['bounds']} still exposes no accessible name")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+d = {'activity': '.MainActivity', 'bounds': [376, 148, 472, 244], 'finding_id': '72c12df2ba', 'keys': ['DOWN', 'DOWN', 'DOWN', 'RIGHT', 'DOWN'], ...}
+msg = 'node bba07c22a9 at [376, 148, 472, 244] still exposes no accessible name'
+
+    def _fail(d, msg):
+&gt;       raise AssertionError(f"[{d['kind']} {d['finding_id']}] {msg}")
+E       AssertionError: [MISSING_LABEL 72c12df2ba] node bba07c22a9 at [376, 148, 472, 244] still exposes no accessible name
+
+fa/testgen.py:90: AssertionError</failure></testcase><testcase classname="tests_generated_v2.test_9ee483ba4d" name="test_9ee483ba4d" time="106.600"><failure message="AssertionError: [TRAP 9ee483ba4d] focus never leaves region of 3 node(s) ['a36fc012d8', 'c1ce733d4e', 'e1436289c7']: UP/DOWN/LEFT/RIGHT all stay inside">@pytest.mark.device
+    def test_9ee483ba4d():
+&gt;       testgen.check(DATA)
+
+tests_generated_v2/test_9ee483ba4d.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+fa/testgen.py:96: in check
+    {"TRAP": _check_trap, "MISSING_LABEL": _check_label, "DUPLICATE_LABEL": _check_dup}[d["kind"]](dev, d)
+fa/testgen.py:164: in _check_trap
+    _fail(d, f"focus never leaves region of {len(region)} node(s) {sorted(region)}: UP/DOWN/LEFT/RIGHT all stay inside")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+d = {'activity': '.MainActivity', 'bounds': [224, 140, 600, 244], 'finding_id': '9ee483ba4d', 'keys': ['DOWN', 'RIGHT'], ...}
+msg = "focus never leaves region of 3 node(s) ['a36fc012d8', 'c1ce733d4e', 'e1436289c7']: UP/DOWN/LEFT/RIGHT all stay inside"
+
+    def _fail(d, msg):
+&gt;       raise AssertionError(f"[{d['kind']} {d['finding_id']}] {msg}")
+E       AssertionError: [TRAP 9ee483ba4d] focus never leaves region of 3 node(s) ['a36fc012d8', 'c1ce733d4e', 'e1436289c7']: UP/DOWN/LEFT/RIGHT all stay inside
+
+fa/testgen.py:90: AssertionError</failure></testcase><testcase classname="tests_generated_v2.test_b9df6da731" name="test_b9df6da731" time="12.380"><failure message="AssertionError: [MISSING_LABEL b9df6da731] node a36fc012d8 at [504, 148, 600, 244] still exposes no accessible name">@pytest.mark.device
+    def test_b9df6da731():
+&gt;       testgen.check(DATA)
+
+tests_generated_v2/test_b9df6da731.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+fa/testgen.py:96: in check
+    {"TRAP": _check_trap, "MISSING_LABEL": _check_label, "DUPLICATE_LABEL": _check_dup}[d["kind"]](dev, d)
+fa/testgen.py:108: in _check_label
+    _fail(d, f"node {d['node_id']} at {d['bounds']} still exposes no accessible name")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+d = {'activity': '.MainActivity', 'bounds': [504, 148, 600, 244], 'finding_id': 'b9df6da731', 'keys': ['DOWN', 'DOWN', 'DOWN', 'RIGHT', 'DOWN'], ...}
+msg = 'node a36fc012d8 at [504, 148, 600, 244] still exposes no accessible name'
+
+    def _fail(d, msg):
+&gt;       raise AssertionError(f"[{d['kind']} {d['finding_id']}] {msg}")
+E       AssertionError: [MISSING_LABEL b9df6da731] node a36fc012d8 at [504, 148, 600, 244] still exposes no accessible name
+
+fa/testgen.py:90: AssertionError</failure></testcase></testsuite></testsuites>

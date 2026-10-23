@@ -1,0 +1,205 @@
+{
+ "meta": {
+  "app": "hello-world-fire-tv (buggy)",
+  "package": "com.amazonappstore.helloworldtv",
+  "device": "Android TV emulator (API 31, 1920x1080)",
+  "fa_version": "0.1",
+  "run_id": "design-fixture",
+  "timestamp": "2026-10-19T00:10:00Z",
+  "fixture": true
+ },
+ "verdict": "fail",
+ "coverage": {
+  "pressed": 112,
+  "budget": 400,
+  "nodes": 32,
+  "inconclusive": []
+ },
+ "summary": {
+  "trap": 1,
+  "missing_label": 2,
+  "duplicate_label": 1,
+  "total": 4,
+  "critical": 1,
+  "warning": 2,
+  "info": 1
+ },
+ "findings": [
+  {
+   "id": "f_a36fc012",
+   "kind": "TRAP",
+   "severity": "critical",
+   "title": "Focus trap in Quick actions",
+   "evidence": "From Play, either icon tile, UP and DOWN never leave the row. 3 controls, 0 exits.",
+   "bounds": [
+    376,
+    148,
+    600,
+    244
+   ],
+   "node_ids": [
+    "e1436289c7",
+    "a36fc012d8"
+   ],
+   "witness": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "UP",
+    "UP",
+    "UP"
+   ],
+   "fix_hint": "Remove focusProperties { exit = Cancel } from the row, or provide an explicit exit target.",
+   "test": "test_f_a36fc012",
+   "status": "failing"
+  },
+  {
+   "id": "f_e1436289",
+   "kind": "MISSING_LABEL",
+   "severity": "warning",
+   "title": "Icon-only control without a name",
+   "evidence": "Focusable 96x96 px, no text, no content description, no labelled descendants.",
+   "bounds": [
+    376,
+    148,
+    472,
+    244
+   ],
+   "node_ids": [
+    "e1436289c7"
+   ],
+   "fix_hint": "Add Modifier.semantics { contentDescription = \"...\" } to the tile.",
+   "test": "test_f_e1436289",
+   "status": "failing"
+  },
+  {
+   "id": "f_a36fc013",
+   "kind": "MISSING_LABEL",
+   "severity": "warning",
+   "title": "Icon-only control without a name",
+   "evidence": "Focusable 96x96 px, no text, no content description, no labelled descendants.",
+   "bounds": [
+    504,
+    148,
+    600,
+    244
+   ],
+   "node_ids": [
+    "a36fc012d8"
+   ],
+   "fix_hint": "Add Modifier.semantics { contentDescription = \"...\" } to the tile.",
+   "test": "test_f_a36fc013",
+   "status": "failing"
+  },
+  {
+   "id": "f_dup_movie",
+   "kind": "DUPLICATE_LABEL",
+   "severity": "info",
+   "title": "30 cards share the name \"Movie Name\"",
+   "evidence": "A screen reader announces the same name for 30 different cards.",
+   "bounds": [
+    224,
+    308,
+    1856,
+    1080
+   ],
+   "node_ids": [],
+   "fix_hint": "Use the real title of each item as its text.",
+   "test": "test_f_dup_movie",
+   "status": "failing"
+  }
+ ],
+ "graph": {
+  "nodes": [
+   {
+    "id": "play",
+    "label": "Play",
+    "bounds": [
+     248,
+     148,
+     344,
+     244
+    ]
+   },
+   {
+    "id": "e1436289c7",
+    "label": "",
+    "bounds": [
+     376,
+     148,
+     472,
+     244
+    ]
+   },
+   {
+    "id": "a36fc012d8",
+    "label": "",
+    "bounds": [
+     504,
+     148,
+     600,
+     244
+    ]
+   },
+   {
+    "id": "c1",
+    "label": "Movie Name",
+    "bounds": [
+     224,
+     308,
+     525,
+     477
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "Movie Name",
+    "bounds": [
+     557,
+     308,
+     858,
+     477
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "play",
+    "RIGHT",
+    "e1436289c7"
+   ],
+   [
+    "e1436289c7",
+    "RIGHT",
+    "a36fc012d8"
+   ],
+   [
+    "a36fc012d8",
+    "LEFT",
+    "e1436289c7"
+   ],
+   [
+    "e1436289c7",
+    "LEFT",
+    "play"
+   ],
+   [
+    "c1",
+    "RIGHT",
+    "c2"
+   ],
+   [
+    "c2",
+    "LEFT",
+    "c1"
+   ],
+   [
+    "c1",
+    "UP",
+    "play"
+   ]
+  ]
+ },
+ "screenshot": "data/screen.png",
+ "after": null
+}

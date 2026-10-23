@@ -1,0 +1,22 @@
+{
+ "announcements": {
+  "note": "Rules (TalkBack-style), not a device recording."
+ },
+ "screen_match": {
+  "best_method": "tree_exact",
+  "best_f1": 0.69,
+  "network_f1": 0.536,
+  "n_pairs": 83,
+  "model": "torchvision mobilenet_v3_small (ImageNet)",
+  "verdict": "The simple 'tree_exact' check beat the neural network on this data, so the auditor keeps the simple check."
+ },
+ "name_suggestions": {
+  "n": 2,
+  "exact_match": 0.0,
+  "token_f1": 0.25,
+  "abstention_rate": 0.0,
+  "baseline": "constant_Button_baseline",
+  "baseline_exact_match": 0.0,
+  "baseline_token_f1": 0.5
+ }
+}

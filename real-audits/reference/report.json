@@ -1,0 +1,1491 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "app": "com.android.tv.reference",
+    "activity": ".MainActivity",
+    "device": "sdk_google_atv64_arm64 default",
+    "timestamp": "2026-10-20T00:07:17-0400",
+    "fa_version": "0.1.0",
+    "run_id": "a7fbfbad"
+  },
+  "coverage": {
+    "pressed": 141,
+    "budget": 400,
+    "cold_starts": 8,
+    "probes": 56,
+    "nodes": 15,
+    "expanded": 14,
+    "max_nodes": 60,
+    "elapsed_s": 291.8,
+    "inconclusive_reasons": [
+      "replay_mismatch: wanted 4d41ce4c7f got 78a09cf3a4",
+      "node_cap: 1 discovered nodes not expanded (max_nodes=60)"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "78a09cf3a4",
+      "cls": "android.widget.TextView",
+      "label": "Supercharged Clips",
+      "bounds": [
+        112,
+        329,
+        479,
+        393
+      ]
+    },
+    {
+      "id": "94cdf03a7f",
+      "cls": "android.widget.TextView",
+      "label": "Misc Clips",
+      "bounds": [
+        112,
+        329,
+        308,
+        393
+      ]
+    },
+    {
+      "id": "82c2ee94c4",
+      "cls": "android.widget.FrameLayout",
+      "label": "jQuery and Closest Clip",
+      "bounds": [
+        85,
+        351,
+        523,
+        715
+      ]
+    },
+    {
+      "id": "36aa043572",
+      "cls": "android.widget.FrameLayout",
+      "label": "Chrome Dev Summit Promo Clip",
+      "bounds": [
+        85,
+        351,
+        523,
+        715
+      ]
+    },
+    {
+      "id": "6ddeecf624",
+      "cls": "android.widget.TextView",
+      "label": "Beverly Hillbillies",
+      "bounds": [
+        112,
+        329,
+        435,
+        393
+      ]
+    },
+    {
+      "id": "41d3242b5d",
+      "cls": "android.widget.FrameLayout",
+      "label": "State of the Web Clip",
+      "bounds": [
+        485,
+        351,
+        923,
+        715
+      ]
+    },
+    {
+      "id": "b259c3a1de",
+      "cls": "android.widget.FrameLayout",
+      "label": "Map and Filter Clip",
+      "bounds": [
+        485,
+        351,
+        923,
+        715
+      ]
+    },
+    {
+      "id": "ebc059c200",
+      "cls": "android.widget.FrameLayout",
+      "label": "Some and Every Clip",
+      "bounds": [
+        741,
+        351,
+        1179,
+        715
+      ]
+    },
+    {
+      "id": "96b2537738",
+      "cls": "android.widget.FrameLayout",
+      "label": "Jethro's Friend Season 1 Episode 36",
+      "bounds": [
+        741,
+        351,
+        1179,
+        715
+      ]
+    },
+    {
+      "id": "d5d27d026c",
+      "cls": "android.widget.FrameLayout",
+      "label": "Reduce Clip",
+      "bounds": [
+        997,
+        351,
+        1435,
+        715
+      ]
+    },
+    {
+      "id": "0aab37f2ff",
+      "cls": "android.widget.FrameLayout",
+      "label": "FlatMap Clip",
+      "bounds": [
+        1397,
+        351,
+        1835,
+        715
+      ]
+    },
+    {
+      "id": "16a76f8e33",
+      "cls": "android.widget.TextView",
+      "label": "Charlie Chaplin Movies",
+      "bounds": [
+        112,
+        329,
+        524,
+        393
+      ]
+    },
+    {
+      "id": "35ee217401",
+      "cls": "android.widget.TextView",
+      "label": "Identity",
+      "bounds": [
+        112,
+        329,
+        254,
+        393
+      ]
+    },
+    {
+      "id": "c7774e6565",
+      "cls": "android.widget.TextView",
+      "label": "Sign in",
+      "bounds": [
+        98,
+        352,
+        326,
+        580
+      ]
+    },
+    {
+      "id": "4d41ce4c7f",
+      "cls": "android.widget.FrameLayout",
+      "label": "Hair-Raising Holiday Season 2 Episode 2",
+      "bounds": [
+        997,
+        351,
+        1435,
+        715
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "78a09cf3a4",
+      "UP",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "DOWN",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "UP",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "LEFT",
+      "78a09cf3a4"
+    ],
+    [
+      "78a09cf3a4",
+      "RIGHT",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "LEFT",
+      "78a09cf3a4"
+    ],
+    [
+      "94cdf03a7f",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "LEFT",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "DOWN",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "UP",
+      "94cdf03a7f"
+    ],
+    [
+      "94cdf03a7f",
+      "LEFT",
+      "94cdf03a7f"
+    ],
+    [
+      "36aa043572",
+      "RIGHT",
+      "41d3242b5d"
+    ],
+    [
+      "41d3242b5d",
+      "LEFT",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "UP",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "36aa043572",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "82c2ee94c4",
+      "UP",
+      "82c2ee94c4"
+    ],
+    [
+      "82c2ee94c4",
+      "RIGHT",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "LEFT",
+      "82c2ee94c4"
+    ],
+    [
+      "b259c3a1de",
+      "RIGHT",
+      "ebc059c200"
+    ],
+    [
+      "ebc059c200",
+      "LEFT",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "UP",
+      "b259c3a1de"
+    ],
+    [
+      "b259c3a1de",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "41d3242b5d",
+      "UP",
+      "b259c3a1de"
+    ],
+    [
+      "ebc059c200",
+      "DOWN",
+      "41d3242b5d"
+    ],
+    [
+      "41d3242b5d",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "41d3242b5d",
+      "RIGHT",
+      "96b2537738"
+    ],
+    [
+      "96b2537738",
+      "LEFT",
+      "41d3242b5d"
+    ],
+    [
+      "96b2537738",
+      "RIGHT",
+      "96b2537738"
+    ],
+    [
+      "96b2537738",
+      "UP",
+      "41d3242b5d"
+    ],
+    [
+      "96b2537738",
+      "DOWN",
+      "96b2537738"
+    ],
+    [
+      "ebc059c200",
+      "UP",
+      "ebc059c200"
+    ],
+    [
+      "ebc059c200",
+      "RIGHT",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "LEFT",
+      "ebc059c200"
+    ],
+    [
+      "d5d27d026c",
+      "RIGHT",
+      "0aab37f2ff"
+    ],
+    [
+      "0aab37f2ff",
+      "LEFT",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "UP",
+      "d5d27d026c"
+    ],
+    [
+      "d5d27d026c",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "6ddeecf624",
+      "DOWN",
+      "16a76f8e33"
+    ],
+    [
+      "16a76f8e33",
+      "UP",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "LEFT",
+      "6ddeecf624"
+    ],
+    [
+      "6ddeecf624",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "16a76f8e33",
+      "LEFT",
+      "16a76f8e33"
+    ],
+    [
+      "16a76f8e33",
+      "RIGHT",
+      "36aa043572"
+    ],
+    [
+      "16a76f8e33",
+      "DOWN",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "UP",
+      "16a76f8e33"
+    ],
+    [
+      "35ee217401",
+      "DOWN",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "LEFT",
+      "35ee217401"
+    ],
+    [
+      "35ee217401",
+      "RIGHT",
+      "c7774e6565"
+    ],
+    [
+      "c7774e6565",
+      "LEFT",
+      "35ee217401"
+    ],
+    [
+      "c7774e6565",
+      "RIGHT",
+      "c7774e6565"
+    ],
+    [
+      "c7774e6565",
+      "UP",
+      "36aa043572"
+    ],
+    [
+      "0aab37f2ff",
+      "DOWN",
+      "36aa043572"
+    ],
+    [
+      "0aab37f2ff",
+      "UP",
+      "0aab37f2ff"
+    ],
+    [
+      "0aab37f2ff",
+      "RIGHT",
+      "0aab37f2ff"
+    ],
+    [
+      "c7774e6565",
+      "DOWN",
+      "c7774e6565"
+    ]
+  ],
+  "entry": [
+    [
+      "CENTER",
+      "78a09cf3a4"
+    ]
+  ],
+  "back": {
+    "78a09cf3a4": "yes"
+  },
+  "findings": [
+    {
+      "id": "9623b212b3",
+      "kind": "TRAP",
+      "severity": "medium",
+      "node_id": "78a09cf3a4",
+      "bounds": [
+        85,
+        329,
+        1835,
+        715
+      ],
+      "evidence": {
+        "region": [
+          "0aab37f2ff",
+          "16a76f8e33",
+          "35ee217401",
+          "36aa043572",
+          "41d3242b5d",
+          "6ddeecf624",
+          "78a09cf3a4",
+          "82c2ee94c4",
+          "94cdf03a7f",
+          "96b2537738",
+          "b259c3a1de",
+          "c7774e6565",
+          "d5d27d026c",
+          "ebc059c200"
+        ],
+        "region_labels": [
+          "FlatMap Clip",
+          "Charlie Chaplin Movies",
+          "Identity",
+          "Chrome Dev Summit Promo Clip",
+          "State of the Web Clip",
+          "Beverly Hillbillies",
+          "Supercharged Clips",
+          "jQuery and Closest Clip",
+          "Misc Clips",
+          "Jethro's Friend Season 1 Episode 36",
+          "Map and Filter Clip",
+          "Sign in",
+          "Reduce Clip",
+          "Some and Every Clip"
+        ],
+        "region_edges": [
+          [
+            "78a09cf3a4",
+            "UP",
+            "78a09cf3a4"
+          ],
+          [
+            "78a09cf3a4",
+            "DOWN",
+            "94cdf03a7f"
+          ],
+          [
+            "94cdf03a7f",
+            "UP",
+            "78a09cf3a4"
+          ],
+          [
+            "78a09cf3a4",
+            "LEFT",
+            "78a09cf3a4"
+          ],
+          [
+            "78a09cf3a4",
+            "RIGHT",
+            "82c2ee94c4"
+          ],
+          [
+            "82c2ee94c4",
+            "LEFT",
+            "78a09cf3a4"
+          ],
+          [
+            "94cdf03a7f",
+            "RIGHT",
+            "36aa043572"
+          ],
+          [
+            "36aa043572",
+            "LEFT",
+            "94cdf03a7f"
+          ],
+          [
+            "94cdf03a7f",
+            "DOWN",
+            "6ddeecf624"
+          ],
+          [
+            "6ddeecf624",
+            "UP",
+            "94cdf03a7f"
+          ],
+          [
+            "94cdf03a7f",
+            "LEFT",
+            "94cdf03a7f"
+          ],
+          [
+            "36aa043572",
+            "RIGHT",
+            "41d3242b5d"
+          ],
+          [
+            "41d3242b5d",
+            "LEFT",
+            "36aa043572"
+          ],
+          [
+            "36aa043572",
+            "UP",
+            "82c2ee94c4"
+          ],
+          [
+            "82c2ee94c4",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "36aa043572",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "82c2ee94c4",
+            "UP",
+            "82c2ee94c4"
+          ],
+          [
+            "82c2ee94c4",
+            "RIGHT",
+            "b259c3a1de"
+          ],
+          [
+            "b259c3a1de",
+            "LEFT",
+            "82c2ee94c4"
+          ],
+          [
+            "b259c3a1de",
+            "RIGHT",
+            "ebc059c200"
+          ],
+          [
+            "ebc059c200",
+            "LEFT",
+            "b259c3a1de"
+          ],
+          [
+            "b259c3a1de",
+            "UP",
+            "b259c3a1de"
+          ],
+          [
+            "b259c3a1de",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "41d3242b5d",
+            "UP",
+            "b259c3a1de"
+          ],
+          [
+            "ebc059c200",
+            "DOWN",
+            "41d3242b5d"
+          ],
+          [
+            "41d3242b5d",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "41d3242b5d",
+            "RIGHT",
+            "96b2537738"
+          ],
+          [
+            "96b2537738",
+            "LEFT",
+            "41d3242b5d"
+          ],
+          [
+            "96b2537738",
+            "RIGHT",
+            "96b2537738"
+          ],
+          [
+            "96b2537738",
+            "UP",
+            "41d3242b5d"
+          ],
+          [
+            "96b2537738",
+            "DOWN",
+            "96b2537738"
+          ],
+          [
+            "ebc059c200",
+            "UP",
+            "ebc059c200"
+          ],
+          [
+            "ebc059c200",
+            "RIGHT",
+            "d5d27d026c"
+          ],
+          [
+            "d5d27d026c",
+            "LEFT",
+            "ebc059c200"
+          ],
+          [
+            "d5d27d026c",
+            "RIGHT",
+            "0aab37f2ff"
+          ],
+          [
+            "0aab37f2ff",
+            "LEFT",
+            "d5d27d026c"
+          ],
+          [
+            "d5d27d026c",
+            "UP",
+            "d5d27d026c"
+          ],
+          [
+            "d5d27d026c",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "6ddeecf624",
+            "DOWN",
+            "16a76f8e33"
+          ],
+          [
+            "16a76f8e33",
+            "UP",
+            "6ddeecf624"
+          ],
+          [
+            "6ddeecf624",
+            "LEFT",
+            "6ddeecf624"
+          ],
+          [
+            "6ddeecf624",
+            "RIGHT",
+            "36aa043572"
+          ],
+          [
+            "16a76f8e33",
+            "LEFT",
+            "16a76f8e33"
+          ],
+          [
+            "16a76f8e33",
+            "RIGHT",
+            "36aa043572"
+          ],
+          [
+            "16a76f8e33",
+            "DOWN",
+            "35ee217401"
+          ],
+          [
+            "35ee217401",
+            "UP",
+            "16a76f8e33"
+          ],
+          [
+            "35ee217401",
+            "DOWN",
+            "35ee217401"
+          ],
+          [
+            "35ee217401",
+            "LEFT",
+            "35ee217401"
+          ],
+          [
+            "35ee217401",
+            "RIGHT",
+            "c7774e6565"
+          ],
+          [
+            "c7774e6565",
+            "LEFT",
+            "35ee217401"
+          ],
+          [
+            "c7774e6565",
+            "RIGHT",
+            "c7774e6565"
+          ],
+          [
+            "c7774e6565",
+            "UP",
+            "36aa043572"
+          ],
+          [
+            "0aab37f2ff",
+            "DOWN",
+            "36aa043572"
+          ],
+          [
+            "0aab37f2ff",
+            "UP",
+            "0aab37f2ff"
+          ],
+          [
+            "0aab37f2ff",
+            "RIGHT",
+            "0aab37f2ff"
+          ],
+          [
+            "c7774e6565",
+            "DOWN",
+            "c7774e6565"
+          ]
+        ],
+        "outside_count": 1,
+        "suspected": true,
+        "whole_screen": true,
+        "back_exits": "yes",
+        "summary": "14 focusable(s): every D-pad direction stays inside; 1 other focusable(s) exist (suspected: region is most of the screen, likely a top-level screen)"
+      },
+      "fix_hint": "Remove the focus property that cancels/blocks exit (e.g. Compose focusProperties { exit = Cancel }) so UP/DOWN/LEFT/RIGHT can leave the group.",
+      "witness": {
+        "keys": [
+          "CENTER"
+        ],
+        "path": [
+          "78a09cf3a4"
+        ]
+      },
+      "test_id": "tests_generated/test_9623b212b3.py"
+    },
+    {
+      "id": "148cd6b25c",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "24e64b24f8",
+      "bounds": [
+        1526,
+        354,
+        1833,
+        527
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_148cd6b25c.py"
+    },
+    {
+      "id": "33701b0b02",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "f69f5ad250",
+      "bounds": [
+        566,
+        559,
+        873,
+        732
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_33701b0b02.py"
+    },
+    {
+      "id": "48677cbbbc",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "01d5680d2d",
+      "bounds": [
+        1846,
+        149,
+        1920,
+        322
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_48677cbbbc.py"
+    },
+    {
+      "id": "4a6a036e0c",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "b74beb63b0",
+      "bounds": [
+        886,
+        744,
+        1193,
+        917
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_4a6a036e0c.py"
+    },
+    {
+      "id": "551ab8d5c8",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "564f40d476",
+      "bounds": [
+        1526,
+        149,
+        1833,
+        322
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_551ab8d5c8.py"
+    },
+    {
+      "id": "5cc19d972d",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "8d5a29b3dd",
+      "bounds": [
+        886,
+        149,
+        1193,
+        322
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_5cc19d972d.py"
+    },
+    {
+      "id": "7c7b6e3f4c",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "5b4cc194bb",
+      "bounds": [
+        1846,
+        354,
+        1920,
+        527
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_7c7b6e3f4c.py"
+    },
+    {
+      "id": "7ddbcf97fb",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "eaf14b2d81",
+      "bounds": [
+        1206,
+        149,
+        1513,
+        322
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_7ddbcf97fb.py"
+    },
+    {
+      "id": "7fc8240517",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "04208f75eb",
+      "bounds": [
+        566,
+        149,
+        873,
+        322
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_7fc8240517.py"
+    },
+    {
+      "id": "83d8ad2059",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "28a2681d6a",
+      "bounds": [
+        1206,
+        354,
+        1513,
+        527
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_83d8ad2059.py"
+    },
+    {
+      "id": "8de926a07c",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "29f9e148ea",
+      "bounds": [
+        566,
+        354,
+        873,
+        527
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_8de926a07c.py"
+    },
+    {
+      "id": "965f81c8db",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "897da2a109",
+      "bounds": [
+        886,
+        559,
+        1193,
+        732
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_965f81c8db.py"
+    },
+    {
+      "id": "9be25c2e5b",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "eaae9b9fe0",
+      "bounds": [
+        1526,
+        559,
+        1833,
+        732
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_9be25c2e5b.py"
+    },
+    {
+      "id": "b66222915c",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "a9b7b054c4",
+      "bounds": [
+        1846,
+        0,
+        1920,
+        136
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          136
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_b66222915c.py"
+    },
+    {
+      "id": "be4230fb28",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "06258018ee",
+      "bounds": [
+        1846,
+        930,
+        1920,
+        1080
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          150
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER"
+        ]
+      },
+      "test_id": "tests_generated/test_be4230fb28.py"
+    },
+    {
+      "id": "c264e3ddb0",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "51e7dedff5",
+      "bounds": [
+        1846,
+        559,
+        1920,
+        732
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_c264e3ddb0.py"
+    },
+    {
+      "id": "cc0d847443",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "c7295f121b",
+      "bounds": [
+        886,
+        354,
+        1193,
+        527
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_cc0d847443.py"
+    },
+    {
+      "id": "d86504e1e2",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "44990c7452",
+      "bounds": [
+        1206,
+        744,
+        1513,
+        917
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_d86504e1e2.py"
+    },
+    {
+      "id": "d963402097",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "a2e3dbc5dd",
+      "bounds": [
+        1206,
+        559,
+        1513,
+        732
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_d963402097.py"
+    },
+    {
+      "id": "e52550bce3",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "19b8982ae2",
+      "bounds": [
+        1526,
+        744,
+        1833,
+        917
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_e52550bce3.py"
+    },
+    {
+      "id": "e644b1c840",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "c60a81f404",
+      "bounds": [
+        566,
+        744,
+        873,
+        917
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          307,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_e644b1c840.py"
+    },
+    {
+      "id": "eff3d12945",
+      "kind": "MISSING_LABEL",
+      "severity": "medium",
+      "node_id": "361a6f3d44",
+      "bounds": [
+        1846,
+        744,
+        1920,
+        917
+      ],
+      "evidence": {
+        "subtype": "unnamed",
+        "cls": "android.widget.FrameLayout",
+        "size": [
+          74,
+          173
+        ],
+        "summary": "no exposed accessible name in the accessibility tree"
+      },
+      "fix_hint": "Add a contentDescription (Compose: Modifier.semantics { contentDescription = ... }).",
+      "witness": {
+        "keys": [
+          "CENTER",
+          "DOWN"
+        ]
+      },
+      "test_id": "tests_generated/test_eff3d12945.py"
+    }
+  ],
+  "screenshot": "screen.png",
+  "summary": {
+    "counts": {
+      "TRAP": 1,
+      "MISSING_LABEL": 22
+    },
+    "total": 23,
+    "icon_only": 0
+  },
+  "verdict": "fail"
+}

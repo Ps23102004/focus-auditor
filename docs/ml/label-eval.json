@@ -1,0 +1,109 @@
+{
+  "model": "gemma4:e4b-it-qat",
+  "ollama": "http://127.0.0.1:11434/api/generate",
+  "n_examples": 2,
+  "metrics": {
+    "model": {
+      "n": 2,
+      "answered": 2,
+      "abstention_rate": 0.0,
+      "exact_match": 0.0,
+      "token_f1": 0.25,
+      "exact_match_on_answered": 0.0,
+      "token_f1_on_answered": 0.25
+    },
+    "resource_id_baseline": {
+      "n": 2,
+      "answered": 0,
+      "abstention_rate": 1.0,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "exact_match_on_answered": null,
+      "token_f1_on_answered": null
+    },
+    "nearest_sibling_baseline": {
+      "n": 2,
+      "answered": 2,
+      "abstention_rate": 0.0,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "exact_match_on_answered": 0.0,
+      "token_f1_on_answered": 0.0
+    },
+    "constant_Button_baseline": {
+      "n": 2,
+      "answered": 2,
+      "abstention_rate": 0.0,
+      "exact_match": 0.0,
+      "token_f1": 0.5,
+      "exact_match_on_answered": 0.0,
+      "token_f1_on_answered": 0.5
+    }
+  },
+  "model_status_counts": {
+    "ok": 2
+  },
+  "cache": {
+    "hits": 2,
+    "misses": 0
+  },
+  "note": "Ground truth = the real content-desc, hidden from the model and from its context. Exact/token match measures agreement with one reference string, not semantic acceptability (judged separately).",
+  "examples": [
+    {
+      "id": "p001v0",
+      "app": "jetstream",
+      "bounds": [
+        116,
+        48,
+        212,
+        144
+      ],
+      "truth": "User Profile Button",
+      "context": {
+        "neighbours": [
+          "Home",
+          "Categories",
+          "Movies",
+          "Watch Now",
+          "Shows",
+          "Favourites"
+        ],
+        "parent_text": ""
+      },
+      "model": "Profile",
+      "model_status": "ok",
+      "rid_baseline": null,
+      "sibling_baseline": "Home",
+      "constant_baseline": "Button",
+      "crop": "docs/ml/label-crops/f762d3963747.png"
+    },
+    {
+      "id": "p004v0",
+      "app": "jetstream",
+      "bounds": [
+        116,
+        48,
+        212,
+        144
+      ],
+      "truth": "User Profile Button",
+      "context": {
+        "neighbours": [
+          "Home",
+          "Categories",
+          "Movies",
+          "Watch Now",
+          "Shows",
+          "Favourites"
+        ],
+        "parent_text": ""
+      },
+      "model": "Home",
+      "model_status": "ok",
+      "rid_baseline": null,
+      "sibling_baseline": "Home",
+      "constant_baseline": "Button",
+      "crop": "docs/ml/label-crops/256c0d064ddc.png"
+    }
+  ]
+}

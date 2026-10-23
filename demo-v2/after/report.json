@@ -1,0 +1,1318 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "app": "com.amazonappstore.helloworldtv",
+    "activity": ".MainActivity",
+    "device": "sdk_google_atv64_arm64 default",
+    "timestamp": "2026-10-19T10:24:19-0400",
+    "fa_version": "0.1.0",
+    "run_id": "bd869647"
+  },
+  "coverage": {
+    "pressed": 360,
+    "budget": 400,
+    "cold_starts": 27,
+    "probes": 125,
+    "nodes": 59,
+    "expanded": 40,
+    "max_nodes": 40,
+    "elapsed_s": 741.8,
+    "inconclusive_reasons": [
+      "budget_exhausted: max_presses",
+      "node_cap: 19 discovered nodes not expanded (max_nodes=40)"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "84c1a1b0e4",
+      "cls": "android.view.View",
+      "label": "Menu A",
+      "bounds": [
+        24,
+        56,
+        536,
+        168
+      ]
+    },
+    {
+      "id": "bc5e667038",
+      "cls": "android.view.View",
+      "label": "Menu B",
+      "bounds": [
+        24,
+        184,
+        536,
+        296
+      ]
+    },
+    {
+      "id": "4b6544b82f",
+      "cls": "android.view.View",
+      "label": "Settings",
+      "bounds": [
+        504,
+        148,
+        600,
+        244
+      ]
+    },
+    {
+      "id": "e44335efcc",
+      "cls": "android.view.View",
+      "label": "Search",
+      "bounds": [
+        376,
+        148,
+        472,
+        244
+      ]
+    },
+    {
+      "id": "c6efe6c99f",
+      "cls": "android.view.View",
+      "label": "Movie 2",
+      "bounds": [
+        557,
+        308,
+        858,
+        477
+      ]
+    },
+    {
+      "id": "cf4535a33a",
+      "cls": "android.view.View",
+      "label": "Movie 1",
+      "bounds": [
+        224,
+        308,
+        525,
+        477
+      ]
+    },
+    {
+      "id": "73691b3f67",
+      "cls": "android.view.View",
+      "label": "Movie 7",
+      "bounds": [
+        557,
+        509,
+        858,
+        678
+      ]
+    },
+    {
+      "id": "d7591a5dbf",
+      "cls": "android.view.View",
+      "label": "Movie 3",
+      "bounds": [
+        890,
+        308,
+        1191,
+        477
+      ]
+    },
+    {
+      "id": "936537caa0",
+      "cls": "android.view.View",
+      "label": "Movie 8",
+      "bounds": [
+        890,
+        509,
+        1191,
+        678
+      ]
+    },
+    {
+      "id": "ded27af43b",
+      "cls": "android.view.View",
+      "label": "Movie 12",
+      "bounds": [
+        557,
+        710,
+        858,
+        879
+      ]
+    },
+    {
+      "id": "9afd44f3c3",
+      "cls": "android.view.View",
+      "label": "Movie 6",
+      "bounds": [
+        224,
+        509,
+        525,
+        678
+      ]
+    },
+    {
+      "id": "8d64b1f27b",
+      "cls": "android.view.View",
+      "label": "Movie 11",
+      "bounds": [
+        224,
+        710,
+        525,
+        879
+      ]
+    },
+    {
+      "id": "b34d4135f8",
+      "cls": "android.view.View",
+      "label": "Movie 17",
+      "bounds": [
+        557,
+        911,
+        858,
+        1080
+      ]
+    },
+    {
+      "id": "0b7a804f5d",
+      "cls": "android.view.View",
+      "label": "Movie 13",
+      "bounds": [
+        890,
+        710,
+        1191,
+        879
+      ]
+    },
+    {
+      "id": "3b2f6cfd87",
+      "cls": "android.view.View",
+      "label": "Movie 18",
+      "bounds": [
+        890,
+        911,
+        1191,
+        1080
+      ]
+    },
+    {
+      "id": "49b235ffa9",
+      "cls": "android.view.View",
+      "label": "Movie 21",
+      "bounds": [
+        224,
+        911,
+        525,
+        1080
+      ]
+    },
+    {
+      "id": "66491ede62",
+      "cls": "android.view.View",
+      "label": "Movie 16",
+      "bounds": [
+        224,
+        710,
+        525,
+        879
+      ]
+    },
+    {
+      "id": "e9ded5c9e7",
+      "cls": "android.view.View",
+      "label": "Movie 26",
+      "bounds": [
+        224,
+        911,
+        525,
+        1080
+      ]
+    },
+    {
+      "id": "5e537613d3",
+      "cls": "android.view.View",
+      "label": "Movie 21",
+      "bounds": [
+        224,
+        710,
+        525,
+        879
+      ]
+    },
+    {
+      "id": "9709eb01ae",
+      "cls": "android.view.View",
+      "label": "Menu C",
+      "bounds": [
+        24,
+        312,
+        536,
+        424
+      ]
+    },
+    {
+      "id": "24c0ce7902",
+      "cls": "android.view.View",
+      "label": "Movie 12",
+      "bounds": [
+        557,
+        308,
+        858,
+        477
+      ]
+    },
+    {
+      "id": "f423ea4f15",
+      "cls": "android.view.View",
+      "label": "Movie 11",
+      "bounds": [
+        224,
+        308,
+        525,
+        477
+      ]
+    },
+    {
+      "id": "8db90ac240",
+      "cls": "android.view.View",
+      "label": "Movie 7",
+      "bounds": [
+        557,
+        107,
+        858,
+        276
+      ]
+    },
+    {
+      "id": "9ee450af22",
+      "cls": "android.view.View",
+      "label": "Movie 17",
+      "bounds": [
+        557,
+        509,
+        858,
+        678
+      ]
+    },
+    {
+      "id": "36215f7578",
+      "cls": "android.view.View",
+      "label": "Movie 13",
+      "bounds": [
+        890,
+        308,
+        1191,
+        477
+      ]
+    },
+    {
+      "id": "0cd44fdbc1",
+      "cls": "android.view.View",
+      "label": "Movie 8",
+      "bounds": [
+        890,
+        107,
+        1191,
+        276
+      ]
+    },
+    {
+      "id": "1db50b6bb4",
+      "cls": "android.view.View",
+      "label": "Movie 2",
+      "bounds": [
+        557,
+        0,
+        858,
+        169
+      ]
+    },
+    {
+      "id": "462728aad1",
+      "cls": "android.view.View",
+      "label": "Movie 7",
+      "bounds": [
+        557,
+        201,
+        858,
+        370
+      ]
+    },
+    {
+      "id": "29e5ff259a",
+      "cls": "android.view.View",
+      "label": "Settings",
+      "bounds": [
+        504,
+        0,
+        600,
+        96
+      ]
+    },
+    {
+      "id": "0163c551d5",
+      "cls": "android.view.View",
+      "label": "Movie 2",
+      "bounds": [
+        557,
+        160,
+        858,
+        329
+      ]
+    },
+    {
+      "id": "f8a675ded9",
+      "cls": "android.view.View",
+      "label": "Search",
+      "bounds": [
+        376,
+        0,
+        472,
+        96
+      ]
+    },
+    {
+      "id": "45ef99b17a",
+      "cls": "android.view.View",
+      "label": "Movie 1",
+      "bounds": [
+        224,
+        160,
+        525,
+        329
+      ]
+    },
+    {
+      "id": "44f2b24056",
+      "cls": "android.view.View",
+      "label": "Movie 7",
+      "bounds": [
+        557,
+        361,
+        858,
+        530
+      ]
+    },
+    {
+      "id": "cab0c90a8d",
+      "cls": "android.view.View",
+      "label": "Movie 3",
+      "bounds": [
+        890,
+        160,
+        1191,
+        329
+      ]
+    },
+    {
+      "id": "22879c7a47",
+      "cls": "android.view.View",
+      "label": "Movie 8",
+      "bounds": [
+        890,
+        361,
+        1191,
+        530
+      ]
+    },
+    {
+      "id": "4a638d1eec",
+      "cls": "android.view.View",
+      "label": "Movie 12",
+      "bounds": [
+        557,
+        562,
+        858,
+        731
+      ]
+    },
+    {
+      "id": "a717de6795",
+      "cls": "android.view.View",
+      "label": "Movie 6",
+      "bounds": [
+        224,
+        361,
+        525,
+        530
+      ]
+    },
+    {
+      "id": "10cbaffd8e",
+      "cls": "android.view.View",
+      "label": "Movie 11",
+      "bounds": [
+        224,
+        562,
+        525,
+        731
+      ]
+    },
+    {
+      "id": "4080967234",
+      "cls": "android.view.View",
+      "label": "Movie 17",
+      "bounds": [
+        557,
+        763,
+        858,
+        932
+      ]
+    },
+    {
+      "id": "ff1250b113",
+      "cls": "android.view.View",
+      "label": "Movie 13",
+      "bounds": [
+        890,
+        562,
+        1191,
+        731
+      ]
+    },
+    {
+      "id": "e247f8c8d3",
+      "cls": "android.view.View",
+      "label": "Movie 18",
+      "bounds": [
+        890,
+        763,
+        1191,
+        932
+      ]
+    },
+    {
+      "id": "be9cf631bc",
+      "cls": "android.view.View",
+      "label": "Play",
+      "bounds": [
+        224,
+        140,
+        344,
+        236
+      ]
+    },
+    {
+      "id": "635f79deec",
+      "cls": "android.view.View",
+      "label": "Menu C",
+      "bounds": [
+        24,
+        312,
+        536,
+        424
+      ]
+    },
+    {
+      "id": "ef6794a61c",
+      "cls": "android.view.View",
+      "label": "Movie 4",
+      "bounds": [
+        1223,
+        308,
+        1524,
+        477
+      ]
+    },
+    {
+      "id": "6ebe6c5454",
+      "cls": "android.view.View",
+      "label": "Movie 9",
+      "bounds": [
+        1223,
+        509,
+        1524,
+        678
+      ]
+    },
+    {
+      "id": "fc94e416ee",
+      "cls": "android.view.View",
+      "label": "Movie 16",
+      "bounds": [
+        224,
+        911,
+        525,
+        1080
+      ]
+    },
+    {
+      "id": "506c48305b",
+      "cls": "android.view.View",
+      "label": "Movie 14",
+      "bounds": [
+        1223,
+        710,
+        1524,
+        879
+      ]
+    },
+    {
+      "id": "2fc7fcd61b",
+      "cls": "android.view.View",
+      "label": "Menu C",
+      "bounds": [
+        24,
+        312,
+        536,
+        424
+      ]
+    },
+    {
+      "id": "013dc24dae",
+      "cls": "android.view.View",
+      "label": "Movie 19",
+      "bounds": [
+        1223,
+        911,
+        1524,
+        1080
+      ]
+    },
+    {
+      "id": "62ed074c45",
+      "cls": "android.view.View",
+      "label": "Movie 22",
+      "bounds": [
+        557,
+        911,
+        858,
+        1080
+      ]
+    },
+    {
+      "id": "34905149db",
+      "cls": "android.view.View",
+      "label": "Movie 17",
+      "bounds": [
+        557,
+        710,
+        858,
+        879
+      ]
+    },
+    {
+      "id": "4307da46a1",
+      "cls": "android.view.View",
+      "label": "Movie 11",
+      "bounds": [
+        224,
+        509,
+        525,
+        678
+      ]
+    },
+    {
+      "id": "8705b0390b",
+      "cls": "android.view.View",
+      "label": "Movie 27",
+      "bounds": [
+        557,
+        911,
+        858,
+        1080
+      ]
+    },
+    {
+      "id": "447ba887f1",
+      "cls": "android.view.View",
+      "label": "Menu B",
+      "bounds": [
+        24,
+        184,
+        536,
+        296
+      ]
+    },
+    {
+      "id": "bdf537213b",
+      "cls": "android.view.View",
+      "label": "Movie 18",
+      "bounds": [
+        890,
+        509,
+        1191,
+        678
+      ]
+    },
+    {
+      "id": "f6981190ba",
+      "cls": "android.view.View",
+      "label": "Movie 16",
+      "bounds": [
+        224,
+        509,
+        525,
+        678
+      ]
+    },
+    {
+      "id": "e839cea0eb",
+      "cls": "android.view.View",
+      "label": "Movie 22",
+      "bounds": [
+        557,
+        710,
+        858,
+        879
+      ]
+    },
+    {
+      "id": "a4508ed247",
+      "cls": "android.view.View",
+      "label": "Movie 14",
+      "bounds": [
+        1223,
+        308,
+        1524,
+        477
+      ]
+    },
+    {
+      "id": "bb95fdb79f",
+      "cls": "android.view.View",
+      "label": "Movie 6",
+      "bounds": [
+        224,
+        107,
+        525,
+        276
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "84c1a1b0e4",
+      "UP",
+      "84c1a1b0e4"
+    ],
+    [
+      "84c1a1b0e4",
+      "DOWN",
+      "bc5e667038"
+    ],
+    [
+      "bc5e667038",
+      "UP",
+      "84c1a1b0e4"
+    ],
+    [
+      "84c1a1b0e4",
+      "LEFT",
+      "84c1a1b0e4"
+    ],
+    [
+      "84c1a1b0e4",
+      "RIGHT",
+      "4b6544b82f"
+    ],
+    [
+      "4b6544b82f",
+      "LEFT",
+      "e44335efcc"
+    ],
+    [
+      "e44335efcc",
+      "RIGHT",
+      "4b6544b82f"
+    ],
+    [
+      "4b6544b82f",
+      "UP",
+      "4b6544b82f"
+    ],
+    [
+      "4b6544b82f",
+      "DOWN",
+      "c6efe6c99f"
+    ],
+    [
+      "c6efe6c99f",
+      "UP",
+      "4b6544b82f"
+    ],
+    [
+      "4b6544b82f",
+      "RIGHT",
+      "c6efe6c99f"
+    ],
+    [
+      "c6efe6c99f",
+      "LEFT",
+      "cf4535a33a"
+    ],
+    [
+      "cf4535a33a",
+      "RIGHT",
+      "c6efe6c99f"
+    ],
+    [
+      "c6efe6c99f",
+      "DOWN",
+      "73691b3f67"
+    ],
+    [
+      "73691b3f67",
+      "UP",
+      "c6efe6c99f"
+    ],
+    [
+      "c6efe6c99f",
+      "RIGHT",
+      "d7591a5dbf"
+    ],
+    [
+      "d7591a5dbf",
+      "LEFT",
+      "c6efe6c99f"
+    ],
+    [
+      "73691b3f67",
+      "RIGHT",
+      "936537caa0"
+    ],
+    [
+      "936537caa0",
+      "LEFT",
+      "73691b3f67"
+    ],
+    [
+      "73691b3f67",
+      "DOWN",
+      "ded27af43b"
+    ],
+    [
+      "ded27af43b",
+      "UP",
+      "73691b3f67"
+    ],
+    [
+      "73691b3f67",
+      "LEFT",
+      "9afd44f3c3"
+    ],
+    [
+      "9afd44f3c3",
+      "RIGHT",
+      "73691b3f67"
+    ],
+    [
+      "ded27af43b",
+      "LEFT",
+      "8d64b1f27b"
+    ],
+    [
+      "8d64b1f27b",
+      "RIGHT",
+      "ded27af43b"
+    ],
+    [
+      "ded27af43b",
+      "DOWN",
+      "b34d4135f8"
+    ],
+    [
+      "b34d4135f8",
+      "UP",
+      "ded27af43b"
+    ],
+    [
+      "ded27af43b",
+      "RIGHT",
+      "0b7a804f5d"
+    ],
+    [
+      "0b7a804f5d",
+      "LEFT",
+      "ded27af43b"
+    ],
+    [
+      "b34d4135f8",
+      "RIGHT",
+      "3b2f6cfd87"
+    ],
+    [
+      "3b2f6cfd87",
+      "LEFT",
+      "b34d4135f8"
+    ],
+    [
+      "b34d4135f8",
+      "DOWN",
+      "49b235ffa9"
+    ],
+    [
+      "49b235ffa9",
+      "UP",
+      "66491ede62"
+    ],
+    [
+      "66491ede62",
+      "DOWN",
+      "49b235ffa9"
+    ],
+    [
+      "49b235ffa9",
+      "DOWN",
+      "e9ded5c9e7"
+    ],
+    [
+      "e9ded5c9e7",
+      "UP",
+      "5e537613d3"
+    ],
+    [
+      "5e537613d3",
+      "DOWN",
+      "e9ded5c9e7"
+    ],
+    [
+      "e9ded5c9e7",
+      "DOWN",
+      "e9ded5c9e7"
+    ],
+    [
+      "e9ded5c9e7",
+      "LEFT",
+      "9709eb01ae"
+    ],
+    [
+      "9709eb01ae",
+      "RIGHT",
+      "24c0ce7902"
+    ],
+    [
+      "24c0ce7902",
+      "LEFT",
+      "f423ea4f15"
+    ],
+    [
+      "f423ea4f15",
+      "RIGHT",
+      "24c0ce7902"
+    ],
+    [
+      "24c0ce7902",
+      "UP",
+      "8db90ac240"
+    ],
+    [
+      "8db90ac240",
+      "DOWN",
+      "24c0ce7902"
+    ],
+    [
+      "24c0ce7902",
+      "DOWN",
+      "9ee450af22"
+    ],
+    [
+      "9ee450af22",
+      "UP",
+      "24c0ce7902"
+    ],
+    [
+      "24c0ce7902",
+      "RIGHT",
+      "36215f7578"
+    ],
+    [
+      "36215f7578",
+      "LEFT",
+      "24c0ce7902"
+    ],
+    [
+      "8db90ac240",
+      "RIGHT",
+      "0cd44fdbc1"
+    ],
+    [
+      "0cd44fdbc1",
+      "LEFT",
+      "8db90ac240"
+    ],
+    [
+      "8db90ac240",
+      "UP",
+      "1db50b6bb4"
+    ],
+    [
+      "1db50b6bb4",
+      "DOWN",
+      "462728aad1"
+    ],
+    [
+      "462728aad1",
+      "UP",
+      "1db50b6bb4"
+    ],
+    [
+      "1db50b6bb4",
+      "UP",
+      "29e5ff259a"
+    ],
+    [
+      "29e5ff259a",
+      "DOWN",
+      "0163c551d5"
+    ],
+    [
+      "0163c551d5",
+      "UP",
+      "29e5ff259a"
+    ],
+    [
+      "29e5ff259a",
+      "UP",
+      "29e5ff259a"
+    ],
+    [
+      "29e5ff259a",
+      "LEFT",
+      "f8a675ded9"
+    ],
+    [
+      "f8a675ded9",
+      "RIGHT",
+      "29e5ff259a"
+    ],
+    [
+      "29e5ff259a",
+      "RIGHT",
+      "0163c551d5"
+    ],
+    [
+      "0163c551d5",
+      "LEFT",
+      "45ef99b17a"
+    ],
+    [
+      "45ef99b17a",
+      "RIGHT",
+      "0163c551d5"
+    ],
+    [
+      "0163c551d5",
+      "DOWN",
+      "44f2b24056"
+    ],
+    [
+      "44f2b24056",
+      "UP",
+      "0163c551d5"
+    ],
+    [
+      "0163c551d5",
+      "RIGHT",
+      "cab0c90a8d"
+    ],
+    [
+      "cab0c90a8d",
+      "LEFT",
+      "0163c551d5"
+    ],
+    [
+      "44f2b24056",
+      "RIGHT",
+      "22879c7a47"
+    ],
+    [
+      "22879c7a47",
+      "LEFT",
+      "44f2b24056"
+    ],
+    [
+      "44f2b24056",
+      "DOWN",
+      "4a638d1eec"
+    ],
+    [
+      "4a638d1eec",
+      "UP",
+      "44f2b24056"
+    ],
+    [
+      "44f2b24056",
+      "LEFT",
+      "a717de6795"
+    ],
+    [
+      "a717de6795",
+      "RIGHT",
+      "44f2b24056"
+    ],
+    [
+      "4a638d1eec",
+      "LEFT",
+      "10cbaffd8e"
+    ],
+    [
+      "10cbaffd8e",
+      "RIGHT",
+      "4a638d1eec"
+    ],
+    [
+      "4a638d1eec",
+      "DOWN",
+      "4080967234"
+    ],
+    [
+      "4080967234",
+      "UP",
+      "4a638d1eec"
+    ],
+    [
+      "4a638d1eec",
+      "RIGHT",
+      "ff1250b113"
+    ],
+    [
+      "ff1250b113",
+      "LEFT",
+      "4a638d1eec"
+    ],
+    [
+      "4080967234",
+      "RIGHT",
+      "e247f8c8d3"
+    ],
+    [
+      "bc5e667038",
+      "LEFT",
+      "bc5e667038"
+    ],
+    [
+      "bc5e667038",
+      "RIGHT",
+      "4b6544b82f"
+    ],
+    [
+      "e44335efcc",
+      "LEFT",
+      "be9cf631bc"
+    ],
+    [
+      "bc5e667038",
+      "DOWN",
+      "635f79deec"
+    ],
+    [
+      "e44335efcc",
+      "UP",
+      "e44335efcc"
+    ],
+    [
+      "e44335efcc",
+      "DOWN",
+      "cf4535a33a"
+    ],
+    [
+      "cf4535a33a",
+      "UP",
+      "e44335efcc"
+    ],
+    [
+      "cf4535a33a",
+      "DOWN",
+      "9afd44f3c3"
+    ],
+    [
+      "9afd44f3c3",
+      "UP",
+      "cf4535a33a"
+    ],
+    [
+      "cf4535a33a",
+      "LEFT",
+      "635f79deec"
+    ],
+    [
+      "d7591a5dbf",
+      "RIGHT",
+      "ef6794a61c"
+    ],
+    [
+      "d7591a5dbf",
+      "UP",
+      "4b6544b82f"
+    ],
+    [
+      "d7591a5dbf",
+      "DOWN",
+      "936537caa0"
+    ],
+    [
+      "936537caa0",
+      "UP",
+      "d7591a5dbf"
+    ],
+    [
+      "936537caa0",
+      "DOWN",
+      "0b7a804f5d"
+    ],
+    [
+      "0b7a804f5d",
+      "UP",
+      "936537caa0"
+    ],
+    [
+      "936537caa0",
+      "RIGHT",
+      "6ebe6c5454"
+    ],
+    [
+      "9afd44f3c3",
+      "LEFT",
+      "635f79deec"
+    ],
+    [
+      "9afd44f3c3",
+      "DOWN",
+      "8d64b1f27b"
+    ],
+    [
+      "8d64b1f27b",
+      "UP",
+      "9afd44f3c3"
+    ],
+    [
+      "8d64b1f27b",
+      "DOWN",
+      "fc94e416ee"
+    ],
+    [
+      "8d64b1f27b",
+      "LEFT",
+      "635f79deec"
+    ],
+    [
+      "0b7a804f5d",
+      "RIGHT",
+      "506c48305b"
+    ],
+    [
+      "b34d4135f8",
+      "LEFT",
+      "fc94e416ee"
+    ],
+    [
+      "0b7a804f5d",
+      "DOWN",
+      "3b2f6cfd87"
+    ],
+    [
+      "3b2f6cfd87",
+      "UP",
+      "0b7a804f5d"
+    ],
+    [
+      "3b2f6cfd87",
+      "DOWN",
+      "49b235ffa9"
+    ],
+    [
+      "49b235ffa9",
+      "LEFT",
+      "2fc7fcd61b"
+    ],
+    [
+      "3b2f6cfd87",
+      "RIGHT",
+      "013dc24dae"
+    ],
+    [
+      "49b235ffa9",
+      "RIGHT",
+      "62ed074c45"
+    ],
+    [
+      "66491ede62",
+      "LEFT",
+      "2fc7fcd61b"
+    ],
+    [
+      "66491ede62",
+      "RIGHT",
+      "34905149db"
+    ],
+    [
+      "66491ede62",
+      "UP",
+      "4307da46a1"
+    ],
+    [
+      "e9ded5c9e7",
+      "RIGHT",
+      "8705b0390b"
+    ],
+    [
+      "5e537613d3",
+      "LEFT",
+      "9709eb01ae"
+    ],
+    [
+      "9709eb01ae",
+      "UP",
+      "447ba887f1"
+    ],
+    [
+      "9709eb01ae",
+      "DOWN",
+      "9709eb01ae"
+    ],
+    [
+      "9709eb01ae",
+      "LEFT",
+      "9709eb01ae"
+    ],
+    [
+      "9ee450af22",
+      "RIGHT",
+      "bdf537213b"
+    ],
+    [
+      "5e537613d3",
+      "UP",
+      "f6981190ba"
+    ],
+    [
+      "5e537613d3",
+      "RIGHT",
+      "e839cea0eb"
+    ],
+    [
+      "f423ea4f15",
+      "LEFT",
+      "9709eb01ae"
+    ],
+    [
+      "36215f7578",
+      "RIGHT",
+      "a4508ed247"
+    ],
+    [
+      "8db90ac240",
+      "LEFT",
+      "bb95fdb79f"
+    ],
+    [
+      "f423ea4f15",
+      "UP",
+      "bb95fdb79f"
+    ],
+    [
+      "f423ea4f15",
+      "DOWN",
+      "f6981190ba"
+    ]
+  ],
+  "entry": [
+    [
+      "DOWN",
+      "84c1a1b0e4"
+    ]
+  ],
+  "back": {},
+  "findings": [],
+  "screenshot": "screen.png",
+  "summary": {
+    "counts": {},
+    "total": 0,
+    "icon_only": 0
+  },
+  "verdict": "inconclusive"
+}

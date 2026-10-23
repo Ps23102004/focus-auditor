@@ -1,0 +1,26 @@
+[
+ {
+  "finding": "72c12df2ba",
+  "bounds": [
+   376,
+   148,
+   472,
+   244
+  ],
+  "before": "unlabelled, button",
+  "after": "Search, button",
+  "source": "before: recorded audit snapshot; after: live dump of the fixed app, control found by on-screen position"
+ },
+ {
+  "finding": "b9df6da731",
+  "bounds": [
+   504,
+   148,
+   600,
+   244
+  ],
+  "before": "unlabelled, button",
+  "after": "Settings, button",
+  "source": "before: recorded audit snapshot; after: live dump of the fixed app, control found by on-screen position"
+ }
+]

@@ -1,0 +1,84 @@
+:root {
+  color-scheme: light;
+
+  --ink: #232f3e;
+  --ink-secondary: #526071;
+  --ink-tertiary: #657183;
+  --orange: #ff9900;
+  --blue: #146eb4;
+  --critical: #b12704;
+  --success: #067d62;
+  --white: #ffffff;
+  --grouped: #f5f5f7;
+  --stage: #0b0f14;
+
+  --surface: var(--white);
+  --surface-subtle: #fafafb;
+  --surface-critical: #fff3ef;
+  --surface-warning: #fff6e6;
+  --surface-info: #edf5fc;
+  --surface-success: #edf8f4;
+  --border: rgba(35, 47, 62, 0.08);
+  --border-strong: rgba(35, 47, 62, 0.16);
+  --glass: rgba(255, 255, 255, 0.86);
+
+  --font-sans: -apple-system, "SF Pro Display", "SF Pro Text", Inter,
+    system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --text-xs: 0.75em;
+  --text-sm: 0.875em;
+  --text-base: 1em;
+  --text-lg: 1.25em;
+  --text-xl: 1.5625em;
+  --text-2xl: 1.953125em;
+  --text-3xl: 2.44140625em;
+  --text-display: 3.815em;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 2px 4px rgba(35, 47, 62, 0.025),
+    0 8px 24px rgba(35, 47, 62, 0.035);
+  --shadow-lg: 0 2px 4px rgba(35, 47, 62, 0.035),
+    0 16px 48px rgba(35, 47, 62, 0.08);
+  --shadow-stage: 0 4px 12px rgba(11, 15, 20, 0.08),
+    0 24px 56px rgba(11, 15, 20, 0.15);
+
+  --focus-ring: 3px solid var(--blue);
+  --target: 44px;
+  --page-max: 1760px;
+  --page-gutter: clamp(24px, 4vw, 64px);
+
+  /* Consumed by motion.js; CSS leaves spring-driven properties untouched. */
+  --spring-damping: 1;
+  --spring-response: 0.35;
+  --spring-momentum-damping: 0.8;
+  --spring-momentum-response: 0.3;
+  --entrance-stagger: 50ms;
+  --micro-duration: 180ms;
+  --panel-duration: 350ms;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass: #ffffff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --entrance-stagger: 0ms;
+    --micro-duration: 0ms;
+    --panel-duration: 0ms;
+  }
+}

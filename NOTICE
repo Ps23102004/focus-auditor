@@ -1,0 +1,10 @@
+Focus Auditor, MIT (see LICENSE).
+
+tests/fixtures/catalog/ and real-audits/ (catalog, leanback, reference, jetstream) contain uiautomator accessibility-tree dumps captured from Google's "Compose for TV
+Material Catalog", "Leanback", "TV Reference app" and "JetStream" samples (github.com/android/tv-samples and tv-samples-compose, Apache License 2.0). Only UI structure and label text are
+included, no source code or images. Android and Fire TV are trademarks of their owners; this project is not
+affiliated with or endorsed by Google or Amazon.
+
+tv-app/gradlew and tv-app/gradle/wrapper/gradle-wrapper.jar are the Gradle wrapper (Apache License 2.0, Gradle Inc.).
+The local models used for optional icon-name suggestions (Gemma 4 via Ollama) and the MobileNetV3 weights (torchvision) are
+downloaded by the user under their own licences and are not distributed in this repository.
