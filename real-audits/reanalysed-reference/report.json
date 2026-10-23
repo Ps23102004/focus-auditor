@@ -4,9 +4,9 @@
     "app": "com.android.tv.reference",
     "activity": ".MainActivity",
     "device": "fixture",
-    "timestamp": "2026-10-23T08:44:22-0400",
+    "timestamp": "2026-10-23T10:06:18-0400",
     "fa_version": "0.1.0",
-    "run_id": "04808729"
+    "run_id": "9ed43aa9"
   },
   "coverage": {
     "pressed": 141,
@@ -20,7 +20,7 @@
     "inconclusive_reasons": [
       "replay_mismatch: wanted 4d41ce4c7f got 78a09cf3a4",
       "node_cap: 1 discovered nodes not expanded (max_nodes=60)",
-      "label_unverified: 22 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+      "label_unverified: 30 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
     ]
   },
   "nodes": [

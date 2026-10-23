@@ -15,7 +15,7 @@
 | 11 | Label test passed for a named but non-focusable control | independent judge | Remote still could not reach it |
 | 12 | Duplicate test passed when the whole group was renamed to one new shared name | independent judge | Defect moved, not fixed |
 | 13 | Mutation script counted any non-zero pytest exit as a kill, with no green baseline | independent judge | Could overstate test strength |
-| 14 | The crawler recorded screens of a different app as nodes of the audited app | full re-audit of the fixed app (`demo-v2/after-full/`, kept as evidence) (70 of 8,352 snapshots came from the Catalog app) | 8 findings of another app attributed to the audited app. Fixed: `left_app` is reported, nothing recorded, verdict never pass |
+| 14 | The crawler recorded screens of a different app as nodes of the audited app | full re-audit of the fixed app (`demo-v2/after-full/`, kept as evidence) (2 of the 127 recorded snapshot files, 70 of 8,352 UI nodes, came from the Catalog app) | 8 findings of another app attributed to the audited app. Fixed: `left_app` is reported, nothing recorded, verdict never pass |
 | 15 | Whole-screen downgrade also hid full-screen modal traps | independent judges (round 2) | Now only when BACK can leave the screen; a modal BACK cannot leave stays a firm trap |
 | 16 | Duplicate test passed when every label in the group was erased | independent judge (GPT-6 Astra, round 2) | An agent could blank all names and receive a passing regression |
 | 17 | A one-control screen (first-run onboarding) was reported as pass | real app: Google Leanback sample | Now inconclusive (`tiny_coverage`) with a hint to use `--entry` |
@@ -27,5 +27,8 @@
 | 23 | Whole-screen check lost its floor of all known controls; findings with no key path got an unpassable frozen test; nodes added by the BACK probe were never counted | independent judge (Fable 5.1, round 5) | Floor restored; no test is generated without a key path (stated on stderr); unexpanded count taken last |
 | 24 | A multi-root snapshot whose focused node belonged to another app passed the 'app in front' check | independent judge (GPT-6 Astra, round 5) | The focused node's package is checked as well |
 | 25 | A normal two-button second page counted the previous page's controls as 'outside' and was reported as a firm trap | independent judge (GPT-6 Astra, round 5) | Whole-screen test uses the region's own screen only (small screens that BACK leaves are 'suspected', never a firm fail) |
+| 26 | A control whose name is only zero-width or other invisible characters counted as named (also passed the frozen test) | independent judges (Fable 5.1, Opus 5.5, round 6) | Invisible format/control characters are stripped before a name counts |
+| 27 | Two heuristics (collapsed-form, sliver) dropped an unnamed focused control silently, which could yield a clean pass | independent judges (round 6) | Every suppression adds a `label_unverified` note, so the audit is inconclusive |
+| 28 | A description was discarded when the text was only whitespace | independent judge (Fable 5.1, round 6) | The description is used |
 
-The mutation check (`scripts/mutation_check.py`) now requires a green baseline, counts only pytest exit code 1, and covers these fixes (34 mutants).
+The mutation check (`scripts/mutation_check.py`) now requires a green baseline, counts only pytest exit code 1, and covers these fixes (36 mutants).

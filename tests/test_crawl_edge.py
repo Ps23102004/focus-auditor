@@ -639,3 +639,43 @@ def test_focus_in_another_app_inside_a_multi_root_snapshot_is_not_in_front():
          '<node class="V" package="other.app" text="Home" content-desc="" focusable="true" focused="true" clickable="true" bounds="[0,0][50,50]"/></hierarchy>')
     with pytest.raises(AssertionError, match="no longer in front"):
         testgen._in_app({"pkg": "my.app", "kind": "TRAP", "finding_id": "abcdef1234"}, parse(x))
+
+
+# ---- round 6 (public repo judges: Fable 5.1, Opus 5.5) ----
+@pytest.mark.parametrize("invisible", ["​", "‏", "⁠", "﻿", " ​ ", "​​"])
+def test_invisible_characters_are_not_a_name(invisible):
+    s = snap(node(text=invisible, focused=True), node(text="Other", b="[200,10][300,50]"))
+    assert [f.kind for f in detectors.label_issues_across([(s, [])])] == ["MISSING_LABEL"]
+
+
+def test_description_is_used_when_the_text_is_only_whitespace():
+    from fa.tree import effective_label
+    s = snap(node(text=" ", desc="Search", focused=True))
+    assert effective_label(s.focusables()[0], s) == "Search"
+
+
+def test_wider_named_control_on_another_page_cannot_make_an_unnamed_focused_icon_pass():
+    """Judge-reproduced: this used to give verdict=pass with no notes. It must at least be inconclusive."""
+    icon_page = snap(node(b="[100,200][196,296]", focused=True), node(text="Other", b="[400,200][500,296]"))
+    wide_page = snap(node(text="Play now", b="[100,200][700,296]", focused=True))
+    notes = []
+    findings = detectors.label_issues_across([(icon_page, []), (wide_page, ["DOWN"])], notes)
+    assert [f.kind for f in findings if f.kind == "MISSING_LABEL"] or any(n.startswith("label_unverified") for n in notes)
+
+
+def test_tile_flush_with_the_top_edge_cannot_be_dropped_silently():
+    top = snap(node(b="[100,0][196,96]", focused=True), node(b="[100,200][196,296]"))
+    notes = []
+    findings = detectors.label_issues_across([(top, [])], notes)
+    assert [f.kind for f in findings if f.kind == "MISSING_LABEL"] or any(n.startswith("label_unverified") for n in notes)
+
+
+def test_zero_width_fix_does_not_pass_the_frozen_label_test():
+    import pytest as _p
+    from fa import testgen
+    from tests.helpers import FakeDev, node as hnode, screen
+    dev = FakeDev({"s0": screen(hnode(bounds=(200, 100, 300, 200), text="​", focused=True))}, {})
+    d = {"finding_id": "abcdef1234", "node_id": "n1", "pkg": "a.b.c", "activity": ".Main", "keys": [], "kind": "MISSING_LABEL",
+         "bounds": [200, 100, 300, 200], "target_geo": ["android.widget.Button", [25, 12, 37, 25]]}
+    with _p.raises(AssertionError, match="no accessible name"):
+        testgen.check(d, dev)

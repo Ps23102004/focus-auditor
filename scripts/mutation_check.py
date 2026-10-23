@@ -21,6 +21,8 @@ MUTANTS = [
     ("fa/crawl.py", "                self._probe_back()\n            unexpanded = [n for n in self.g.nodes if n not in self.expanded]", "                self._probe_back()\n            unexpanded = []", "late-discovered nodes never counted"),
     ("fa/testgen.py", "        if not (f.get(\"witness\") or {}).get(\"keys\"):", "        if False:", "unpassable test generated for a finding with no key path"),
     ("fa/testgen.py", "(foc is not None and foc.package and foc.package != d[\"pkg\"])", "False", "foreign focus in a multi-root snapshot passes"),
+    ("fa/tree.py", "if unicodedata.category(ch) not in (\"Cf\", \"Cc\") or ch in", "if True or ch in", "zero-width characters count as a name"),
+    ("fa/detectors.py", "                    unverified.add(tuple(v // 8 for v in b))  # heuristic suppression", "                    pass  # heuristic suppression", "collapsed-form suppression is silent again"),
     ("fa/tree.py", "if depth > MAX_DEPTH:", "if False:", "deep nesting crashes parser"),
     ("fa/testgen.py", "if node is None:\n        _fail(d, f\"no control at", "if False:\n        _fail(d, f\"no control at", "label check: deleted control passes"),
     ("fa/testgen.py", "if len(same) >= d[\"min_group\"]:", "if False:", "dup check: shared name passes"),

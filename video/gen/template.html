@@ -45,7 +45,7 @@
   .dim{color:#B9C8DB}
   .solid{background:#0B1220 !important}
   .ok{color:#7CE0AE}.bad{color:#FF8A8E}.or{color:#FFB84D}
-  .big{font-size:150px;font-weight:800;letter-spacing:-.04em;line-height:1}
+  .big{white-space:nowrap;font-size:150px;font-weight:800;letter-spacing:-.04em;line-height:1}
   .abs{position:absolute}
   .vid{position:absolute;z-index:18;border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(0,0,0,.5);background:#000;object-fit:cover}
 </style>
@@ -189,11 +189,11 @@
   <section class="clip scene" id="s12" data-start="125.2" data-duration="14">
     <div class="h1" style="font-size:54px">I tested the tester</div>
     <div class="abs" style="left:0;top:170px;display:flex;gap:26px">
-      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n1" style="color:var(--orange)">0</div><div class="p" style="margin-top:14px">offline tests</div></div>
-      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n2" style="color:var(--sky)">0</div><div class="p" style="margin-top:14px">random apps with ground truth worked out independently</div></div>
-      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n3" style="color:var(--green)">0</div><div class="p" style="margin-top:14px">deliberate code breaks, all caught</div></div>
+      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n1" style="font-size:112px;color:var(--orange)">0</div><div class="p" style="margin-top:14px">offline tests</div></div>
+      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n2" style="font-size:112px;color:var(--sky)">0</div><div class="p" style="margin-top:14px">random apps with ground truth worked out independently</div></div>
+      <div class="card st12" style="position:relative;width:400px;height:360px;padding:34px"><div class="big" id="n3" style="font-size:112px;color:var(--green)">0</div><div class="p" style="margin-top:14px">deliberate code breaks, all caught</div></div>
     </div>
-    <div class="abs p" style="left:0;top:580px;color:var(--mute)">Independent judge models found 25 real bugs along the way. Each one is fixed and has a regression test.</div>
+    <div class="abs p" style="left:0;top:580px;color:var(--mute)">Independent judge models found 28 real bugs along the way. Each one is fixed and has a regression test.</div>
   </section>
 
   <!-- S13 real apps -->
@@ -328,7 +328,7 @@ tl.from("#named",{y:20,opacity:0,duration:0.5,ease:E1},113.0); tl.from("#b10",{s
 /* S11 guards */ sceneIn("#s11",116.2); tl.from("#s11 .g11",{x:-60,opacity:0,duration:0.55,stagger:1.2,ease:E1},117.0); sceneOut("#s11",125.1);
 /* S12 stats */ sceneIn("#s12",125.3,".st12");
 function count(id,to,at,fmt){const o={v:0};tl.to(o,{v:to,duration:2.2,ease:"power2.out",onUpdate:()=>{document.getElementById(id).textContent=fmt(o.v);}},at);}
-count("n1",1094,126.2,v=>Math.round(v).toLocaleString("en-US")); count("n2",600,128.6,v=>Math.round(v)); count("n3",34,132.0,v=>Math.round(v)+" / 34");
+count("n1",1104,126.2,v=>Math.round(v).toLocaleString("en-US")); count("n2",600,128.6,v=>Math.round(v)); count("n3",36,132.0,v=>Math.round(v)+" / 36");
 sceneOut("#s12",138.6);
 /* S13 apps */ sceneIn("#s13",138.8); tl.from("#s13 .r13",{x:-60,opacity:0,duration:0.5,stagger:1.5,ease:E1},139.6);
 tl.from("#inc",{scale:0.85,opacity:0,duration:0.5,ease:"back.out(2)"},149.2); sceneOut("#s13",152.5);

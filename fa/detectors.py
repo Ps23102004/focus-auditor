@@ -196,9 +196,11 @@ def label_issues_across(snapshots, notes=None):
                     continue
                 if any(named and sj != si and _near(pb[0], b[0]) and _near(pb[1], b[1]) and _near(pb[3], b[3])
                        and pb[2] - pb[0] > b[2] - b[0] for sj, pb, named, _c, _i in pool):
+                    unverified.add(tuple(v // 8 for v in b))  # heuristic suppression is never silent: it makes the audit inconclusive
                     continue  # collapsed form of a named control (e.g. a collapsed nav drawer)
                 if _clipped(b, root) and any(not clip and i != f.node_id and _near(pb[0], b[0]) and _near(pb[2], b[2])
                                              for _s, pb, _n, clip, i in pool):
+                    unverified.add(tuple(v // 8 for v in b))
                     continue  # sliver of a control that is fully visible in another state
                 foc = snap.focused()
                 if foc is None or foc.id != f.node_id:  # not focused in this state: no evidence about its spoken name

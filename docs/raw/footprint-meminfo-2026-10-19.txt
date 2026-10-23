@@ -1,0 +1,8 @@
+# Raw lines copied from `adb shell dumpsys meminfo` on the Android TV emulator (2 GB RAM, API 31), companion app open, Oct 19 2026
+# (PSS by process, K)
+     76,898K: com.focusauditor.tv (pid 21493 / activities)
+     63,948K: com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 21538)
+      8,433K: com.google.android.webview:webview_service (pid 21519)
+Total RAM: 2,015,580K (status normal)
+ Free RAM:   745,396K (  177,352K cached pss +   386,300K cached kernel +   181,744K free)
+ Used RAM: 1,229,971K (1,039,239K used pss +   190,732K kernel)

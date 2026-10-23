@@ -1,5 +1,5 @@
 """Parse a uiautomator dump into a Snapshot. Untrusted input: DTDs/entities are rejected."""
-import hashlib, re
+import hashlib, re, unicodedata
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 
@@ -98,10 +98,16 @@ def parse(xml_text):
     return Snapshot(nodes, xml_text)
 
 
+def _visible(t):
+    """Strip whitespace AND invisible format/control characters (zero-width space, RLM, word joiner...): a screen reader
+    says nothing for them, so a name made only of them is no name."""
+    return "".join(ch for ch in (t or "") if unicodedata.category(ch) not in ("Cf", "Cc") or ch in "\t\n ").strip()
+
+
 def _descendant_text(node, snap, out):
     for ci in node.children:
         c = snap.nodes[ci]
-        t = (c.text or c.desc).strip()
+        t = _visible(c.text) or _visible(c.desc)
         if t:
             out.append(t)
         _descendant_text(c, snap, out)
@@ -109,10 +115,10 @@ def _descendant_text(node, snap, out):
 
 def effective_label(node, snap):
     """Own text, else own content-desc, else merged descendant text. This is what the accessibility tree exposes."""
-    if node.text.strip():  # whitespace-only is silent to a screen reader: not a label
-        return node.text.strip()
-    if node.desc.strip():
-        return node.desc.strip()
+    if _visible(node.text):  # whitespace-only or zero-width-only is silent to a screen reader: not a label
+        return _visible(node.text)
+    if _visible(node.desc):
+        return _visible(node.desc)
     parts = []
     _descendant_text(node, snap, parts)
     return " ".join(parts)

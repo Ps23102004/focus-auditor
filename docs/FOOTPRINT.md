@@ -10,7 +10,7 @@ Focus Auditor has two halves. Only one of them ever touches a Fire TV.
 
 ## Companion app, measured (Android TV emulator, 2 GB RAM, API 31, Oct 19 2026)
 `dumpsys meminfo` PSS: app 77 MB + WebView renderer 64 MB + WebView service 8 MB, about 150 MB while showing the report.
-The same emulator had 745 MB free with the app open.
+The same emulator had 745 MB free with the app open. Raw lines: `docs/raw/footprint-meminfo-2026-10-19.txt`.
 
 ## Fire TV sticks (public spec sites, not Amazon's own pages)
 Fire TV Stick HD / Lite class: 1 GB RAM. Stick 4K / 4K Max class: 2 GB RAM.

@@ -541,7 +541,7 @@
     "max_nodes": 40,
     "elapsed_s": 313.8,
     "inconclusive_reasons": [
-      "label_unverified: 29 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+      "label_unverified: 32 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
     ]
   },
   "entry": [

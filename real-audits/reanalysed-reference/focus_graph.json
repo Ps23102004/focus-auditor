@@ -461,7 +461,7 @@
     "inconclusive_reasons": [
       "replay_mismatch: wanted 4d41ce4c7f got 78a09cf3a4",
       "node_cap: 1 discovered nodes not expanded (max_nodes=60)",
-      "label_unverified: 22 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+      "label_unverified: 30 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
     ]
   },
   "entry": [

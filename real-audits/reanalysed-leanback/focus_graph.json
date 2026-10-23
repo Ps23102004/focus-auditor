@@ -913,7 +913,7 @@
       "replay_mismatch: wanted 048cc79f58 got 35a3ea8344",
       "node_cap: 1 discovered nodes not expanded (max_nodes=60)",
       "replay_mismatch: wanted bbf7b88ac6 got 4f94ba0746",
-      "label_unverified: 36 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
+      "label_unverified: 46 control(s) with no name: they were never observed while focused on the same screen, so they are not reported"
     ]
   },
   "entry": [

@@ -8,3 +8,6 @@ affiliated with or endorsed by Google or Amazon.
 tv-app/gradlew and tv-app/gradle/wrapper/gradle-wrapper.jar are the Gradle wrapper (Apache License 2.0, Gradle Inc.).
 The local models used for optional icon-name suggestions (Gemma 4 via Ollama) and the MobileNetV3 weights (torchvision) are
 downloaded by the user under their own licences and are not distributed in this repository.
+
+video/hf/gsap.min.js is GSAP 3.14.2 (c) GreenSock, used under GreenSock's standard "no charge" licence (gsap.com/standard-license); it is not covered by this project's MIT licence.
+The short spoken clips in docs/demo/ and web/data-v2/audio/ were generated with the macOS `say` system voices as a demonstration of the rules preview; they are demo assets, not a redistributed voice product.
