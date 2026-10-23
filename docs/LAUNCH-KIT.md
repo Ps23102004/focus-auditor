@@ -13,7 +13,7 @@ I built Focus Auditor for the Amazon Build, Ship, Shape hackathon (Fire TV track
 
 It drives a Fire TV / Android TV app with real D-pad presses over adb and reads the accessibility tree at every step. It finds focus traps (controls you can enter but not leave), controls with no accessible name, and groups sharing one name. Each finding becomes a frozen live test that fails while the bug exists. A sandboxed coding agent fixes it and the same tests re-run.
 
-The part I care about most is that it will not lie: crashes, deleted controls and renamed groups cannot fake a pass, and when coverage is incomplete it says "inconclusive", never "pass". I tested the tester with 1,094 offline tests, 600 random apps with known answers, 34 deliberate code breaks, five rounds of independent AI judges (25 real bugs found and fixed), and four Google TV sample apps it had never seen.
+The part I care about most is that it will not lie: crashes, deleted controls and renamed groups cannot fake a pass, and when coverage is incomplete it says "inconclusive", never "pass". I tested the tester with 1,104 offline tests, 600 random apps with known answers, 36 deliberate code breaks, five rounds of independent AI judges (28 real bugs found and fixed), and four Google TV sample apps it had never seen.
 
 Honest limits: Android TV emulator only so far, no screen-reader recording yet (the audio preview is a rules approximation), Vega OS not covered.
 
@@ -21,5 +21,5 @@ MIT: https://github.com/Ps23102004/focus-auditor
 
 ## README badge and hero banner spec
 - Hero: 1280x320, navy #232F3E, orange #FF9900 focus ring around a small TV-remote D-pad glyph, title "Focus Auditor" (system-ui bold), one line "Drive a Fire TV app with a remote. Prove the fix."
-- Badges (shields.io, one row): `license MIT` (orange), `tests 1094 passing` (green), `mutants 34/34 caught` (blue), `platform Android TV / Fire OS` (navy).
+- Badges (shields.io, one row): `license MIT` (orange), `tests 1104 passing` (green), `mutants 36/36 caught` (blue), `platform Android TV / Fire OS` (navy).
 - Keep the numbers in the badges in sync with `scripts/mutation_check.py` and `pytest -m "not device"` output; do not add a badge for anything not measured.
